@@ -3,17 +3,17 @@
    By s_akhundoff — https://instagram.com/s_akhundoff
    ============================================================ */
 :root{
-  --bg-1:#8a5427; --bg-2:#3d2313;
-  --topbar-bg: rgba(238,225,208,0.95);
-  --topbar-text:#3b2010;
-  --surface: rgba(255,238,214,0.09);
-  --surface-h: rgba(255,238,214,0.15);
-  --border: rgba(255,224,180,0.18);
-  --teal:#f0c86e; --teal-soft: rgba(240,200,110,0.20);
-  --violet:#8a4a1e; --violet-soft: rgba(138,74,30,0.28);
-  --amber:#f59e0b; --amber-soft: rgba(245,158,11,0.20);
-  --sky:#fbbf24; --sky-soft:rgba(251,191,36,.18);
-  --text-1:#fdf3e2; --text-2:#ecd9bd; --text-3:#c9ac86;
+  --bg-1:#160d06; --bg-2:#2b1a0a;
+  --topbar-bg: rgba(22,13,6,0.78);
+  --topbar-text:var(--text-1);
+  --surface: rgba(255,231,190,0.055);
+  --surface-h: rgba(255,231,190,0.10);
+  --border: rgba(255,214,150,0.12);
+  --teal:#eab308; --teal-soft: rgba(234,179,8,0.16);
+  --violet:#b45309; --violet-soft: rgba(180,83,9,0.20);
+  --amber:#f59e0b; --amber-soft: rgba(245,158,11,0.18);
+  --sky:#fbbf24; --sky-soft:rgba(251,191,36,.16);
+  --text-1:#fdf3e2; --text-2:#d8c0a0; --text-3:#9a8265;
   --font-d:'Playfair Display', Georgia, serif;
   --font-b:'Inter', system-ui, sans-serif;
   /* Hər modul bunları öz rənginə görə override edir */
@@ -25,24 +25,24 @@ body{-webkit-user-select:none;-moz-user-select:none;user-select:none;}
 body{
   font-family:var(--font-b);
   background:
-    radial-gradient(1100px 750px at 12% -10%, rgba(240,200,110,0.18), transparent 60%),
-    radial-gradient(1000px 700px at 110% 15%, rgba(138,74,30,0.28), transparent 55%),
-    linear-gradient(160deg, var(--bg-1) 0%, var(--bg-2) 70%);
+    radial-gradient(1100px 750px at 12% -10%, rgba(var(--acc-rgb),0.16), transparent 60%),
+    radial-gradient(1000px 700px at 110% 15%, rgba(180,83,9,0.18), transparent 55%),
+    linear-gradient(180deg, var(--bg-1), var(--bg-2));
   color:var(--text-1); min-height:100vh; line-height:1.65;
 }
-.blob{position:fixed;border-radius:50%;filter:blur(80px);opacity:.5;pointer-events:none;z-index:0;}
-.blob-1{width:400px;height:400px;background:rgba(240,200,140,.30);top:-100px;left:-120px;}
-.blob-2{width:360px;height:360px;background:rgba(138,74,30,.35);top:40%;right:-140px;}
+.blob{position:fixed;border-radius:50%;filter:blur(80px);opacity:.45;pointer-events:none;z-index:0;}
+.blob-1{width:400px;height:400px;background:var(--acc-soft);top:-100px;left:-120px;}
+.blob-2{width:360px;height:360px;background:var(--violet-soft);top:40%;right:-140px;}
 .blob-3{width:320px;height:320px;background:var(--amber-soft);bottom:-80px;left:30%;}
 
-.topbar{position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between; gap:14px; padding:14px 28px; background:var(--topbar-bg); backdrop-filter:blur(16px); border-bottom:1px solid rgba(59,32,16,0.12);}
+.topbar{position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between; gap:14px; padding:14px 28px; background:var(--topbar-bg); backdrop-filter:blur(16px); border-bottom:1px solid var(--border);}
 .topbar-brand{display:flex; align-items:center; gap:10px; text-decoration:none; flex-shrink:0;}
-.topbar-brand img{width:34px; height:34px; border-radius:9px; object-fit:cover; border:1px solid rgba(59,32,16,0.2);}
-.topbar-brand .tb-name{font-family:var(--font-d); font-weight:700; font-size:.78rem; color:var(--topbar-text); line-height:1.2; max-width:150px;}
+.topbar-brand img{width:34px; height:34px; border-radius:9px; object-fit:cover; border:1px solid rgba(255,255,255,0.15);}
+.topbar-brand .tb-name{font-family:var(--font-d); font-weight:700; font-size:.78rem; color:var(--text-1); line-height:1.2; max-width:150px;}
 .topbar-right{display:flex; align-items:center; gap:14px; flex-shrink:0;}
-.topbar a.back{display:inline-flex; align-items:center; gap:8px; color:var(--topbar-text); text-decoration:none; font-size:.9rem; font-weight:600; transition:color .2s;}
-.topbar a.back:hover{color:var(--violet);}
-.progress-pill{font-size:.78rem; color:var(--topbar-text); border:1px solid rgba(59,32,16,0.2); padding:6px 14px; border-radius:999px; background:rgba(255,255,255,0.4); white-space:nowrap;}
+.topbar a.back{display:inline-flex; align-items:center; gap:8px; color:var(--text-2); text-decoration:none; font-size:.9rem; font-weight:600; transition:color .2s;}
+.topbar a.back:hover{color:var(--acc);}
+.progress-pill{font-size:.78rem; color:var(--text-3); border:1px solid var(--border); padding:6px 14px; border-radius:999px; background:var(--surface); white-space:nowrap;}
 @media(max-width:640px){
   .topbar{padding:12px 16px;}
   .topbar-brand .tb-name{display:none;}
@@ -147,10 +147,10 @@ h2{font-family:var(--font-d); font-size:clamp(1.35rem,3vw,1.7rem); font-weight:7
 .sess-txt p{font-size:.83rem; color:var(--text-2);}
 .sess-open{font-size:.76rem; color:var(--acc); font-weight:700; white-space:nowrap; display:flex; align-items:center; gap:5px;}
 
-.modal-overlay{position:fixed; inset:0; z-index:200; background:rgba(20,11,5,0.78); backdrop-filter:blur(6px); display:flex; align-items:flex-end; justify-content:center; opacity:0; visibility:hidden; transition:opacity .3s;}
+.modal-overlay{position:fixed; inset:0; z-index:200; background:rgba(11,7,3,0.8); backdrop-filter:blur(6px); display:flex; align-items:flex-end; justify-content:center; opacity:0; visibility:hidden; transition:opacity .3s;}
 .modal-overlay.active{opacity:1; visibility:visible;}
 @media(min-width:720px){ .modal-overlay{align-items:center;} }
-.modal-box{width:100%; max-width:680px; max-height:88vh; overflow-y:auto; background:linear-gradient(180deg, #6b4322, #2e1a0c); border:1px solid var(--border); border-radius:26px 26px 0 0; padding:32px 26px 40px; position:relative; transform:translateY(40px); transition:transform .35s cubic-bezier(.2,.8,.2,1); -webkit-user-select:text; user-select:text;}
+.modal-box{width:100%; max-width:680px; max-height:88vh; overflow-y:auto; background:linear-gradient(180deg, #3d2313, #160d06); border:1px solid var(--border); border-radius:26px 26px 0 0; padding:32px 26px 40px; position:relative; transform:translateY(40px); transition:transform .35s cubic-bezier(.2,.8,.2,1); -webkit-user-select:text; user-select:text;}
 @media(min-width:720px){ .modal-box{border-radius:26px; transform:translateY(0) scale(.94);} }
 .modal-overlay.active .modal-box{transform:translateY(0) scale(1);}
 .modal-close{position:sticky; top:0; float:right; margin-left:12px; width:36px;height:36px; border-radius:50%; border:1px solid var(--border); background:rgba(255,255,255,.06); color:var(--text-1); font-size:1.1rem; display:flex; align-items:center; justify-content:center; cursor:pointer; z-index:5;}
