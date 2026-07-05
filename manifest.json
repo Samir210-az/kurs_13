@@ -1,0 +1,19 @@
+{
+  "name": "AN Psixoloji Dəstək və Reabilitasiya Mərkəzi — Uşaq və Yeniyetmə Terapiya Proqramları Kursu",
+  "short_name": "Terapiya Proqramları",
+  "description": "Uşaq və Yeniyetmələr üçün 13 mövzulu terapiya proqramları kursu — Aqressivlik, Kəkələmə, Oyun Terapiyası, MAK kartları və s. — AN Psixoloji Dəstək və Reabilitasiya Mərkəzi",
+  "start_url": "./index.html",
+  "scope": "./",
+  "id": "/kurs_13/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#160d06",
+  "theme_color": "#160d06",
+  "lang": "az",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
