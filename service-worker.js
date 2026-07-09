@@ -1,9 +1,10 @@
-const CACHE_NAME = "kurs13-v1";
+const CACHE_NAME = "kurs13-v1-guard1";
 const CORE_ASSETS = [
   "./index.html",
   "./styles.css",
   "./engine.js",
   "./protect.js",
+  "./guard.js",
   "./logo.png",
   "./icon-192.png",
   "./icon-512.png",
