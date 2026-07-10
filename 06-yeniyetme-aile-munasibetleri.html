@@ -236,1577 +236,969 @@
 const TOTAL_SESSIONS = 8;
 const SESSIONS = [
   {
-    "num": 1,
     "title": "Tanışlıq və Ailə Dinamikasının Qiymətləndirilməsi",
-    "about": "Ailə Sistemləri Nəzəriyyəsinə (Bowen, 1978) görə, yeniyetmənin davranışı təcrid olunmuş halda deyil, ailə dinamikasının bir hissəsi kimi anlaşılmalıdır. İlkin qiymətləndirmə həm yeniyetmənin, həm valideynin perspektivini əhatə etməlidir.",
-    "goal": "Ailə üzvləri ilə etibarlı əlaqə qurmaq və hazırkı ailə kommunikasiya nümunələrini hər tərəfin perspektivindən başa düşmək.",
-    "administrator": "Klinik psixoloq (ailə terapiyası təlimi keçmiş).",
-    "materials": [
-      "Ailə Dinamikası Müsahibə Vərəqi",
-      "Rəngli kartlar (ailə üzvlərini təmsil etmək üçün)"
-    ],
+    "about": "İlk seansda məqsəd həll deyil, müşahidədir — kim kimə baxaraq danışır, kim sözü kəsir, kim susur. Bu ilk 45 dəqiqə bütün proqramın xəritəsini çəkir.",
+    "goal": "Ailənin ünsiyyət nümunələrini birbaşa müşahidə etmək və hər iki tərəfin gəlmə motivasiyasını ayrıca eşitmək.",
     "phases": [
       {
-        "name": "🟢 Giriş (10-12 dəq)",
-        "text": [
-          "Ailə üzvləri (yeniyetmə və valideyn) ilə birgə rahat mühit yaradılır."
-        ],
+        "name": "🟢 Giriş",
         "dialog": [
           [
             "T",
-            "Salam hər ikinizə! Bu gün ailə münasibətləriniz haqqında danışacağıq. Necəsiniz?"
-          ],
-          [
-            "Yeniyetmə",
-            "Yaxşıyam, bir az narahatam nə danışacağımızı bilmədiyim üçün."
+            "Salam. Bura necə gəldiniz — kimin fikri idi bu görüşə gəlmək?"
           ],
           [
             "Valideyn",
-            "Mən də ümidliyəm ki, bu, bizə kömək edəcək."
+            "Mənim. Açığı, artıq nə edəcəyimi bilmirdim."
           ],
           [
             "T",
-            "Bu, tamam normal hisslərdir. Bura kimisə günahlandırmaq üçün deyil, birlikdə yaxşılaşdırmaq üçün gəlmisiniz."
+            "Elvin, sənə necə təqdim olundu bu görüş?"
           ],
           [
             "Yeniyetmə",
-            "Bu, rahatlaşdırıcıdır."
+            "(çiyinlərini çəkir) Anam dedi gedirik, mən də gəldim."
           ],
           [
             "T",
-            "Ailənizdə ən çox nəyi qiymətləndirirsiniz?"
+            "Yəni sən özün seçmədin gəlməyi."
+          ],
+          [
+            "Yeniyetmə",
+            "Yox. Amma... narahat deyiləm burda olmaqdan, elə bil."
+          ],
+          [
+            "T",
+            "Bunu deməyin özü mənə bir şey göstərir. Neçə vaxtdır bu gərginlik davam edir?"
           ],
           [
             "Valideyn",
-            "Bir-birimizə dəstək olduğumuzu, çətin vaxtlarda yanımızda olduğumuzu."
-          ],
-          [
-            "Yeniyetmə",
-            "Mən də bunu qiymətləndirirəm, amma bəzən başa düşülmür kimi hiss edirəm."
+            "Aylardır. Amma son iki həftə lap pisləşdi."
           ],
           [
             "T",
-            "Bu, çox vacib bir müşahidədir. Son vaxtlar hansı mövzularda ən çox anlaşılmazlıq yaranır?"
+            "Nə dəyişdi son iki həftədə?"
           ],
           [
             "Valideyn",
-            "Ev tapşırıqları və telefon istifadəsi ətrafında."
+            "(fikirləşir) Dəqiq bilmirəm, deyəsən heç nə xüsusi olmadı, sadəcə yığıldı."
           ],
           [
-            "Yeniyetmə",
-            "Bəli, bu, düz belədir, hər gün deyərlər bu barədə."
+            "Valideyn",
+            "Bilirsiniz, bu görüş üçün üç dəfə randevunu təxirə saldım. Sonda özümü məcbur etdim gəlməyə."
           ],
           [
             "T",
-            "Anlaşılandır. Bu gün bunları daha dərindən araşdıracağıq."
-          ],
-          [
-            "Valideyn",
-            "Hazırıq."
+            "Bu, sizin üçün nə qədər çətin olduğunu göstərir. İndi buradasınız — bu, əhəmiyyətlidir."
           ],
           [
             "Yeniyetmə",
-            "Mən də hazıram."
+            "(bir az tərəddüdlə) Bura gələndə nə deməli olduğumu bilmirdim açığı."
+          ],
+          [
+            "T",
+            "Bunu deməyin özü kifayətdir, hazır cavab lazım deyil."
           ]
         ]
       },
       {
-        "name": "🔵 Əsas hissə (28-30 dəq)",
-        "text": [
-          "Hər tərəfin perspektivindən ailə dinamikası, kommunikasiya nümunələri və konflikt sahələri araşdırılır."
-        ],
+        "name": "🔵 Əsas hissə",
         "dialog": [
           [
             "T",
-            "Elvin, evdə özünü ən çox harada rahat hiss edirsən?"
+            "Elvin, sən desən, evdə ən çox nə vaxt gərginlik yaranır?"
           ],
           [
             "Yeniyetmə",
-            "Öz otağımda, tək qalanda."
+            "(susur bir neçə saniyə) Bilmirəm... hər şeydə bəlkə."
           ],
           [
             "T",
-            "Bəs ailənlə birlikdə olanda?"
+            "Yaxşı, konkret bir nümunə axtaraq. Dünən nə oldu?"
           ],
           [
             "Yeniyetmə",
-            "Yemək zamanı, bəzən yaxşı keçir, bəzən mübahisə olur."
-          ],
-          [
-            "T",
-            "Aygün xanım, siz necə görürsünüz ailə münasibətlərini?"
+            "Heç nə. Ciddi heç nə."
           ],
           [
             "Valideyn",
-            "Onu daha çox anlamaq istəyirəm, amma bəzən əlaqə qura bilmirəm."
+            "(kəsir) Necə heç nə? Sən qapını çırpıb girdin otağına!"
           ],
           [
             "T",
-            "Bu, çox səmimi bir etiraf. Elvin, sən nə vaxt özünü anlaşılmamış hiss edirsən?"
-          ],
-          [
-            "Yeniyetmə",
-            "Telefonumu yoxlayanda, hər şeyi izləmək istəyirlər kimi."
-          ],
-          [
-            "T",
-            "Aygün xanım, bu barədə nə düşünürsünüz?"
+            "(Valideynə) Bir saniyə saxlayaq — Elvinə buraxaq öz sözü ilə desin, sonra sizə sözü verəcəm."
           ],
           [
             "Valideyn",
-            "Narahatlığımdan irəli gəlir, amma bəlkə həddindən artıq nəzarət edirəm."
-          ],
-          [
-            "T",
-            "Bu, çox dəyərli bir özünüfarkındalıqdır. Elvin, sənə görə valideynlərin nəyə görə narahat olur?"
+            "Üzr istəyirəm."
           ],
           [
             "Yeniyetmə",
-            "Bilmirəm, bəlkə təhlükəsizliyimə görə."
+            "(bir az rahatlaşır) Sadəcə... o həmişə sual verir. Hara getdin, kiminləydin, niyə gec gəldin. Elə bil polis dindirməsi kimi."
           ],
           [
             "T",
-            "Bu, çox yetkin bir anlayışdır. Hər ikiniz üçün ən böyük istək nədir bu proqramdan?"
-          ],
-          [
-            "Valideyn",
-            "Daha yaxşı ünsiyyət qurmaq istəyirəm."
+            "Bu sualları eşidəndə sənin daxilində nə baş verir?"
           ],
           [
             "Yeniyetmə",
-            "Mən də eyni şeyi istəyirəm, daha az mübahisə."
+            "Bilmirəm necə deyim... boğulmuş kimi. Amma bilirəm ki, o narahat olur, ona görə soruşur, sadəcə... çoxdur."
           ],
           [
             "T",
-            "Bu, çox güclü ortaq məqsəddir — bunu bu gündən etibarən işləyəcəyimiz əsas istiqamətə çevirək."
+            "Aygün xanım, indi sizin növbənizdir. Siz bu sualları soruşanda nə düşünürsünüz?"
+          ],
+          [
+            "Valideyn",
+            "O, əvvəllər mənə hər şeyi deyərdi. İndi heç nə demir. Mən də qorxuram nəsə pis bir şey olar, xəbərim olmaz."
           ],
           [
             "T",
-            "İndi kiçik bir tapşırıq edək — buna 'Ailə Yaxınlıq Xəritəsi' deyilir. Bir vərəqdə özünüzü mərkəzdə dairə kimi çəkin, sonra ailənin digər üzvlərini sizə nə qədər yaxın hiss etdiyinizə görə uzaqlıqda yerləşdirin."
+            "Deməli sual vermək sizin üçün əlaqəni saxlamağın yoludur."
+          ],
+          [
+            "Valideyn",
+            "Bəli, elədir. Amma... (susur) bəlkə o başqa cür görür bunu."
+          ],
+          [
+            "T",
+            "Bu, çox əhəmiyyətli bir fərqdir — eyni davranış, iki tamam fərqli məna daşıyır. Elvin üçün nəzarət, sizin üçün qayğı. İkiniz də haqlısınız öz tərəfinizdən."
           ],
           [
             "Yeniyetmə",
-            "(çəkir) Anamı yaxın qoydum, amma bir az da kənarda, çünki bəzən uzaq hiss edirəm."
+            "(sakitcə) Mən heç düşünməmişdim ki, o qorxur."
           ],
           [
             "T",
-            "Aygün xanım, siz də eyni tapşırığı edin, öz perspektivinizdən."
+            "Bu, indi ikinizin arasında yeni bir söhbətin başlanğıcı ola bilər. Amma tələsməyək."
           ],
           [
             "Valideyn",
-            "(çəkir) Mən Elvini çox yaxın qoydum, amma indi görürəm ki, o məni bir az uzaqda görür."
+            "(bir az müdafiəyə keçir) Amma mən pis ana deyiləm. Sadəcə narahatam onun üçün."
           ],
           [
             "T",
-            "Bu fərq çox dəyərlidir — iki fərqli xəritə eyni ailəni göstərir, amma fərqli məsafələrlə. Bu, bizə harada işləməli olduğumuzu göstərir."
+            "Mən heç vaxt demədim ki, pis anasınız. Narahatlıq və nəzarət bəzən qarışa bilir, bu, fərqli şeydir."
           ],
           [
-            "Valideyn",
-            "Düşünmürdüm ki, bu qədər fərqli görəcəyik eyni münasibəti."
+            "Yeniyetmə",
+            "(aşağı baxaraq) Mən də demirəm o pisdir. Sadəcə... boğulur adam."
+          ],
+          [
+            "T",
+            "Bu ikisi — 'pis deyilsən' və 'boğuluram' — eyni anda doğru ola bilər. Bu, bizim işləyəcəyimiz yerdir."
+          ],
+          [
+            "T",
+            "Bir sual da sizə, Aygün xanım — bu narahatlıq hissi sizin öz uşaqlığınızdan tanışdırmı?"
           ]
         ]
       },
       {
-        "name": "🟣 Bağlanış (8-10 dəq)",
-        "text": [
-          "İlk seansın xülasəsi aparılır, proqramın gedişatı izah olunur."
-        ],
+        "name": "🟣 Bağlanış",
         "dialog": [
           [
             "T",
-            "Bu gün nə haqda danışdığımızı hər ikiniz xatırlaya bilərsinizmi?"
-          ],
-          [
-            "Yeniyetmə",
-            "Ailə münasibətlərimiz və anlaşılmazlıqlar haqqında."
+            "Bu görüşdən sonra bir sual apara bilərsiniz evə, cavabsız — sadəcə düşünmək üçün: 'Mən nəyə görə belə reaksiya verirəm?' Hər ikiniz üçün."
           ],
           [
             "Valideyn",
-            "Bəli, və hər ikimizin perspektivi haqqında."
-          ],
-          [
-            "T",
-            "Möhtəşəm! Bu söhbət sizə necə hiss etdirdi?"
+            "Yaxşı, düşünərəm."
           ],
           [
             "Yeniyetmə",
-            "Yaxşı, ilk dəfə açıq danışdıq kimi hiss etdim."
-          ],
-          [
-            "Valideyn",
-            "Mən də eyni fikirdəyəm, ümidliyəm."
+            "(başını tərpədir, heç nə demir)"
           ],
           [
             "T",
-            "Bu, çox gözəl bir başlanğıcdır! Növbəti dəfə muxtariyyət və bağlılıq balansından danışacağıq."
+            "Elvin, sənin sükutun da bir cavabdır, məcburi deyil danışmaq."
           ],
           [
             "Yeniyetmə",
-            "Bu, nə deməkdir?"
-          ],
-          [
-            "T",
-            "Sənin müstəqillik ehtiyacın və ailə bağlılığı arasındakı balans. Maraqlı olacaq!"
+            "(yüngül təbəssüm) Sağ olun."
           ],
           [
             "Valideyn",
-            "Maraqla gözləyirik."
+            "(bir az narahat) Bəs neçə seansdan sonra düzələcək?"
           ],
           [
             "T",
-            "Sizin hər ikiniz bu gün çox açıq və dürüst oldunuz."
+            "Dürüst deyim — mən vaxt zəmanəti verə bilmərəm. Bəzi ailələr 6 seansda əhəmiyyətli fərq görür, bəzilərinə daha çox lazım olur. Bu, ikinizin nə qədər işə açıq olmanızdan asılıdır."
+          ],
+          [
+            "Valideyn",
+            "Bir sual da mənim var — bu, neçə həftə davam edəcək?"
+          ],
+          [
+            "T",
+            "Adətən 8 seans planlaşdırırıq, amma bu, sərt qayda deyil, ehtiyaca görə tənzimlənə bilər."
           ],
           [
             "Yeniyetmə",
-            "Təşəkkür edirəm."
-          ],
-          [
-            "Valideyn",
-            "Biz də təşəkkür edirik."
+            "(heç nə demir, qapıya tərəf baxır)"
           ],
           [
             "T",
-            "Görüşənədək!"
+            "Görüşərik gələn həftə."
+          ],
+          [
+            "Valideyn",
+            "(bir anlıq susur) Maraqlı sual, düşünəcəm bunu."
           ]
         ]
       }
-    ],
-    "homework": "Bu həftə ailə üzvləri arasında 1 müsbət, mübahisəsiz anı qeyd etmək (hər iki tərəf ayrıca)."
+    ]
   },
   {
-    "num": 2,
     "title": "Yeniyetmə Muxtariyyəti və Ailə Bağlılığı Balansı",
-    "about": "Steinberg-in (2001) yeniyetmə individuasiya nəzəriyyəsinə görə, sağlam inkişaf həm muxtariyyət (avtonomiya), həm də ailə ilə emosional bağlılığın davam etməsini tələb edir — bunlar bir-birinə zidd deyil, paralel inkişaf edən ehtiyaclardır.",
-    "goal": "Ailə üzvlərinə muxtariyyət və bağlılığın necə paralel şəkildə dəstəklənə biləcəyini başa düşdürmək.",
-    "administrator": "Klinik psixoloq.",
-    "materials": [
-      "'Muxtariyyət-Bağlılıq' balans şkalası",
-      "Nümunə ssenarilər"
-    ],
+    "about": "İkinci seansda müqavimət adətən artır, çünki ilk görüşün 'rahatlığı' keçib. Bu seans yeniyetmənin müstəqillik ehtiyacı ilə valideynin nəzarət ehtiyacı arasındakı gərginliyi normallaşdırır.",
+    "goal": "Differensiasiya konsepti (Bowen) vasitəsilə muxtariyyət tələbinin ailədən qopmaq demək olmadığını göstərmək.",
     "phases": [
       {
-        "name": "🟢 Giriş (8-10 dəq)",
-        "text": [
-          "Keçən həftənin müsbət anlarının nəzərdən keçirilməsi."
-        ],
+        "name": "🟢 Giriş",
         "dialog": [
           [
             "T",
-            "Salam! Bu həftə müsbət bir an qeyd etdinizmi?"
-          ],
-          [
-            "Yeniyetmə",
-            "Bəli, birlikdə film izlədik, əylənərək."
+            "Keçən həftədən bəri necə keçdi?"
           ],
           [
             "Valideyn",
-            "Mən də bunu qeyd etmişdim, çox xoş idi."
-          ],
-          [
-            "T",
-            "Bu, möhtəşəmdir! Bu gün 'muxtariyyət və bağlılıq' anlayışından danışacağıq."
+            "Açığı, elə bir fərq olmadı."
           ],
           [
             "Yeniyetmə",
-            "Bu, nədir dəqiq?"
+            "(susur, telefona baxır)"
           ],
           [
             "T",
-            "Sənin özün olmaq, öz qərarlarını vermək istəyin ilə ailənlə yaxın olmaq istəyin arasındakı balans."
-          ],
-          [
-            "Valideyn",
-            "Bu, çox aktual bir mövzudur bizim üçün."
-          ],
-          [
-            "T",
-            "Hazırsınızmı bunu araşdırmağa?"
+            "Elvin?"
           ],
           [
             "Yeniyetmə",
-            "Bəli, hazıram."
-          ],
-          [
-            "Valideyn",
-            "Mən də hazıram."
+            "(telefonu qaldırmadan) Normal."
           ],
           [
             "T",
-            "Bu barədə düşünmək necə hiss etdirir?"
+            "'Normal' bir az geniş bir söz — pis normal, yoxsa yaxşı normal?"
           ],
           [
             "Yeniyetmə",
-            "Maraqlı, çünki bu, mənim üçün əhəmiyyətlidir."
-          ],
-          [
-            "Valideyn",
-            "Mən də öyrənmək istəyirəm necə balans tapmalı."
+            "(çiyin çəkir) Bilmirəm. Adi."
           ],
           [
             "T",
-            "Möhtəşəm niyyət hər ikinizdən! Başlayaq."
+            "Yaxşı, bunu qəbul edirəm. Hər həftə böyük dəyişiklik gözləmirəm, düzəlmə bəzən görünməz gedir."
+          ],
+          [
+            "T",
+            "Bu gün otağa girəndə bir az fərqli enerji hiss etdim — nəsə oldu?"
+          ],
+          [
+            "Valideyn",
+            "(ah çəkir) Sabah kiçik bir mübahisə oldu, əhəmiyyətsiz."
+          ],
+          [
+            "Yeniyetmə",
+            "(kəsir) Əhəmiyyətsiz deyildi mənə görə."
+          ],
+          [
+            "T",
+            "Aygün xanım, siz özünüz necəsiniz bu günlərdə, işdən, gündəlik həyatdan kənar?"
+          ],
+          [
+            "Valideyn",
+            "(təəccüblənir sualdan) Açığı, heç kim bunu soruşmurdu son vaxtlar. Yorğunam, düzü."
+          ],
+          [
+            "T",
+            "Otağınızın rəngi barədə nəyə qərar verdiniz axırda?"
+          ],
+          [
+            "Yeniyetmə",
+            "(yüngül gülümsəyir) Boz-mavi. Onun da xoşuna gəldi."
+          ],
+          [
+            "T",
+            "Sağ olun bu açıqlığa görə."
           ]
         ]
       },
       {
-        "name": "🔵 Əsas hissə (25-28 dəq)",
-        "text": [
-          "Muxtariyyət və bağlılığın paralel inkişafı konkret nümunələrlə izah edilir, hər tərəfin ehtiyacları araşdırılır."
-        ],
+        "name": "🔵 Əsas hissə",
         "dialog": [
           [
             "T",
-            "Elvin, hansı sahələrdə daha çox müstəqillik istəyirsən?"
-          ],
-          [
-            "Yeniyetmə",
-            "Öz vaxtımı planlaşdırmaq, dostlarımı seçmək."
-          ],
-          [
-            "T",
-            "Aygün xanım, bu istəkləri eşidəndə nə hiss edirsiniz?"
+            "Bu gün sizinlə bir şey haqqında danışmaq istəyirəm — 'muxtariyyət' sözü. Eşitmisiniz?"
           ],
           [
             "Valideyn",
-            "Bir az narahat, amma anlayıram ki, bu, normal inkişafdır."
+            "Müstəqillik kimi bir şeydir yəqin?"
           ],
           [
             "T",
-            "Möhtəşəm anlayış! Eyni zamanda, Elvin, ailənlə hansı bağlılığı qorumaq istəyirsən?"
+            "Dəqiq. Amma incə fərqi var — muxtariyyət ailədən uzaqlaşmaq demək deyil, öz fikrini, öz sərhədini müəyyən edə bilmək bacarığıdır. Elvin, sənə görə hazırda sənə nə qədər sərbəstlik verilir?"
           ],
           [
             "Yeniyetmə",
-            "Onlarla vaxt keçirməyi, dəstəklərini hiss etməyi."
-          ],
-          [
-            "T",
-            "Bu, çox gözəldir — demək istəyirsən ki, müstəqil olmaq ailəni sevmədiyin demək deyil?"
-          ],
-          [
-            "Yeniyetmə",
-            "Dəqiq belədir! Bunu izah etmək çətin idi əvvəl."
-          ],
-          [
-            "T",
-            "Aygün xanım, bu izahı eşidəndə necə hiss edirsiniz?"
+            "Az. Çox az."
           ],
           [
             "Valideyn",
-            "Rahatlıq, çünki uzaqlaşmaq istəmədiyini bilmək yaxşıdır."
+            "(dərhal) Necə az? Sən istədiyin qədər dostlarınla gəzirsən!"
           ],
           [
             "T",
-            "Möhtəşəm! Necə bir orta yol tapa bilərsiniz — məsələn dostlar seçimi mövzusunda?"
+            "Görürsünüzmü, elə indi baş verdi — Elvin bir şey dedi, siz dərhal fərqli faktla cavab verdiniz. Bu, normal reaksiyadır, amma nəticədə söhbət bağlanır."
           ],
           [
             "Valideyn",
-            "Bəlkə mən daha az sual verim, ona etibar edim."
+            "(dayanır) Haqlısınız. Üzr istəyirəm, Elvin."
+          ],
+          [
+            "T",
+            "Elvin, sən 'az sərbəstlik' deyəndə konkret nəyi nəzərdə tutursan?"
           ],
           [
             "Yeniyetmə",
-            "Mən də sizinlə daha çox paylaşa bilərəm, könüllü olaraq."
+            "Qərar. Heç nəyə öz başıma qərar verə bilmirəm. Hətta otağımın rəngini seçəndə də anam qarışdı."
           ],
           [
             "T",
-            "Bu, möhtəşəm bir kompromisdir!"
-          ],
-          [
-            "T",
-            "Bu balansı praktik etmək üçün 'Pillə-pillə Muxtariyyət Nərdivanı' adlı bir metod təklif edirəm — kiçik addımlarla etibar artırılır, hər pillə əvvəlkinin uğurundan sonra gəlir."
+            "(Aygün xanıma) Bu sizə necə gəlir eşidəndə?"
           ],
           [
             "Valideyn",
-            "Bu, mənə daha təhlükəsiz gəlir, birdən-birə hər şeyi buraxmaqdansa."
+            "Bilmirdim otaq rəngi bu qədər önəmli idi ona görə."
           ],
           [
             "T",
-            "Elvin, ilk pillə nə olmalıdır sənə görə — ən kiçik, ən az riskli addım?"
+            "Bəzən böyük deyil, kiçik qərarlarda özünü göstərir bu ehtiyac. Elvin, sənə bir sual — əgər sənə tam sərbəstlik verilsə, qorxmazsan?"
           ],
           [
             "Yeniyetmə",
-            "Bəlkə həftəsonu dostlarımla 2 saat çölə çıxmaq, mesajla xəbər verməklə."
+            "(uzun fasilə) ...Bilmirəm açığı. Bəlkə bir az."
           ],
           [
             "T",
-            "Aygün xanım, bu ilk pillə sizin üçün məqbuldurmu?"
+            "Bu, çox dürüst bir cavabdır. Muxtariyyət təkcə valideynin verməli olduğu bir şey deyil, sənin özünün də hazır olmalı olduğun bir şeydir. İkiniz eyni sürətdə deyilsiniz, bu, normaldır."
           ],
           [
             "Valideyn",
-            "Bəli, bunu edə bilərəm, sadəcə mesaj kifayətdir."
+            "Bəs biz necə tapaq bu balansı?"
           ],
           [
             "T",
-            "Möhtəşəm! Uğurlu olsa, növbəti pillə nə ola bilər?"
+            "Bu gün başlanğıc olaraq, kiçik bir şeydən başlayaq — Elvin, bir sahə seç, harada sən qərar versən, anan qarışmasın."
           ],
           [
             "Yeniyetmə",
-            "Bəlkə vaxtı bir az uzatmaq, ya da tək gecə qalmaq dostumda."
+            "(fikirləşir) Bəlkə... geyim seçimim."
+          ],
+          [
+            "Valideyn",
+            "(bir az tərəddüdlə) Yaxşı, cəhd edərəm."
+          ],
+          [
+            "T",
+            "Elvin, sən 'əhəmiyyətsiz deyildi' dedin — nə idi məsələ?"
+          ],
+          [
+            "Yeniyetmə",
+            "O mənim otağıma icazəsiz girib, kitablarımı yığışdırıb."
+          ],
+          [
+            "Valideyn",
+            "Sadəcə səliqə yaratmaq istədim, otaq dağınıq idi!"
+          ],
+          [
+            "T",
+            "(hər ikisinə) Görürəm — eyni hərəkət, iki fərqli məna. Sizin üçün qayğı, Elvin üçün sərhədin pozulması."
           ]
         ]
       },
       {
-        "name": "🟣 Bağlanış (7-8 dəq)",
-        "text": [
-          "Balans üçün konkret kiçik dəyişikliklər planlaşdırılır."
-        ],
+        "name": "🟣 Bağlanış",
         "dialog": [
           [
             "T",
-            "Bu balansı necə tətbiq edəcəksiniz bu həftə?"
+            "'Cəhd edərəm' — bu, dürüst bir cavabdır, 'əlbəttə' demədiniz, bu, mənə göstərir ki, ciddi qəbul edirsiniz."
           ],
           [
             "Valideyn",
-            "Ona bir qərarını özü verməsinə icazə verəcəm."
-          ],
-          [
-            "Yeniyetmə",
-            "Mən də bir şeyi könüllü paylaşacam onlarla."
+            "Çətin olacaq mənə, açığı deyim."
           ],
           [
             "T",
-            "Möhtəşəm plan hər ikinizdən! Bu barədə necə hiss edirsiniz?"
+            "Normaldır. Bir həftə görək necə keçir, sonra danışarıq."
           ],
           [
             "Yeniyetmə",
-            "Ümidli, bu, ədalətli görünür."
+            "(ilk dəfə bir az gülümsəyir) Yaxşı."
+          ],
+          [
+            "Yeniyetmə",
+            "(hələ bir az narazı) Bilmirəm bu geyim məsələsi doğrudan işləyəcəkmi."
+          ],
+          [
+            "T",
+            "Şübhəli olmağın haqqı var — bir kiçik razılaşma hər şeyi düzəltmir. Amma başlanğıcdır."
+          ],
+          [
+            "T",
+            "Bu yorğunluq mövzusuna növbəti dəfə bir az da toxunaq, istəsəniz."
           ],
           [
             "Valideyn",
-            "Mən də ümidliyəm."
+            "(minnətdarlıqla) Bəli, bəlkə də."
           ],
           [
             "T",
-            "Bu gün özünüzdə hansı dəyişikliyi hiss edirsiniz?"
-          ],
-          [
-            "Yeniyetmə",
-            "Daha başa düşülmüş hiss edirəm."
+            "Növbəti dəfə sərhədlər mövzusuna keçəcəyik daha dərindən."
           ],
           [
             "Valideyn",
-            "Mən də daha yaxın hiss edirəm ona."
-          ],
-          [
-            "T",
-            "Bu, çox gözəldir! Siz bu gün çox açıq oldunuz."
-          ],
-          [
-            "Yeniyetmə",
-            "Təşəkkür edirəm."
-          ],
-          [
-            "Valideyn",
-            "Biz də təşəkkür edirik."
-          ],
-          [
-            "T",
-            "Növbəti dəfə effektiv kommunikasiya bacarıqlarını görəcəyik."
-          ],
-          [
-            "Yeniyetmə",
-            "Maraqla gözləyirəm."
+            "Gözləyirik."
           ]
         ]
       }
-    ],
-    "homework": "Valideyn bir qərar sahəsində yeniyetməyə muxtariyyət verəcək, yeniyetmə isə bir şeyi könüllü paylaşacaq."
+    ]
   },
   {
-    "num": 3,
     "title": "Effektiv Ailə Kommunikasiyası",
-    "about": "Gottman-ın (1999) kommunikasiya modelinə əsasən, 'Mən-dili' (I-statements) ifadələri ittiham etmədən hisslərini bildirməyə imkan verir və müdafiə reaksiyalarını azaldır.",
-    "goal": "Ailə üzvlərinə 'Mən-dili' ifadələrini və aktiv dinləməni öyrətmək, real kommunikasiya nümunəsi üzərində məşq etdirmək.",
-    "administrator": "Klinik psixoloq.",
-    "materials": [
-      "'Mən-dili' formulası kartı",
-      "Rol-oyunu ssenariləri"
-    ],
+    "about": "Üçüncü seansda tez-tez geriləmə baş verir — 'geyim sərbəstliyi' kimi kiçik razılaşmalar belə sürtünmə yaradır. Bu seans kommunikasiya nümunələrinin altında yatan emosional məntiqi açır.",
+    "goal": "'Mən-dili' və əks-etdirici dinləmə vasitəsilə ittihamedici kommunikasiyanı azaltmaq.",
     "phases": [
       {
-        "name": "🟢 Giriş (8-10 dəq)",
-        "text": [
-          "Keçən həftənin nəticələrinin nəzərdən keçirilməsi."
-        ],
+        "name": "🟢 Giriş",
         "dialog": [
           [
             "T",
-            "Salam! Keçən həftəki planı sınadınızmı?"
+            "Geyim mövzusu necə keçdi?"
           ],
           [
             "Valideyn",
-            "Bəli, ona bir qərar sahəsində sərbəstlik verdim."
-          ],
-          [
-            "Yeniyetmə",
-            "Mən də valideynlərimlə bir şey paylaşdım, yaxşı keçdi."
+            "(ah çəkir) Açığı, əvvəl yaxşı getdi, sonra... bir söz-söhbət oldu."
           ],
           [
             "T",
-            "Bu, möhtəşəm nəticədir! Bu gün 'Mən-dili' adlı bir kommunikasiya bacarığı öyrənəcəyik."
+            "Nə oldu?"
           ],
           [
             "Yeniyetmə",
-            "Bu, nə deməkdir?"
-          ],
-          [
-            "T",
-            "'Sən həmişə...' demək əvəzinə, 'Mən hiss edirəm ki...' formasında danışmaq."
+            "Bir köynək geydim, anam bəyənmədi, yenə başladı."
           ],
           [
             "Valideyn",
-            "Bu, maraqlı görünür, bəzən ittiham edici danışırıq bir-birimizə."
-          ],
-          [
-            "T",
-            "Tam doğrudur, bu, çox yayılmışdır. Hazırsınızmı öyrənməyə?"
+            "Mən sadəcə fikrimi dedim, məcbur etmədim ki."
           ],
           [
             "Yeniyetmə",
-            "Bəli, hazıram."
-          ],
-          [
-            "Valideyn",
-            "Mən də hazıram."
+            "(səsini qaldırmadan, amma kəskin) Fikrini demək kifayətdir artıq, hər dəfə."
           ],
           [
             "T",
-            "Bu barədə necə hiss edirsiniz?"
+            "(sakit) Görürəm ikinizin arasında hələ də bu mövzuda gərginlik var. Bu, uğursuzluq demək deyil — dəyişiklik xətli getmir."
+          ],
+          [
+            "T",
+            "Bu gün ikinizin sifətindən bir az yorğunluq oxuyuram. Həftə çətin keçdi?"
+          ],
+          [
+            "Valideyn",
+            "Bir az, bəli. İş yerində də stresli idi, evə gətirdim yəqin."
           ],
           [
             "Yeniyetmə",
-            "Maraqlı, faydalı ola biləcəyini düşünürəm."
-          ],
-          [
-            "Valideyn",
-            "Mən də ümidliyəm bunun köməyi olacağına."
+            "(özündən) Bilirsiniz, mən bəzən elə fikirləşirəm ki, danışsam da fayda vermir."
           ],
           [
             "T",
-            "Başlayaq onda!"
+            "Bu fikir haradan gəlir sənə görə?"
+          ],
+          [
+            "Yeniyetmə",
+            "Bilmirəm, deyəsən əvvəllər cəhd etmişəm, nəticə olmayıb."
+          ],
+          [
+            "Yeniyetmə",
+            "Bu gün özümü bir az fərqli hiss edirəm, açığı yaxşı mənada."
+          ],
+          [
+            "T",
+            "Bu, nə ilə bağlıdır sənə görə?"
           ]
         ]
       },
       {
-        "name": "🔵 Əsas hissə (25-28 dəq)",
-        "text": [
-          "'Mən-dili' formulası (Mən hiss edirəm... çünki... istəyirəm ki...) izah olunur, real konflikt mövzusu üzərində məşq edilir."
-        ],
+        "name": "🔵 Əsas hissə",
         "dialog": [
           [
             "T",
-            "'Mən-dili' formulası belədir: 'Mən [hiss] hiss edirəm, çünki [səbəb], istəyirəm ki [istək].' Gəl telefon mövzusunda sınayaq."
+            "Aygün xanım, o köynəyi görəndə nə dediniz dəqiq?"
           ],
           [
             "Valideyn",
-            "(sınayır) 'Mən narahat hiss edirəm, çünki gec saatlara qədər telefondasan, istəyirəm ki, saat 10-da telefonu yığışdırasan.'"
+            "Dedim ki, 'bu, sənə yaraşmır, başqasını gey'."
           ],
           [
             "T",
-            "Möhtəşəm! Bunu deyərkən necə hiss etdiniz — əvvəlki 'Sən həmişə telefondasan!' ilə müqayisədə?"
+            "Elvin, bunu eşidəndə nə hiss etdin?"
+          ],
+          [
+            "Yeniyetmə",
+            "Elə bil yenidən uşaq kimi baxıldım mənə."
+          ],
+          [
+            "T",
+            "Bu, maraqlı bir nöqtə. Aygün xanım, məqsədiniz nə idi bunu deyəndə?"
           ],
           [
             "Valideyn",
-            "Daha sakit, ittiham etmirəm kimi hiss etdim."
+            "(fikirləşir) Bilmirəm... deyəsən sadəcə öyrəşmişəm rəy bildirməyə. Uşaq vaxtından."
           ],
           [
             "T",
-            "Elvin, bunu eşidəndə necə hiss edərdin?"
-          ],
-          [
-            "Yeniyetmə",
-            "Daha az müdafiəçi olardım, dinləyərdim daha çox."
-          ],
-          [
-            "T",
-            "Möhtəşəm müşahidə! İndi sən sına, ev tapşırıqları mövzusunda."
-          ],
-          [
-            "Yeniyetmə",
-            "(sınayır) 'Mən təzyiq hiss edirəm, çünki çox tapşırıq var, istəyirəm ki, bir az daha vaxt verəsiniz.'"
-          ],
-          [
-            "T",
-            "Möhtəşəm oldu! Valideyn, bunu eşidəndə necə hiss edirsiniz?"
+            "İndi bir şey sınayaq. Eyni fikri, amma fərqli formada demək mümkündür — 'sən pissən' demədən 'mən narahatam' deyə. Cəhd edin — o köynəyi indi görsəniz, necə deyərdiniz?"
           ],
           [
             "Valideyn",
-            "Anlayışlı, əvvəlki 'Mənə vaxt yoxdur!' ilə müqayisədə daha aydındır."
+            "(tərəddüdlə) 'Mən... bu rəngi sənə yaraşan görmürəm, amma sənin seçimindir'?"
           ],
           [
             "T",
-            "Tam doğrudur! Bu formula ilə daha bir nümunə sınayaq — otaq nizamı haqqında."
+            "Bu, əvvəlkindən çox fərqlidir — irad deyil, sadəcə fikir, seçim hüququ onda qalır. Elvin, bunu eşitsən necə fərqli olardı?"
+          ],
+          [
+            "Yeniyetmə",
+            "(düşünür) Bəlkə... az əsəbləşərdim. Amma yenə də bilmirəm, hələ qulaq asmaq istərdim, görüm doğrudanmı belə deyər."
+          ],
+          [
+            "T",
+            "Bu şübhə normaldır — bir cümlə hər şeyi dəyişməyəcək, amma vaxtla nümunə dəyişə bilər. Elvin, sən özün necə danışırsan anana narahat olanda?"
+          ],
+          [
+            "Yeniyetmə",
+            "(susur) Danışmıram. Sadəcə qapını bağlayıram."
+          ],
+          [
+            "T",
+            "Bu da bir kommunikasiya formasıdır, sadəcə sözsüz. Amma anan onu necə oxuyur bilirsənmi?"
+          ],
+          [
+            "Yeniyetmə",
+            "Yəqin ki, 'məni sevmir' kimi?"
           ],
           [
             "Valideyn",
-            "'Mən narahat oluram, çünki otaq nizamsızdır, istəyirəm ki, həftədə 1 dəfə səliqəyə salasan.'"
+            "(kövrəlir) Bəzən elə düşünürəm, bəli."
+          ],
+          [
+            "T",
+            "Bu, çox güclü bir andır — hər ikiniz eyni sükutu tamam fərqli oxuyursunuz."
+          ],
+          [
+            "T",
+            "Elvin, sən ananın stresini hiss edirsənmi bəzən?"
           ],
           [
             "Yeniyetmə",
-            "Bu, daha rahat qəbul edilir mənə görə, tənqid kimi gəlmir."
-          ],
-          [
-            "T",
-            "Bu formulanı öz sözlərinizlə necə xatırlayacaqsınız?"
-          ],
-          [
-            "Yeniyetmə",
-            "'Hiss-səbəb-istək' kimi yadda saxlayacam."
-          ],
-          [
-            "T",
-            "Bu, çox gözəl bir yaddaş üsuludur — indi bunu daha bir bacarıqla möhkəmləndirək."
-          ],
-          [
-            "T",
-            "'Əks-etdirici Dinləmə' texnikasını sınayaq — biriniz danışanda, digəri əvvəlcə eşitdiyini öz sözləri ilə təkrarlayır, sonra öz fikrini bildirir. Bu, danışanın özünü doğrudan eşidilmiş hiss etməsinə kömək edir."
-          ],
-          [
-            "Yeniyetmə",
-            "Necə başlayaq?"
-          ],
-          [
-            "T",
-            "Aygün xanım, Elvinə bir şey deyin, o isə əvvəlcə təkrarlasın."
+            "(fikirləşir) Bəli, amma o mənə demir, mən özüm hiss edirəm ondan."
           ],
           [
             "Valideyn",
-            "Sənin gec yatmağın məni narahat edir, çünki səhər yorğun oyanırsan."
-          ],
-          [
-            "Yeniyetmə",
-            "(təkrarlayır) Dediniz ki, gec yatmağım sizi narahat edir, çünki səhər yorğun oluram. Bu doğrudur, amma bəzən yuxum gəlmir."
+            "(təəccüblənir) Mən heç bilmirdim bunu göstərdiyimi."
           ],
           [
             "T",
-            "Möhtəşəm əks-etdirmə! Gördünüzmü — əvvəlcə eşidilmək, mübahisəni azaldır."
+            "Bu, maraqlı bir nöqtə — sözsüz ünsiyyət də var, o da öyrənilə bilər, amma bəzən yanlış oxunur."
+          ],
+          [
+            "Yeniyetmə",
+            "Bəzən düşünürəm ki, o mənə əsəbləşir, amma sonra öyrənirəm ki, işdən əsəbidir."
+          ],
+          [
+            "T",
+            "Bu, çox dəyərli bir fərqləndirmədir — sənin özün öyrənmisən bunu ayırd etməyi."
           ]
         ]
       },
       {
-        "name": "🟣 Bağlanış (7-8 dəq)",
-        "text": [
-          "Bu bacarığın gündəlik tətbiqi planlaşdırılır."
-        ],
+        "name": "🟣 Bağlanış",
         "dialog": [
           [
             "T",
-            "Bu 'Mən-dili'ni bu həftə necə tətbiq edəcəksiniz?"
+            "Bu həftə bir şey sınayaq — Elvin, qapını bağlamaq əvəzinə, heç olmasa 'indi danışmaq istəmirəm' desən, nə dəyişər?"
+          ],
+          [
+            "Yeniyetmə",
+            "(uzun fasilə) Çətindir, amma... sınaya bilərəm."
           ],
           [
             "Valideyn",
-            "Hər dəfə narahat olanda, bu formulanı istifadə edəcəm."
-          ],
-          [
-            "Yeniyetmə",
-            "Mən də eyni şeyi edəcəm, xüsusən mübahisə anlarında."
+            "Mən də köynək kimi şeylərə rəy verməzdən əvvəl bir dayanmağa çalışacam."
           ],
           [
             "T",
-            "Möhtəşəm niyyət! Bu barədə necə hiss edirsiniz?"
-          ],
-          [
-            "Yeniyetmə",
-            "Ümidli, bu, kömək edəcək kimi hiss edirəm."
+            "İkiniz də böyük söz vermədiniz, kiçik cəhd dediniz. Bu, əslində daha real bir başlanğıcdır."
           ],
           [
             "Valideyn",
-            "Mən də ümidliyəm."
+            "Bəlkə mən də evə gələndə deyim 'bu gün yorğunam', sadəcə."
           ],
           [
             "T",
-            "Bu gün özünüzdə hansı yeniliyi kəşf etdiniz?"
+            "Bu, kiçik, amma çox faydalı bir addım ola bilər."
+          ],
+          [
+            "T",
+            "Bu gün sən danışdın, və nəticə oldu — anan səni fərqli eşitdi. Bunu qeyd etmək istəyirəm."
           ],
           [
             "Yeniyetmə",
-            "Necə danışdığımızın çox əhəmiyyətli olduğunu."
+            "(kiçik təbəssüm) Bəlkə haqlısınız."
           ],
           [
             "Valideyn",
-            "Mən də eyni şeyi kəşf etdim."
+            "Mən bu axşam sınayacam deyilən şeyi."
           ],
           [
             "T",
-            "Bu, çox dəyərli bir kəşfdir! Sizin hər ikiniz bu gün çox səylə çalışdınız."
-          ],
-          [
-            "Yeniyetmə",
-            "Təşəkkür edirəm."
-          ],
-          [
-            "Valideyn",
-            "Biz də təşəkkür edirik."
-          ],
-          [
-            "T",
-            "Növbəti dəfə sərhədlər və qaydalar haqqında danışacağıq."
-          ],
-          [
-            "Yeniyetmə",
-            "Maraqla gözləyirəm."
+            "Uğurlar, gələn həftə eşidək necə keçdi."
           ]
         ]
       }
-    ],
-    "homework": "Hər iki tərəf bu həftə ən azı 2 dəfə 'Mən-dili' formulasını istifadə etmək."
+    ]
   },
   {
-    "num": 4,
     "title": "Sərhədlər və Qaydalar Haqqında Danışıq",
-    "about": "Baumrind-in (1991) tərbiyə üslubları nəzəriyyəsinə görə, 'authoritative' (nüfuzlu, lakin isti) tərbiyə üslubu — aydın sərhədlər və qaydaların birgə müzakirə ilə formalaşdırılması — ən sağlam inkişaf nəticələrini təmin edir.",
-    "goal": "Ailə qaydalarını birgə, hər tərəfin fikrini nəzərə alaraq yenidən müzakirə etmək və razılaşma əldə etmək.",
-    "administrator": "Klinik psixoloq.",
-    "materials": [
-      "'Ailə Qaydaları' müzakirə vərəqi",
-      "Rəngli qələmlər"
-    ],
+    "about": "Dördüncü seans qayda müzakirəsinin özü münaqişə yarada biləcəyi üçün diqqətlə strukturlaşdırılıb — hədəf konsensus deyil, hər iki tərəfin narahatlığının eşidilməsidir.",
+    "goal": "Ev qaydalarını təkbaşına deyil, birgə formalaşdırma prosesini modelləşdirmək.",
     "phases": [
       {
-        "name": "🟢 Giriş (8-10 dəq)",
-        "text": [
-          "'Mən-dili' tətbiqinin nəticələrinin nəzərdən keçirilməsi."
-        ],
+        "name": "🟢 Giriş",
         "dialog": [
           [
             "T",
-            "Salam! 'Mən-dili'ni tətbiq etdinizmi bu həftə?"
-          ],
-          [
-            "Valideyn",
-            "Bəli, bir neçə dəfə, daha az mübahisə oldu."
+            "Bu gün qaydalar haqqında danışacağıq — telefon, saat, ev işləri kimi mövzular. Hazırsınızmı?"
           ],
           [
             "Yeniyetmə",
-            "Mən də sınadım, valideynlərim daha yaxşı dinlədi."
+            "(bir az gərgin) Yəni yeni qadağalar qoyulacaq?"
           ],
           [
             "T",
-            "Bu, möhtəşəm nəticədir! Bu gün ailə qaydaları haqqında danışacağıq."
+            "Xeyr, əksinə — birlikdə formalaşdıracağıq, təkbaşına yox."
           ],
           [
             "Yeniyetmə",
-            "Bu, mövzuda çox mübahisə edirik biz."
-          ],
-          [
-            "Valideyn",
-            "Doğrudur, xüsusən vaxt məhdudiyyətləri haqqında."
+            "(bir az rahatlaşır, amma hələ şübhəli) Yaxşı, görək."
           ],
           [
             "T",
-            "Anlaşılandır. Bu gün bunları birgə yenidən nəzərdən keçirəcəyik."
-          ],
-          [
-            "Yeniyetmə",
-            "Bu, ədalətli səslənir."
+            "Necə hiss edirsiniz bu gün qaydalar mövzusuna başlamazdan əvvəl?"
           ],
           [
             "Valideyn",
-            "Mən də razıyam bununla."
-          ],
-          [
-            "T",
-            "Hazırsınızmı başlamağa?"
+            "Bir az gərginəm açığı, əvvəlki cəhdlər uğursuz oldu."
           ],
           [
             "Yeniyetmə",
-            "Bəli, hazıram."
+            "(səssiz razılıq işarəsi verir)"
+          ],
+          [
+            "T",
+            "Bu iki həftə ərzində qaydalar mövzusunda başqa nəsə oldumu?"
           ],
           [
             "Valideyn",
-            "Mən də hazıram."
-          ],
-          [
-            "T",
-            "Bu barədə necə hiss edirsiniz?"
+            "Kiçik bir şey — bacısı ilə də mübahisə var bəzən, oxşar mövzuda."
           ],
           [
             "Yeniyetmə",
-            "Ümidli, bəlkə daha ədalətli qaydalar olar."
+            "(təəccüblənir) O barədə bilmirdim."
+          ],
+          [
+            "T",
+            "Görürsünüz, ailədə bir nümunə tək bir münasibətlə məhdudlaşmır çox vaxt."
+          ],
+          [
+            "Valideyn",
+            "Açığı bu gün bir az ümidsiz gəldim, əvvəlki cəhdlər yadımdadır."
+          ],
+          [
+            "T",
+            "Bu ümidsizlik başa düşüləndir, amma fərqli bir prosesdir bu."
+          ],
+          [
+            "Yeniyetmə",
+            "(başını qaldırır) Bu dəfə fərqlidir, çünki mən də danışıram."
           ]
         ]
       },
       {
-        "name": "🔵 Əsas hissə (25-28 dəq)",
-        "text": [
-          "Mövcud qaydalar birgə nəzərdən keçirilir, hər tərəfin perspektivi dinlənilir, yeni razılaşmalar formalaşdırılır."
-        ],
+        "name": "🔵 Əsas hissə",
         "dialog": [
           [
             "T",
-            "Hansı qayda ən çox mübahisəyə səbəb olur?"
-          ],
-          [
-            "Yeniyetmə",
-            "Telefon vaxtı — mənə çox az görünür."
-          ],
-          [
-            "T",
-            "Aygün xanım, bu qaydanı niyə qoymusunuz?"
+            "Aygün xanım, ən çox hansı qayda ətrafında münaqişə olur?"
           ],
           [
             "Valideyn",
-            "Yuxu və dərslərə təsir etməsin deyə."
+            "Telefon vaxtı. Gecə saat 12-yə qədər telefondadır."
           ],
           [
             "T",
-            "Elvin, bu narahatlığı anlayırsanmı?"
+            "Elvin, sənə görə niyə belədir?"
           ],
           [
             "Yeniyetmə",
-            "Bəli, anlayıram, amma vaxt bəlkə bir az artırıla bilər."
+            "Çünki gündüz vaxtım yoxdur, dərs, sonra gəzmə. Gecə yeganə sərbəst vaxtımdır."
           ],
           [
             "T",
-            "Gəl birlikdə orta yol tapaq — nə təklif edirsiniz?"
+            "Aygün xanım, bunu eşidəndə fikriniz dəyişirmi?"
           ],
           [
             "Valideyn",
-            "Bəlkə həftə içi 1 saat, həftəsonu 2 saat?"
-          ],
-          [
-            "Yeniyetmə",
-            "Bu, əvvəlkindən yaxşıdır, qəbul edirəm."
+            "Bir az. Amma yenə narahatam, yuxusuzluq üçün."
           ],
           [
             "T",
-            "Möhtəşəm razılaşma! Başqa hansı qayda müzakirə tələb edir?"
+            "İkiniz də haqlısınız öz tərəfinizdən. Gəlin konkret bir rəqəm tapmağa çalışaq — kompromis, tam təslim yox."
           ],
           [
             "Yeniyetmə",
-            "Evə qayıtma vaxtı, dostlarımla olanda."
+            "(fikirləşir) 23:00?"
           ],
           [
             "Valideyn",
-            "Bu barədə də açığıq danışmağa."
+            "(dərhal) Yox, çox gecdir, 22:00."
           ],
           [
             "T",
-            "Bu, çox gözəl bir əməkdaşlıqdır! Bu yeni qaydaları yazaq."
+            "Görürəm ikiniz fərqli rəqəmlərdəsiniz. Bu normaldır ilk təklifdə. Elvin, 22:00 niyə sənə çox erkən gəlir?"
           ],
           [
             "Yeniyetmə",
-            "(yazır) Bax, indi hər ikimiz razıyıq."
-          ],
-          [
-            "T",
-            "Bu razılaşmaları formal etmək üçün 'Yazılı Ailə Müqaviləsi' hazırlayaq — hər qayda, gözlənilən nəticə və razılaşdırılmış nəticələr (mükafat/itki) yazılı şəkildə qeyd olunur ki, hər ikiniz eyni şeyi xatırlayasınız."
+            "Çünki dostlarım da o vaxta qədər onlayndır, mən yalnız qalıram."
           ],
           [
             "Valideyn",
-            "Bu, yaxşı fikirdir, sözlə razılaşıb sonra unuduruq bəzən."
+            "(bir az yumşalır) Bunu bilmirdim."
           ],
           [
             "T",
-            "Elvin, telefon qaydası üçün müqavilədə nə yazılmalıdır?"
+            "Bəlkə orta bir nöqtə — 22:30?"
           ],
           [
             "Yeniyetmə",
-            "Həftə içi saat 22:00-a qədər, həftəsonu 23:00-a qədər, əgər riayət etməsəm sabahkı vaxt 30 dəqiqə azalır."
-          ],
-          [
-            "T",
-            "Aygün xanım, bu şərtlə razısınızmı?"
+            "(tərəddüdlə) Yaxşı... amma həftəsonu fərqli olsun istəyirəm."
           ],
           [
             "Valideyn",
-            "Bəli, aydın və ədalətlidir, imzalayacağıq."
+            "(fikirləşir) Həftəsonu 23:00 ola bilər, bəlkə."
           ],
           [
             "T",
-            "Möhtəşəm! Bu müqaviləni hər ikiniz imzalayın və görünən yerə asın — bu, sadəcə cəza sistemi deyil, qarşılıqlı razılaşmanın xatırlatmasıdır."
+            "Bu, tam ideal həll deyil hər ikiniz üçün, amma hər ikiniz güzəştə getdiniz. Bu, əslində uğurdur."
           ],
           [
             "Yeniyetmə",
-            "Anladım, mən də bunu ədalətli hesab edirəm."
+            "(bir az narazı, amma qəbul edir) Yaxşı, sınayaq."
+          ],
+          [
+            "T",
+            "Nə üçün əvvəlki cəhdlər işləmədi sizcə?"
+          ],
+          [
+            "Valideyn",
+            "Yəqin ki, mən tək qərar verirdim, sonra o etmirdi."
+          ],
+          [
+            "Yeniyetmə",
+            "Bəli, mənə soruşmadan qayda qoyulanda, mən də riayət etmirəm."
+          ],
+          [
+            "T",
+            "Bu, çox aydın bir səbəb-nəticə əlaqəsidir. Bu gün fərqli bir şey sınayaq — hər ikinizin səsi olsun."
+          ],
+          [
+            "T",
+            "Bunu unutmayaq, növbəti dəfə davam edərik."
           ]
         ]
       },
       {
-        "name": "🟣 Bağlanış (7-8 dəq)",
-        "text": [
-          "Yeni razılaşmaların sınaq müddəti planlaşdırılır."
-        ],
+        "name": "🟣 Bağlanış",
         "dialog": [
           [
             "T",
-            "Bu yeni qaydaları nə qədər müddət sınayacaqsınız?"
+            "Bu qaydanı yazılı saxlamaq faydalı ola bilər, unutmamaq üçün. Amma bilin ki, bir qayda bir dəfə qoyulub əbədi qalmır — bir ay sonra yenidən baxa bilərik."
           ],
           [
             "Valideyn",
-            "2 həftə, sonra yenidən nəzərdən keçirərik."
+            "Yaxşı fikir."
           ],
           [
             "Yeniyetmə",
-            "Bu, ədalətli görünür mənə."
+            "(hələ tam razı deyil, amma) Yaxşı."
           ],
           [
             "T",
-            "Möhtəşəm plan! Bu barədə necə hiss edirsiniz?"
+            "Tam razı olmamağınız normaldır — kompromis heç kimi 100% razı salmır, bu, onun təbiətidir."
           ],
           [
             "Yeniyetmə",
-            "Daha yaxşı, dinlənildiyimi hiss edirəm."
+            "(hələ tərəddüdlə) Yaxşı, amma əgər işləməsə?"
+          ],
+          [
+            "T",
+            "Onda bir ay sonra oturub yenidən danışarıq, dəyişdirmək mümkündür."
           ],
           [
             "Valideyn",
-            "Mən də daha rahat hiss edirəm bu razılaşma ilə."
+            "Bəs bacısı ilə də eyni üsulu tətbiq edə bilərikmi?"
           ],
           [
             "T",
-            "Bu, çox gözəldir! Bu gün özünüzdə nə hiss edirsiniz?"
+            "Prinsip eynidir — birgə qərar, amma konkret detallar fərqli ola bilər hər uşaq üçün."
           ],
           [
             "Yeniyetmə",
-            "Ümidli və minnətdar."
+            "(bir az rahatlaşır) Yaxşı, bunu sınamağa hazıram."
           ],
           [
             "Valideyn",
-            "Mən də eyni hissləri yaşayıram."
-          ],
-          [
-            "T",
-            "Siz bu gün çox əməkdaşlıq nümunəsi göstərdiniz."
-          ],
-          [
-            "Yeniyetmə",
-            "Təşəkkür edirəm."
-          ],
-          [
-            "Valideyn",
-            "Biz də təşəkkür edirik."
-          ],
-          [
-            "T",
-            "Növbəti dəfə konflikt həlli bacarıqlarını görəcəyik."
-          ],
-          [
-            "Yeniyetmə",
-            "Maraqla gözləyirəm."
+            "Mən də."
           ]
         ]
       }
-    ],
-    "homework": "Yeni razılaşdırılmış qaydaları 2 həftə tətbiq etmək, çətinlikləri qeyd etmək."
+    ]
   },
   {
-    "num": 5,
     "title": "Konflikt Həlli Bacarıqları",
-    "about": "Gottman-ın konflikt həlli modelinə görə, 'dörd atlı' (tənqid, müdafiə, təhqir, divar çəkmə) münasibətləri zədələyən əsas nümunələrdir. Bunların əvəzinə 'yumşaq başlanğıc' və qarşılıqlı hörmət prinsipi tətbiq olunur.",
-    "goal": "Ailə üzvlərinə sağlam konflikt həlli strategiyalarını öyrətmək və real konflikt ssenarisi üzərində məşq etdirmək.",
-    "administrator": "Klinik psixoloq.",
-    "materials": [
-      "'4 Zərərli Nümunə' kartı",
-      "Konflikt həlli addımları vərəqi"
-    ],
+    "about": "Beşinci seansda ailənin real bir münaqişəsi canlı şəkildə ortaya çıxdı — bu, planlaşdırılmamışdı, amma terapevtik baxımdan ən dəyərli material oldu.",
+    "goal": "Real vaxtda baş verən konflikti təhlükəsiz şəkildə emal etmək və de-eskalasiya bacarığını canlı nümayiş etdirmək.",
     "phases": [
       {
-        "name": "🟢 Giriş (8-10 dəq)",
-        "text": [
-          "Yeni qaydaların tətbiqinin nəzərdən keçirilməsi."
-        ],
+        "name": "🟢 Giriş",
         "dialog": [
           [
             "T",
-            "Salam! Yeni qaydalar necə işlədi bu həftə?"
+            "Necəsiniz bu gün?"
           ],
           [
             "Valideyn",
-            "Yaxşı, bir dəfə kiçik anlaşılmazlıq oldu, amma həll etdik."
+            "(gərgin) Açığı, bu gün əvvəldən problemli idi."
           ],
           [
             "Yeniyetmə",
-            "Bəli, ümumiyyətlə yaxşı keçdi."
-          ],
-          [
-            "T",
-            "Bu, möhtəşəm nəticədir! Bu gün konfliktləri necə sağlam həll etməyi görəcəyik."
-          ],
-          [
-            "Yeniyetmə",
-            "Bu, bizə çox lazımdır, bəzən mübahisələr böyüyür."
+            "(kəskin) Bəli, çünki telefonumu yoxlayıb."
           ],
           [
             "Valideyn",
-            "Doğrudur, bəzən özümüzü saxlaya bilmirik."
-          ],
-          [
-            "T",
-            "Anlaşılandır, bu, çox ailədə olur. Hazırsınızmı öyrənməyə?"
+            "Yoxlamadım! Sadəcə masanın üstündə gördüm ekranı."
           ],
           [
             "Yeniyetmə",
-            "Bəli, hazıram."
+            "Fərq etmir, baxmısan!"
+          ],
+          [
+            "T",
+            "(sakit səslə) Dayanaq bir saniyə. Bu, tam olaraq bizim danışmalı olduğumuz növ andır. Davam edin, amma bir-birinizi dinləyərək."
+          ],
+          [
+            "T",
+            "Bu, gözlənilməz bir seans oldu bu gün — amma dəyərli material verdi."
           ],
           [
             "Valideyn",
-            "Mən də hazıram."
+            "(hələ bir az narahat) Bağışlayın, bura pis bir gündə gəldik."
           ],
           [
             "T",
-            "Bu barədə necə hiss edirsiniz?"
+            "Əksinə, real anlar bəzən planlaşdırılmış söhbətlərdən daha çox öyrədir."
           ],
           [
-            "Yeniyetmə",
-            "Ümidli, faydalı olacağını düşünürəm."
+            "T",
+            "Bura gəlməzdən əvvəl, təxminən nə vaxt bu gərginlik başladı bu gün?"
           ],
           [
             "Valideyn",
-            "Mən də eyni fikirdəyəm."
-          ],
-          [
-            "T",
-            "Başlayaq?"
+            "Səhər, telefon məsələsi ilə başladı, sonra bütün günə yayıldı."
           ],
           [
             "Yeniyetmə",
-            "Bəli, başlayaq."
+            "(səssiz, hələ bir az əsəbi görünür)"
+          ],
+          [
+            "Valideyn",
+            "(dərin nəfəs) Üzr istəyirəm bu qarmaqarışıqlığa görə."
+          ],
+          [
+            "T",
+            "Üzr istəməyə ehtiyac yoxdur — bu, real həyatdır, tərtəmiz seanslar deyil."
           ]
         ]
       },
       {
-        "name": "🔵 Əsas hissə (25-28 dəq)",
-        "text": [
-          "Zərərli konflikt nümunələri (tənqid, təhqir) tanınır, sağlam alternativlər (yumşaq başlanğıc, fasilə vermə) rol-oyunu ilə məşq edilir."
-        ],
+        "name": "🔵 Əsas hissə",
         "dialog": [
           [
             "T",
-            "Mübahisə zamanı hansı sözləri işlədirsiniz adətən?"
+            "Aygün xanım, konkret nə gördünüz?"
           ],
           [
             "Valideyn",
-            "Bəzən 'Sən heç vaxt dinləmirsən' kimi şeylər deyirəm."
+            "Bir mesaj bildirişi, adı görünmürdü, sadəcə mətn qismən göründü."
           ],
           [
             "T",
-            "Bu, 'ümumiləşdirmə' adlanan zərərli bir nümunədir. Bunun əvəzinə nə deyə bilərsiniz?"
+            "Nə hiss etdiniz o an?"
           ],
           [
             "Valideyn",
-            "Bəlkə 'Bu dəfə məni dinləmədiyini hiss etdim' desəm?"
+            "Qorxdum. Bilmirəm nədən, sadəcə ürəyim düşdü."
           ],
           [
             "T",
-            "Möhtəşəm dəyişiklik! Elvin, sən mübahisədə nə edirsən adətən?"
+            "Elvin, sən nə hiss etdin bunu biləndə?"
           ],
           [
             "Yeniyetmə",
-            "Bəzən otağıma qaçıram, qapını çırpıram."
+            "(hələ əsəbi) İnamsızlıq! Hələ də mənə güvənmir!"
           ],
           [
             "T",
-            "Bu, 'divar çəkmə' adlanır. Fərqli bir yol sınayaq — 'Mənə 10 dəqiqə lazımdır sakitləşmək üçün, sonra danışarıq' demək necədir?"
-          ],
-          [
-            "Yeniyetmə",
-            "Bu, daha yaxşıdır, hələ də fasilə verirəm, amma daha hörmətlə."
-          ],
-          [
-            "T",
-            "Möhtəşəm! Gəl real bir konflikti canlandıraq — telefon vaxtı haqqında."
+            "Bu ağrılı bir sözdür — inamsızlıq. Aygün xanım, buna cavabınız var?"
           ],
           [
             "Valideyn",
-            "(rol-oyunu) 'Bu, artıq razılaşdığımız vaxtı keçib.'"
-          ],
-          [
-            "Yeniyetmə",
-            "(sakit) 'Haqlısınız, bağışlayın, indi yığışdırıram, amma bir az da vaxt istəyirəm sabah üçün danışmağa.'"
+            "(səsi titrəyir) Mən sənə güvənirəm, Elvin. Amma qorxu ilə güvən eyni şey deyil məndə. Hər ikisi ola bilir eyni anda."
           ],
           [
             "T",
-            "Möhtəşəm həll! Bu, necə hiss etdirdi hər ikinizə?"
+            "(fasilə verir, bunun çökməsinə icazə verir) Bu, çox vacib bir fərqdir sizin dediyiniz."
+          ],
+          [
+            "Yeniyetmə",
+            "(bir az yumşalır, amma hələ narahat) Bəs mən nə vaxt inamı qazanacam?"
+          ],
+          [
+            "T",
+            "Yaxşı sual. İnam bir dəfəlik veriləsi şey deyil, kiçik sübutlarla tikilir. Aygün xanım, konkret olaraq nə görsəniz, bir az rahatlarsınız?"
           ],
           [
             "Valideyn",
-            "Rahat, hörmətli hiss etdim."
-          ],
-          [
-            "Yeniyetmə",
-            "Mən də eşidilmiş hiss etdim."
+            "(fikirləşir) Bilmirəm... bəlkə sadəcə vaxt lazımdır mənə."
           ],
           [
             "T",
-            "Gələcək mübahisələr üçün 'DAYAN Texnikası' öyrədim — Dayan, Ara ver, Yenidən düşün, Alternativ tap, Nəticəni seç. Bu, qızğın anda bir addım geri çəkilməyə kömək edir."
-          ],
-          [
-            "Yeniyetmə",
-            "Bunu necə xatırlayım qızğın anda?"
-          ],
-          [
-            "T",
-            "Əvvəlcə fiziki bir işarə seçək — məsələn əlini qaldırmaq, 'DAYAN vaxtıdır' demək əvəzinə."
+            "Bu, dürüst cavabdır, amma Elvinə konkret bir şey vermir işləmək üçün. Bir daha düşünün — nə kiçik bir addım ola bilər?"
           ],
           [
             "Valideyn",
-            "Mən də bu işarəni görəndə sakitləşəcəm, çünki bilirəm ki, danışmaq deyil, fasilə istəyirsən."
-          ],
-          [
-            "T",
-            "Gəlin indi bunu praktik edək — kiçik bir gərgin mövzu seçin və DAYAN işarəsini ortasında istifadə edin."
-          ],
-          [
-            "Yeniyetmə",
-            "(cəhd edir, əl qaldırır) DAYAN, mənə bir dəqiqə lazımdır."
-          ],
-          [
-            "Valideyn",
-            "(dayanır) Yaxşı, gözləyirəm, sonra danışarıq."
-          ],
-          [
-            "T",
-            "Möhtəşəm! Bu, sizin ilk uğurlu DAYAN təcrübəniz idi."
-          ]
-        ]
-      },
-      {
-        "name": "🟣 Bağlanış (7-8 dəq)",
-        "text": [
-          "Sağlam konflikt həlli strategiyalarının davamlı tətbiqi planlaşdırılır."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Bu strategiyaları necə davam etdirəcəksiniz?"
-          ],
-          [
-            "Valideyn",
-            "Tənqid etmək əvəzinə 'Mən-dili' istifadə edəcəm."
-          ],
-          [
-            "Yeniyetmə",
-            "Mən də qaçmaq əvəzinə fasilə istəyəcəm."
-          ],
-          [
-            "T",
-            "Möhtəşəm niyyət! Bu barədə necə hiss edirsiniz?"
-          ],
-          [
-            "Yeniyetmə",
-            "Ümidli, daha az mübahisə olacaq kimi hiss edirəm."
-          ],
-          [
-            "Valideyn",
-            "Mən də ümidliyəm."
-          ],
-          [
-            "T",
-            "Bu gün özünüzdə hansı dəyişikliyi hiss edirsiniz?"
-          ],
-          [
-            "Yeniyetmə",
-            "Daha sakit, alət var əlimdə indi."
-          ],
-          [
-            "Valideyn",
-            "Mən də daha hazır hiss edirəm."
-          ],
-          [
-            "T",
-            "Bu, çox gözəldir! Siz bu gün çox açıq oldunuz."
-          ],
-          [
-            "Yeniyetmə",
-            "Təşəkkür edirəm."
-          ],
-          [
-            "Valideyn",
-            "Biz də təşəkkür edirik."
-          ],
-          [
-            "T",
-            "Növbəti dəfə etibar qurmaq haqqında danışacağıq."
-          ],
-          [
-            "Yeniyetmə",
-            "Maraqla gözləyirəm."
-          ]
-        ]
-      }
-    ],
-    "homework": "Bir konflikt anında sağlam strategiyaları (yumşaq başlanğıc, fasilə vermə) tətbiq etmək."
-  },
-  {
-    "num": 6,
-    "title": "Etibar Qurmaq və Bərpa Etmək",
-    "about": "Etibar, ailə münasibətlərinin əsasını təşkil edir və zədələnəndə (yalan, sözünə əməl etməmə) sistematik bərpa prosesi tələb edir. Bu, davamlı, kiçik etibarlı hərəkətlərin toplanması yolu ilə baş verir.",
-    "goal": "Ailə üzvlərinə etibarın necə qurulduğunu və zədələndikdə necə bərpa edilə biləcəyini başa düşdürmək.",
-    "administrator": "Klinik psixoloq.",
-    "materials": [
-      "'Etibar Bankı' vizual metaforu",
-      "Konkret nümunə ssenariləri"
-    ],
-    "phases": [
-      {
-        "name": "🟢 Giriş (8-10 dəq)",
-        "text": [
-          "Konflikt həlli strategiyalarının nəticələrinin nəzərdən keçirilməsi."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Salam! Sağlam konflikt həllini sınadınızmı?"
-          ],
-          [
-            "Valideyn",
-            "Bəli, bir dəfə, daha sakit keçdi mübahisə."
-          ],
-          [
-            "Yeniyetmə",
-            "Mən də fasilə istədim, işlədi."
-          ],
-          [
-            "T",
-            "Bu, möhtəşəm nəticədir! Bu gün etibar haqqında danışacağıq."
-          ],
-          [
-            "Yeniyetmə",
-            "Bu, bizim üçün həssas mövzudur bəzən."
-          ],
-          [
-            "Valideyn",
-            "Doğrudur, bəzən etibar məsələləri yaranır."
-          ],
-          [
-            "T",
-            "Anlaşılandır. Hazırsınızmı bunu araşdırmağa?"
-          ],
-          [
-            "Yeniyetmə",
-            "Bəli, hazıram."
-          ],
-          [
-            "Valideyn",
-            "Mən də hazıram."
-          ],
-          [
-            "T",
-            "Bu barədə necə hiss edirsiniz?"
-          ],
-          [
-            "Yeniyetmə",
-            "Bir az narahat, amma faydalı olacağını düşünürəm."
-          ],
-          [
-            "Valideyn",
-            "Mən də eyni hissi yaşayıram."
-          ],
-          [
-            "T",
-            "Bu, çox təbiidir. Başlayaq?"
-          ],
-          [
-            "Yeniyetmə",
-            "Bəli, başlayaq."
-          ]
-        ]
-      },
-      {
-        "name": "🔵 Əsas hissə (25-28 dəq)",
-        "text": [
-          "'Etibar Bankı' metaforu (hər kiçik dürüst hərəkət 'əmanət', hər yalan 'çıxarış') izah edilir, konkret bərpa addımları müzakirə olunur."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Etibarı bir bank hesabı kimi düşünək — hər dürüst hərəkət 'əmanət', hər yalan isə 'çıxarışdır'. Bu, sizə məntiqli gəlirmi?"
-          ],
-          [
-            "Yeniyetmə",
-            "Bəli, çox aydın bir metafora."
-          ],
-          [
-            "Valideyn",
-            "Mən də bunu anlayıram."
-          ],
-          [
-            "T",
-            "Elvin, son vaxtlar hansı 'əmanətləri' qoymusan?"
-          ],
-          [
-            "Yeniyetmə",
-            "Sözümə əməl etdim, vaxtında evə qayıtdım."
-          ],
-          [
-            "T",
-            "Möhtəşəm! Aygün xanım, siz hansı 'əmanətlər' qoymusunuz?"
-          ],
-          [
-            "Valideyn",
-            "Ona verdiyim sözləri tutmuşam, dinləmişəm onu."
-          ],
-          [
-            "T",
-            "Əla! Keçmişdə hər hansı 'çıxarış' olubmu — etibarın zədələndiyi an?"
-          ],
-          [
-            "Yeniyetmə",
-            "Bəli, bir dəfə yalan dedim haradaolduğum haqqında."
-          ],
-          [
-            "T",
-            "Bu, çox dürüst bir etirafdır. Bu, necə bərpa oluna bilər sənə görə?"
-          ],
-          [
-            "Yeniyetmə",
-            "Davamlı dürüst olmaqla, vaxt keçdikcə."
-          ],
-          [
-            "Valideyn",
-            "Mən də bu prosesi dəstəkləmək istəyirəm, kiçik addımları qiymətləndirərək."
-          ],
-          [
-            "T",
-            "Bu, çox sağlam bir yanaşmadır! Bu gündən başlayaraq hansı kiçik 'əmanəti' qoya bilərsiniz?"
-          ],
-          [
-            "Yeniyetmə",
-            "Bu gün dəqiq harada olduğumu deyəcəm."
-          ],
-          [
-            "T",
-            "Bu 'əmanət' prosesini strukturlaşdırmaq üçün konkret bir 'Etibar Bərpası Planı' hazırlayaq — hər həftə üçün kiçik, ölçülə bilən addımlar müəyyən edək."
-          ],
-          [
-            "Valideyn",
-            "Bu, çox faydalı olardı, indiyə qədər sadəcə ümid edirdik ki, yaxşılaşar."
-          ],
-          [
-            "T",
-            "Elvin, birinci həftə üçün hansı konkret addımı öhdənə götürə bilərsən?"
-          ],
-          [
-            "Yeniyetmə",
-            "Hər axşam harada olduğumu bir mesajla bildirmək."
-          ],
-          [
-            "T",
-            "Aygün xanım, siz bu addımı necə tanıyacaqsınız — hansı əlamət sizə etibarın bərpa olunduğunu göstərəcək?"
-          ],
-          [
-            "Valideyn",
-            "Əgər 2 həftə ardıcıl mesaj gəlsə, sual verməyi azaldacam."
-          ],
-          [
-            "T",
-            "Möhtəşəm — bu, hər ikiniz üçün ölçülə bilən, aydın bir plandır."
-          ],
-          [
-            "Yeniyetmə",
-            "Bu, mənə də rahatlıq verir, nə gözlənildiyini bilirəm."
-          ]
-        ]
-      },
-      {
-        "name": "🟣 Bağlanış (7-8 dəq)",
-        "text": [
-          "Etibar bərpası üçün davamlı addımlar planlaşdırılır."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Bu 'Etibar Bankı' konseptini necə xatırlayacaqsınız?"
-          ],
-          [
-            "Valideyn",
-            "Hər kiçik dürüst hərəkəti qiymətləndirəcəm."
-          ],
-          [
-            "Yeniyetmə",
-            "Mən də hər gün kiçik bir 'əmanət' qoymağa çalışacam."
-          ],
-          [
-            "T",
-            "Möhtəşəm niyyət! Bu barədə necə hiss edirsiniz?"
-          ],
-          [
-            "Yeniyetmə",
-            "Ümidli, etibarı bərpa edə biləcəyimizi hiss edirəm."
-          ],
-          [
-            "Valideyn",
-            "Mən də ümidliyəm."
-          ],
-          [
-            "T",
-            "Bu gün özünüzdə hansı dəyişikliyi hiss edirsiniz?"
-          ],
-          [
-            "Yeniyetmə",
-            "Daha yaxın, daha açıq hiss edirəm."
-          ],
-          [
-            "Valideyn",
-            "Mən də eyni hissi yaşayıram."
-          ],
-          [
-            "T",
-            "Bu, çox gözəldir! Siz bu gün çox səmimi oldunuz."
-          ],
-          [
-            "Yeniyetmə",
-            "Təşəkkür edirəm."
-          ],
-          [
-            "Valideyn",
-            "Biz də təşəkkür edirik."
-          ],
-          [
-            "T",
-            "Növbəti dəfə birgə fəaliyyət planlaması ilə məşğul olacağıq."
-          ],
-          [
-            "Yeniyetmə",
-            "Bu, əyləncəli səslənir!"
-          ]
-        ]
-      }
-    ],
-    "homework": "Hər gün kiçik bir 'etibar əmanəti' (sözünə əməl etmək, dürüst olmaq) qoymağa çalışmaq."
-  },
-  {
-    "num": 7,
-    "title": "Ailə Seansı: Birgə Fəaliyyət Planlaması",
-    "about": "Müntəzəm keyfiyyətli ailə vaxtı (family time) münasibətlərin möhkəmləndirilməsində sübut edilmiş effektivliyə malikdir (Gottman İnstitutu tədqiqatları) — struktur, əvvəlcədən planlaşdırılmış fəaliyyətlər təsadüfi qarşılaşmalardan daha çox bağlılıq yaradır.",
-    "goal": "Ailə üzvləri ilə birgə, müntəzəm keyfiyyətli vaxt keçirmək üçün konkret plan formalaşdırmaq.",
-    "administrator": "Klinik psixoloq.",
-    "materials": [
-      "'Ailə Fəaliyyət Planı' vərəqi",
-      "Fəaliyyət ideyaları kartları"
-    ],
-    "phases": [
-      {
-        "name": "🟢 Giriş (8-10 dəq)",
-        "text": [
-          "Etibar bərpası addımlarının nəzərdən keçirilməsi."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Salam! 'Etibar əmanətlərini' qoydunuzmu bu həftə?"
-          ],
-          [
-            "Valideyn",
-            "Bəli, hər gün kiçik bir şey etdim."
-          ],
-          [
-            "Yeniyetmə",
-            "Mən də dürüst olmağa çalışdım, yaxşı hiss edirəm."
-          ],
-          [
-            "T",
-            "Bu, möhtəşəm nəticədir! Bu gün birgə fəaliyyət planlaması ilə məşğul olacağıq."
-          ],
-          [
-            "Yeniyetmə",
-            "Bu, əyləncəli görünür!"
-          ],
-          [
-            "Valideyn",
-            "Mən də həvəsliyəm."
-          ],
-          [
-            "T",
-            "Nə üçün birgə vaxt keçirmək vacibdir sizə görə?"
-          ],
-          [
-            "Yeniyetmə",
-            "Bir-birimizi daha yaxşı tanımaq üçün."
-          ],
-          [
-            "Valideyn",
-            "Mən də bağlılığımızı gücləndirmək üçün deyərdim."
-          ],
-          [
-            "T",
-            "Möhtəşəm cavablar! Hazırsınızmı planlaşdırmağa?"
-          ],
-          [
-            "Yeniyetmə",
-            "Bəli, hazıram."
-          ],
-          [
-            "Valideyn",
-            "Mən də hazıram."
-          ],
-          [
-            "T",
-            "Bu barədə necə hiss edirsiniz?"
-          ],
-          [
-            "Yeniyetmə",
-            "Həyəcanlı, yaxşı mənada."
-          ]
-        ]
-      },
-      {
-        "name": "🔵 Əsas hissə (25-28 dəq)",
-        "text": [
-          "Ailə üzvləri ilə birgə, hər tərəfin maraqlarını əhatə edən müntəzəm fəaliyyət planı formalaşdırılır."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Hansı fəaliyyətlər hər ikinizə maraqlıdır?"
-          ],
-          [
-            "Yeniyetmə",
-            "Film izləmək, bəlkə oyun oynamaq."
-          ],
-          [
-            "Valideyn",
-            "Mən də bunları sevirəm, bəlkə gəzintiyə də çıxa bilərik."
-          ],
-          [
-            "T",
-            "Möhtəşəm! Bu fəaliyyətləri nə qədər tez-tez etmək istərdiniz?"
-          ],
-          [
-            "Valideyn",
-            "Həftədə 1 dəfə, məsələn şənbə axşamları."
-          ],
-          [
-            "Yeniyetmə",
-            "Bu, yaxşı vaxtdır mənim üçün də."
-          ],
-          [
-            "T",
-            "Əla razılaşma! Bu vaxtı necə 'toxunulmaz' edə bilərsiniz — yəni başqa işlər ona müdaxilə etməsin?"
-          ],
-          [
-            "Valideyn",
-            "Telefonları kənara qoyarıq bu vaxt üçün."
-          ],
-          [
-            "Yeniyetmə",
-            "Mən də razıyam bununla."
-          ],
-          [
-            "T",
-            "Möhtəşəm qərar! İlk fəaliyyət nə olacaq?"
-          ],
-          [
-            "Yeniyetmə",
-            "Bəlkə birlikdə oyun gecəsi?"
-          ],
-          [
-            "Valideyn",
-            "Bu, əla fikirdir, mən razıyam."
-          ],
-          [
-            "T",
-            "Bunu vərəqə yazaq — bu şənbə saat neçədə?"
-          ],
-          [
-            "Yeniyetmə",
-            "Axşam saat 7-də, şam yeməyindən sonra."
-          ],
-          [
-            "T",
-            "Tək bir fəaliyyətdən əlavə, 'Ailə Ritualları' qurmaq da vacibdir — bunlar kiçik, təkrarlanan adətlərdir ki, ailəyə aidiyyət hissi verir. Sizin ailənizdə hansı kiçik ritual ola bilər?"
-          ],
-          [
-            "Valideyn",
-            "Bəlkə hər səhər birlikdə səhər yeməyi, heç olmasa 10 dəqiqə."
+            "(uzun fasilə) Bəlkə... o mənə deyəndə hara gedir, mən artıq soruşmadan inansam."
           ],
           [
             "T",
@@ -1814,338 +1206,682 @@ const SESSIONS = [
           ],
           [
             "Yeniyetmə",
-            "Yaxşıdır, tələsmədən danışa bilərik bir az."
+            "(bir az sakitləşir) Bu, yaxşı olardı. Amma mən də... bəlkə bəzən özüm deyərəm, soruşmadan."
           ],
           [
             "T",
-            "Ritualların gücü ondadır ki, kiçik olsalar belə, davamlı olanda ailəyə sabitlik hissi verir. Başqa hansı kiçik ritual əlavə edə bilərsiniz?"
-          ],
-          [
-            "Valideyn",
-            "Bəlkə yatmazdan əvvəl 5 dəqiqə günün necə keçdiyini soruşmaq."
-          ],
-          [
-            "T",
-            "Möhtəşəm! İki kiçik ritual — səhər yeməyi və axşam söhbəti — bu, böyük fəaliyyətdən daha çox əhəmiyyət daşıya bilər."
+            "Bu, ikinizin birlikdə tapdığı ilk konkret addımdır bu gün — kiçik, amma real."
           ],
           [
             "Yeniyetmə",
-            "Bunu sınamağa hazıram."
+            "(bir qədər sakitləşdikdən sonra) Mən üzr istəyirəm səsimi qaldırdığım üçün."
+          ],
+          [
+            "T",
+            "Üzr istəməyin gözəl bir addımdır, amma məcburi deyil — səni eşitmək daha vacibdir."
+          ],
+          [
+            "Valideyn",
+            "Mən də bağışla, Elvin, birbaşa şübhələnməməli idim."
           ]
         ]
       },
       {
-        "name": "🟣 Bağlanış (7-8 dəq)",
-        "text": [
-          "Planın davamlılığı üçün motivasiya gücləndirilir."
-        ],
+        "name": "🟣 Bağlanış",
         "dialog": [
           [
             "T",
-            "Bu planı necə xatırlayacaqsınız?"
+            "Bu seans planlaşdırılmamışdı belə keçsin, amma çox dəyərli oldu — real vaxtda gördük necə eskalasiya olur və necə geri dönə bilər."
           ],
           [
             "Valideyn",
-            "Təqvimə yazacam, xatırlatma qoyacam."
-          ],
-          [
-            "Yeniyetmə",
-            "Mən də səbirsizliklə gözləyəcəm."
+            "(hələ bir az yorğun görünür) Asan deyil bu."
           ],
           [
             "T",
-            "Möhtəşəm! Bu barədə necə hiss edirsiniz?"
+            "Yox, deyil. Amma bu gün ikiniz də bir az geri çəkilə bildiniz, bu, əvvəlki həftələrdən fərqlidir."
           ],
           [
             "Yeniyetmə",
-            "Xoşbəxt, ailə vaxtımız olacaq deyə."
+            "(heç nə demir, amma başını tərpədir)"
+          ],
+          [
+            "T",
+            "Bu cür anlar yenə olacaq, tam yox olmayacaq. Sual odur ki, növbəti dəfə necə reaksiya verəcəksiniz."
+          ],
+          [
+            "T",
+            "Elvin, sənə bir sual — indi, bu anda, özünü necə hiss edirsən?"
+          ],
+          [
+            "Yeniyetmə",
+            "(fikirləşir) Yorğun. Amma... daha yaxşı əvvəlkindən."
+          ],
+          [
+            "T",
+            "Bu, əhəmiyyətli bir dəyişiklikdir seans başlanğıcı ilə müqayisədə."
           ],
           [
             "Valideyn",
-            "Mən də çox həvəsliyəm."
+            "Sağ olun bunu sakit apardığınıza görə."
           ],
           [
             "T",
-            "Bu gün özünüzdə hansı yeniliyi hiss edirsiniz?"
-          ],
-          [
-            "Yeniyetmə",
-            "Daha yaxın, birlikdə nəsə planladıq."
-          ],
-          [
-            "Valideyn",
-            "Mən də eyni hissi yaşayıram."
-          ],
-          [
-            "T",
-            "Bu, çox gözəldir! Siz bu gün çox yaradıcı oldunuz birlikdə."
-          ],
-          [
-            "Yeniyetmə",
-            "Təşəkkür edirəm."
-          ],
-          [
-            "Valideyn",
-            "Biz də təşəkkür edirik."
-          ],
-          [
-            "T",
-            "Növbəti dəfə yekun qiymətləndirmə aparacağıq."
-          ],
-          [
-            "Yeniyetmə",
-            "Bu, sonuncu görüşümüzdür demək?"
+            "Siz özünüz sakitləşdiniz, mən sadəcə kömək etdim."
           ]
         ]
       }
-    ],
-    "homework": "Planlaşdırılan ilk ailə fəaliyyətini (oyun gecəsi) həyata keçirmək."
+    ]
   },
   {
-    "num": 8,
-    "title": "Yekun Qiymətləndirmə və Davamlılıq Planı",
-    "about": "Ailə terapiyasının yekun mərhələsi qazanılan bacarıqların (kommunikasiya, sərhəd qoyma, konflikt həlli, etibar) konsolidasiyası və davamlı tətbiqi üçün konkret çərçivə formalaşdırılmasıdır.",
-    "goal": "Proqramın nəticələrini qiymətləndirmək və ailənin gələcəkdə öz-özünə tətbiq edə biləcəyi davamlılıq planı formalaşdırmaq.",
-    "administrator": "Klinik psixoloq.",
-    "materials": [
-      "Bütün əvvəlki materiallar",
-      "'Ailə Alət Qutusu' yekun vərəqi"
-    ],
+    "title": "Etibar Qurmaq və Bərpa Etmək",
+    "about": "Altıncı seans əvvəlki həftənin telefon məsələsi üzərində davam edir — etibarın bir cümlə ilə deyil, davamlı kiçik təcrübələrlə bərpa olunduğunu göstərir.",
+    "goal": "Konkret, ölçülə bilən etibar-bərpası planı qurmaq, mücərrəd vədlər əvəzinə.",
     "phases": [
       {
-        "name": "🟢 Giriş (10 dəq)",
-        "text": [
-          "Proqramın əvvəlindən bəri qət edilən yol xatırlanır."
-        ],
+        "name": "🟢 Giriş",
         "dialog": [
           [
             "T",
-            "Salam! Bu, bizim son görüşümüzdür. Necə hiss edirsiniz?"
-          ],
-          [
-            "Yeniyetmə",
-            "Bir az kədərli, amma çox razıyam ümumilikdə."
+            "Keçən həftə danışdığınız kiçik addım — necə keçdi?"
           ],
           [
             "Valideyn",
-            "Mən də eyni hissləri yaşayıram, çox faydalı oldu."
+            "Bir az yaxşı, açığı. Amma tam rahat deyiləm hələ."
+          ],
+          [
+            "Yeniyetmə",
+            "(sakit) Mən dedim ona hara getdiyimi, o da soruşmadı."
           ],
           [
             "T",
-            "İlk gəldiyinizdə münasibətləriniz necə idi xatırlayırsınızmı?"
-          ],
-          [
-            "Yeniyetmə",
-            "Çox mübahisə edirdik, anlaşılmırdıq."
+            "Bu, kiçik, amma real bir dəyişiklikdir."
           ],
           [
             "Valideyn",
-            "Mən də narahat idim, əlaqə qura bilmirdim."
+            "Bəli, amma... bir dəfə olub, bilmirəm davam edəcəkmi."
           ],
           [
             "T",
-            "İndi necəsiniz?"
-          ],
-          [
-            "Yeniyetmə",
-            "Daha yaxın, daha çox danışırıq."
-          ],
-          [
-            "Valideyn",
-            "Mən də daha rahat hiss edirəm münasibətimizdə."
+            "Bu şübhə normaldır, bir həftə kifayət deyil güvən qurmağa."
           ],
           [
             "T",
-            "Bu, möhtəşəm bir dəyişiklikdir! Hazırsınızmı yekun qiymətləndirməyə?"
+            "Telefon mövzusunda kiçik addım necə keçdi, xatırladırsınızsa?"
           ],
           [
             "Yeniyetmə",
-            "Bəli, hazıram."
+            "Yaxşı keçdi əslində, bir dəfə unutdum mesaj atmağı."
           ],
           [
             "Valideyn",
-            "Mən də hazıram."
+            "(gülümsəyir) Bəli, o axşam bir az narahat oldum, amma özümü saxladım."
           ],
           [
             "T",
-            "Bu son görüş sizə necə hiss etdirir?"
+            "Bu iki həftə ümumilikdə necə keçdi, telefon planından kənar?"
+          ],
+          [
+            "Valideyn",
+            "Sakit idi, düzü. Bir-iki kiçik sürtünmə oldu, amma böyümədi."
           ],
           [
             "Yeniyetmə",
-            "Qarışıq, amma əsasən minnətdarlıq."
+            "(razılıqla başını yellədir)"
+          ],
+          [
+            "T",
+            "Bu iki həftədə ən çox nəyə fəxr edirsiniz?"
           ],
           [
             "Valideyn",
-            "Mən də çox minnətdaram bu prosesə."
-          ],
-          [
-            "Valideyn",
-            "Biz də hazırıq bu son seansa."
+            "Telefonu başqa otağa qoymağıma, düzü kiçik amma böyük hiss edirəm."
           ]
         ]
       },
       {
-        "name": "🔵 Əsas hissə (25-30 dəq)",
-        "text": [
-          "Ailə öyrənilən bütün bacarıqları 'Ailə Alət Qutusu' şəklində ümumiləşdirir, gələcək üçün davamlılıq planı qurulur."
-        ],
+        "name": "🔵 Əsas hissə",
         "dialog": [
           [
             "T",
-            "Bu proqram boyu öyrəndiyiniz bütün bacarıqları sadalaya bilərsinizmi?"
+            "Bu gün konkret bir plan quraq — 'etibar' mücərrəd bir söz, ölçülə bilən deyil. Amma addımlar ola bilər."
+          ],
+          [
+            "Valideyn",
+            "Necə yəni ölçülə bilən?"
+          ],
+          [
+            "T",
+            "Məsələn, Elvin, sən neçə gün ardıcıl anana harada olduğunu desən, bu, konkret bir göstərici olar."
           ],
           [
             "Yeniyetmə",
-            "Mən-dili, sərhədlər haqqında danışıq, konflikt həlli."
+            "(fikirləşir) Bəlkə... hər axşam bir mesajla, sadəcə 'yaxşıyam, filan yerdəyəm'?"
           ],
           [
             "Valideyn",
-            "Etibar bankı və birgə fəaliyyət planlaması da."
+            "Bu, mənə kifayət edər açığı."
           ],
           [
             "T",
-            "Möhtəşəm yaddaş hər ikinizdən! Hansı bacarıq ən çox kömək etdi?"
+            "Aygün xanım, sizin tərəfinizdən nə ola bilər — Elvin nəyi görsə, sizin dəyişdiyinizi hiss edər?"
           ],
           [
             "Valideyn",
-            "Mən-dili, mübahisələri çox azaltdı."
+            "(uzun fikirləşir) Bəlkə... telefonuna baxmadığımı görsə. Fiziki olaraq, masada qalanda."
           ],
           [
             "Yeniyetmə",
-            "Mən üçün sərhədlər haqqında danışıq, dinlənildiyimi hiss etdim."
-          ],
-          [
-            "T",
-            "Bu bacarıqları 'Ailə Alət Qutusu' vərəqinə yazaq."
+            "(bir az təəccüblənir) Bunu edə bilərsən?"
           ],
           [
             "Valideyn",
-            "(yazır) Bax, hamısı burada!"
+            "Çətin olacaq, açığı deyim. Amma cəhd edəcəm."
           ],
           [
             "T",
-            "Gələcəkdə çətinlik yaransa, nə edəcəksiniz?"
+            "Sizin ikinizin də dediyi — 'çətin olacaq, amma cəhd edəcəm' — bu, çox real bir dildir. 'Əlbəttə edəcəm' deyən insanlara mən daha az inanıram açığı, çünki reallıq nadir hallarda asan olur."
           ],
           [
             "Yeniyetmə",
-            "Alət qutumuza baxıb, uyğun bacarığı seçəcəyik."
-          ],
-          [
-            "Valideyn",
-            "Mən də bunu dəstəkləyirəm, birlikdə həll edəcəyik."
+            "(gülür bir az) Deməli şübhəli olmaq yaxşıdır?"
           ],
           [
             "T",
-            "Möhtəşəm plan! Ailə fəaliyyət vaxtınızı davam etdirəcəksinizmi?"
+            "Reallıqçı olmaq yaxşıdır. İki həftə bu planı sınayaq, sonra baxarıq nə işlədi, nə yox."
+          ],
+          [
+            "T",
+            "Aygün xanım, o axşam narahatlığınızı necə idarə etdiniz?"
           ],
           [
             "Valideyn",
-            "Bəli, hər şənbə davam edəcəyik."
+            "Telefonumu başqa otağa qoydum, düzü. Yoxsa hər 5 dəqiqədən bir baxacaqdım."
+          ],
+          [
+            "T",
+            "Bu, çox praktik bir strategiya — özünüzü tutmaq üçün fiziki məsafə yaratmısınız."
+          ],
+          [
+            "T",
+            "Bu 'böyümədi' sözü maraqlıdır — necə bacardınız böyütməməyi?"
+          ],
+          [
+            "Valideyn",
+            "(fikirləşir) Yəqin ki, bir dəfə dayandım demədən əvvəl fikirləşdim."
+          ],
+          [
+            "T",
+            "Bu, kiçik görünsə də, əvvəlki nümunədən böyük fərqdir — avtomatik reaksiya əvəzinə fasilə."
           ],
           [
             "Yeniyetmə",
-            "Mən də səbirsizliklə gözləyirəm."
-          ],
-          [
-            "T",
-            "Proqramı bitirməzdən əvvəl 'Erkən Xəbərdarlıq Əlamətləri Planı' hazırlayaq — köhnə münaqişə nümunələrinə qayıtmağa başladığınızı necə tanıyacaqsınız?"
+            "Mən də fəxr edirəm ki, özüm dedim, məcbur olmadan."
           ],
           [
             "Valideyn",
-            "Bəlkə mən yenidən çox sual verməyə başlasam, ya da səsimi qaldırsam."
-          ],
-          [
-            "T",
-            "Elvin, sənin üçün hansı əlamət xəbərdarlıq olardı?"
-          ],
-          [
-            "Yeniyetmə",
-            "Əgər yenə qapını çırpıb otağıma qaçsam, danışmaq əvəzinə."
-          ],
-          [
-            "T",
-            "Belə bir əlamət görəndə ilk addım nə olmalıdır?"
-          ],
-          [
-            "Valideyn",
-            "Bəlkə 'Ailə Alət Qutusu' vərəqinə baxıb, DAYAN texnikasını xatırlamaq."
-          ],
-          [
-            "T",
-            "Möhtəşəm plan! Bu, sizə lazım olsa geri qayıda biləcəyiniz konkret bir yol xəritəsidir."
-          ],
-          [
-            "Yeniyetmə",
-            "Bilmək ki, plan var, özü rahatlıq verir."
+            "(fikirli) Doğrudan, mən heç belə düşünməmişdim."
           ]
         ]
       },
       {
-        "name": "🟣 Bağlanış (10 dəq)",
-        "text": [
-          "Proqram rəsmi şəkildə tamamlanır, ailəyə təbrik edilir, nəzarət görüşü planlaşdırılır."
-        ],
+        "name": "🟣 Bağlanış",
         "dialog": [
           [
             "T",
-            "Siz bu proqramda inanılmaz irəliləyiş göstərdiniz. Sizinlə çox fəxr edirəm!"
-          ],
-          [
-            "Yeniyetmə",
-            "Təşəkkür edirəm, mən də özümüzlə fəxr edirəm."
+            "Bu plan mükəmməl olmaya bilər, güman edirəm bəzi axşamlar unudulacaq mesaj, bəzən telefon yenə əlinizə gedəcək. Bu, uğursuzluq demək deyil."
           ],
           [
             "Valideyn",
-            "Biz də çox minnətdarıq bu proqram üçün."
-          ],
-          [
-            "T",
-            "Bu proqramdan ən vacib nəyi öyrəndiniz?"
+            "Yaxşı, bunu bilmək rahatladı məni açığı."
           ],
           [
             "Yeniyetmə",
-            "Bir-birimizi daha yaxşı dinləməyi."
-          ],
-          [
-            "Valideyn",
-            "Mən də münasibətin hər iki tərəfdən səy tələb etdiyini öyrəndim."
-          ],
-          [
-            "T",
-            "Bu, çox dəyərli dərslərdir! Uğurlar sizə ailə olaraq!"
+            "(hələ bir az ehtiyatlı) Görək necə gedir."
           ],
           [
             "Yeniyetmə",
-            "Sağ olun, hər şey üçün!"
-          ],
-          [
-            "Valideyn",
-            "Çox sağ olun, böyük dəyişiklik gördük."
-          ],
-          [
-            "T",
-            "3 ay sonra qısa nəzarət görüşü planlaşdıracağıq."
-          ],
-          [
-            "Valideyn",
-            "Əla, gözləyəcəyik."
-          ],
-          [
-            "T",
-            "Alət qutunuzu unutmayın! Görüşənədək!"
-          ],
-          [
-            "T",
-            "Bu səyahət ailənizə nə öyrətdi ən çox?"
+            "(bir az yumşalır) Bunu bilmək... yaxşıdır açığı."
           ],
           [
             "Yeniyetmə",
-            "Bir-birimizi anlamağın mümkün olduğunu."
+            "(əlavə edir) Mən də bir dəfə özüm dedim hara getdiyimi, o soruşmadan."
+          ],
+          [
+            "T",
+            "İkiniz də fərqli istiqamətdən eyni nöqtəyə — kiçik, öz-özünə addımlar — gəlirsiniz."
+          ],
+          [
+            "Valideyn",
+            "(kövrək) Bunu eşitmək yaxşıdır."
+          ],
+          [
+            "T",
+            "Bu iki fəxr hissi — kiçik, amma real. Davam edin belə."
+          ],
+          [
+            "Valideyn",
+            "Cəhd edəcəyik."
+          ],
+          [
+            "Yeniyetmə",
+            "(razılıqla)"
           ]
         ]
       }
-    ],
-    "homework": "'Ailə Alət Qutusu'nu davamlı istifadə etmək, həftəlik ailə fəaliyyətini davam etdirmək, 3 ay sonra nəzarət görüşünə hazırlaşmaq."
+    ]
+  },
+  {
+    "title": "Ailə Ritualları və Birgə Vaxt",
+    "about": "Yeddinci seansda proqram nəticələrini möhkəmləndirmək üçün formal texnikadan uzaqlaşılır — sadəcə birgə vaxt haqqında sərbəst söhbət.",
+    "goal": "Struktursuz, aşağı-təzyiqli birgə fəaliyyətlərin əlaqəni necə bərpa etdiyini kəşf etmək.",
+    "phases": [
+      {
+        "name": "🟢 Giriş",
+        "dialog": [
+          [
+            "T",
+            "Bu gün fərqli bir şey edəcəyik — az struktur, çox söhbət. Necəsiniz ümumiyyətlə?"
+          ],
+          [
+            "Valideyn",
+            "Daha yaxşı, deyərdim. Hələ mükəmməl deyil."
+          ],
+          [
+            "Yeniyetmə",
+            "(rahat) Normal, pis deyil."
+          ],
+          [
+            "T",
+            "'Normal, pis deyil' — bu, bir neçə həftə əvvəlki 'normal'dan fərqli bir tondadır, hiss edirəm."
+          ],
+          [
+            "Yeniyetmə",
+            "(yüngül gülümsəyir) Bəlkə."
+          ],
+          [
+            "T",
+            "Bu gün gündəm yoxdur, sadəcə necə keçdiyinizi soruşmaq istəyirəm."
+          ],
+          [
+            "Valideyn",
+            "Sakit bir həftə oldu, düzü darıxdırıcı dərəcədə sakit, yaxşı mənada."
+          ],
+          [
+            "T",
+            "Bu gün gündəm yoxdur dedim, amma əvvəlcə bir şey soruşum — narahat edən nəsə varmı hələ?"
+          ],
+          [
+            "Valideyn",
+            "(fikirləşir) Açığı, kiçik şeylər olur, amma özümüz həll edirik indi."
+          ],
+          [
+            "Yeniyetmə",
+            "(razılaşır) Bəli, əvvəlki kimi böyümür."
+          ],
+          [
+            "T",
+            "Bu, əslində proqramın məqsədlərindən biridir — mənsiz də özünüz idarə edə bilmək."
+          ],
+          [
+            "T",
+            "Son iki seansa yaxınlaşırıq. Hazırlaşmaq üçün nə hiss edirsiniz?"
+          ],
+          [
+            "Valideyn",
+            "Bir az narahatam sonra necə davam edəcəyimizi bilmədən."
+          ],
+          [
+            "Valideyn",
+            "(razılıqla) Bəli, mən də hiss edirəm bunu."
+          ]
+        ]
+      },
+      {
+        "name": "🔵 Əsas hissə",
+        "dialog": [
+          [
+            "T",
+            "Son dəfə nə vaxt ikiniz sadəcə vaxt keçirdiniz, heç bir problem müzakirə etmədən?"
+          ],
+          [
+            "Valideyn",
+            "(fikirləşir) Xatırlamıram açığı. Çox vaxtdır."
+          ],
+          [
+            "Yeniyetmə",
+            "Biz əvvəllər film izləyərdik bəzən, bacım da olanda."
+          ],
+          [
+            "T",
+            "Bu, indi niyə dayandı sizcə?"
+          ],
+          [
+            "Valideyn",
+            "Yəqin ki... gərginlik başlayanda hər şey problemə çevrildi, hətta film seçimi belə."
+          ],
+          [
+            "T",
+            "Bu, çox rast gəlinən bir şeydir — münaqişə böyüyəndə, kiçik xoş anlar da qurban gedir. Bunu geri qaytarmaq mümkündür, amma məcburi deyil böyük plan qurmaq."
+          ],
+          [
+            "Yeniyetmə",
+            "(fikirləşir) Bəlkə həftədə bir dəfə, elə bir şey?"
+          ],
+          [
+            "Valideyn",
+            "Mən açığam buna."
+          ],
+          [
+            "T",
+            "Diqqət edin — bu, 'problem həll etmək' seansı deyil, sadəcə birgə olmaq üçündür. Fərq vacibdir."
+          ],
+          [
+            "Yeniyetmə",
+            "Yəni danışmasaq da olar?"
+          ],
+          [
+            "T",
+            "Dəqiq. Bəzən sükut da yaxşıdır, əgər rahatdırsa."
+          ],
+          [
+            "Valideyn",
+            "(bir az düşünür) Bu, mənə asan gəlmir açığı, sükuti sevmirəm."
+          ],
+          [
+            "T",
+            "Bu da öyrənilməli bir şeydir — hər an dolu olmaq məcburi deyil."
+          ],
+          [
+            "Yeniyetmə",
+            "(gülür) Darıxdırıcı yaxşıdır bizim üçün, elə deyilmi?"
+          ],
+          [
+            "T",
+            "Kəskin bir müşahidə — 'sakit' sizin ailənizdə yeni bir normal ola bilər."
+          ],
+          [
+            "Valideyn",
+            "(düşüncəli) Bəlkə həmişə bir problem axtarmağa öyrəşmişdim."
+          ],
+          [
+            "Valideyn",
+            "(düşüncəli) Bəlkə problem axtarmağı öyrənmişdim, çünki uzun müddət nəsə səhv idi."
+          ],
+          [
+            "T",
+            "Bu, çox dərin bir özünütanımadır — köhnə vərdiş yeni reallığa hələ uyğunlaşmayıb."
+          ],
+          [
+            "T",
+            "Bu narahatlıq normaldır, gələn seansda buna da toxunacağıq."
+          ],
+          [
+            "Valideyn",
+            "Yaxşı, gözləyirəm."
+          ]
+        ]
+      },
+      {
+        "name": "🟣 Bağlanış",
+        "dialog": [
+          [
+            "T",
+            "Bu həftə bir kiçik, struktursuz vaxt planlaşdırın — nə olacağını əvvəlcədən tam müəyyənləşdirmədən."
+          ],
+          [
+            "Valideyn",
+            "Sınayarıq."
+          ],
+          [
+            "Yeniyetmə",
+            "(sakit razılıq)"
+          ],
+          [
+            "T",
+            "Növbəti seans sonuncu olacaq, ona hazırlaşaq bir az."
+          ],
+          [
+            "T",
+            "Bu, çox dərin bir fərqindəlikdir sizin üçün — problemsizliyi qəbul etmək də bir bacarıqdır."
+          ],
+          [
+            "Yeniyetmə",
+            "(gülərək) Deməli indi darıxdırıcı olmaq yaxşı bir şeydir?"
+          ],
+          [
+            "T",
+            "Bu kontekstdə, bəli — sakitlik, itki demək deyil."
+          ],
+          [
+            "Valideyn",
+            "(gülümsəyir) İlk dəfə belə düşünürəm buna."
+          ],
+          [
+            "Yeniyetmə",
+            "(sakit) Mən düşünürəm biz bacararıq özümüz."
+          ],
+          [
+            "T",
+            "Bu inam özü böyük bir irəliləyişdir."
+          ],
+          [
+            "Valideyn",
+            "(kövrək təbəssümlə) Bəli."
+          ],
+          [
+            "Valideyn",
+            "(minnətdarlıqla) Sağ olun bu proqram üçün."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Yekun Qiymətləndirmə və Davamlılıq Planı",
+    "about": "Son seans nə 'hər şey həll oldu' deyir, nə də uğursuzluq — real irəliləyişi, hələ də qalan çətinlikləri və gələcək üçün konkret planı bərabər şəkildə tanıyır.",
+    "goal": "Proqram boyu qazanılanları konsolidasiya etmək və realist gözləntilərlə davamlılıq planı qurmaq.",
+    "phases": [
+      {
+        "name": "🟢 Giriş",
+        "dialog": [
+          [
+            "T",
+            "Bu, bizim son planlaşdırılmış görüşümüzdür. Necə hiss edirsiniz?"
+          ],
+          [
+            "Valideyn",
+            "Qarışıq açığı. Minnətdaram, amma bir az narahatam sonra necə olacaq deyə."
+          ],
+          [
+            "Yeniyetmə",
+            "(susur bir az) Mən də bilmirəm açığı, öyrəşmişdim buraya gəlməyə."
+          ],
+          [
+            "T",
+            "Bu, çox təbii bir hissdir — proqram bitəndə dəstək itirmə qorxusu."
+          ],
+          [
+            "T",
+            "Sizinlə işləməyin son günü — hər ikinizə təşəkkür edirəm açıqlığınıza görə."
+          ],
+          [
+            "Valideyn",
+            "Biz sizə təşəkkür etməliyik, düzü ilk gün ümidsiz idim."
+          ],
+          [
+            "T",
+            "Bu son seansa hazırlaşarkən nə hiss etdiniz yol boyu gələndə?"
+          ],
+          [
+            "Valideyn",
+            "Qarışıq, düzü. Sevinc və bir az kədər eyni anda."
+          ],
+          [
+            "Yeniyetmə",
+            "(çiyin çəkir) Mən də bilmirəm necə hiss edirəm açığı."
+          ],
+          [
+            "T",
+            "Bu qarışıqlıq normaldır, proqram bitəndə tez-tez rast gəlinir."
+          ],
+          [
+            "Yeniyetmə",
+            "(bir az kövrək) Doğrusu, bu otağı darıxdıracam."
+          ],
+          [
+            "T",
+            "Bu hiss təbiidir, bura sizin üçün təhlükəsiz yer oldu."
+          ],
+          [
+            "Valideyn",
+            "(razılıqla başını yellədir)"
+          ],
+          [
+            "T",
+            "Başlayaq onda, vaxtımız məhduddur bu gün."
+          ]
+        ]
+      },
+      {
+        "name": "🔵 Əsas hissə",
+        "dialog": [
+          [
+            "T",
+            "İlk gəldiyiniz gündən bu günə, sizcə nə dəyişdi?"
+          ],
+          [
+            "Valideyn",
+            "(fikirləşir) Daha az çığırırıq bir-birimizə. Amma hələ də anlaşılmazlıq olur."
+          ],
+          [
+            "Yeniyetmə",
+            "(əlavə edir) Mən indi bəzən özüm deyirəm hara getdiyimi, əvvəllər heç demirdim."
+          ],
+          [
+            "T",
+            "Bu, kiçik görünsə də, əvvəlki dinamikadan böyük fərqdir. Nə hələ dəyişməyib sizcə?"
+          ],
+          [
+            "Valideyn",
+            "(dürüst) Telefon mövzusu hələ tam həll olmayıb. Bəzən yenə soruşuram, özümü saxlaya bilmirəm."
+          ],
+          [
+            "T",
+            "Bunu deməyiniz vacibdir — mükəmməl bitirmək məcburi deyil, real bitirmək daha faydalıdır."
+          ],
+          [
+            "Yeniyetmə",
+            "(əlavə edir) Mən də hələ bəzən qapını çırpıram. Amma az."
+          ],
+          [
+            "T",
+            "Hər ikiniz köhnə nümunələrin tam getmədiyini etiraf edirsiniz — bu, uğursuzluq deyil, bu, dürüstlükdür."
+          ],
+          [
+            "Valideyn",
+            "Bəs biz özümüz davam edə bilərikmi, sizsiz?"
+          ],
+          [
+            "T",
+            "Bunun üçün konkret bir alət verim sizə — nə vaxt gərginlik yüksəlsə, hər ikiniz 'DAYAN' sözünü deyə bilərsiniz, sonra 10 dəqiqə ayrı qalıb sonra danışarsınız."
+          ],
+          [
+            "Yeniyetmə",
+            "Sadə görünür."
+          ],
+          [
+            "T",
+            "Sadə olması yaxşıdır — mürəkkəb sistemlər gərgin anda unudulur."
+          ],
+          [
+            "Valideyn",
+            "Əgər yenidən pisləşsə, geri gələ bilərikmi?"
+          ],
+          [
+            "T",
+            "Əlbəttə. Bu, son deyil, sadəcə fasilə. Qapı həmişə açıqdır."
+          ],
+          [
+            "T",
+            "Elvin, sənə görə, bu proqramın ən çətin anı nə idi?"
+          ],
+          [
+            "Yeniyetmə",
+            "(fikirləşir) Bəlkə o telefon mübahisəsi olan gün. Amma sonra ən faydalısı da o oldu bəlkə."
+          ],
+          [
+            "Valideyn",
+            "Mənim üçün ən çətini öz sualverici davranışımı görməyim oldu, xoş deyildi özümü belə görmək."
+          ],
+          [
+            "T",
+            "Bu, terapiyanın ən çətin, amma ən dəyərli hissəsidir — özünü güzgüdə görmək."
+          ],
+          [
+            "Valideyn",
+            "(əlavə edir) Mən sizə minnətdaram ki, məni tənqid etmədiniz, sadəcə göstərdiniz."
+          ],
+          [
+            "T",
+            "İkinizin bir-birinizə demək istədiyi son bir şey varmı?"
+          ],
+          [
+            "Yeniyetmə",
+            "(anasına baxaraq) Bilirəm çətin oldu sənə görə də bu proses."
+          ],
+          [
+            "Valideyn",
+            "(kövrəklikdən) Mən də sənə minnətdaram, dözdüyün üçün."
+          ]
+        ]
+      },
+      {
+        "name": "🟣 Bağlanış",
+        "dialog": [
+          [
+            "T",
+            "İkiniz bu proqrama gərgin, bir-birini az anlayan gəldiniz. İndi tam həll olunmuş deyilsiniz — amma bir-birinizi eşitmə bacarığınız var artıq. Bu, kiçik nailiyyət deyil."
+          ],
+          [
+            "Valideyn",
+            "(kövrək) Sağ olun hər şey üçün."
+          ],
+          [
+            "Yeniyetmə",
+            "(sakit) Sağ olun."
+          ],
+          [
+            "T",
+            "3 ay sonra bir yoxlama görüşü planlaşdıraq, sadəcə necə getdiyinizi görmək üçün."
+          ],
+          [
+            "Valideyn",
+            "Yaxşı, buna ehtiyacımız olacaq bəlkə."
+          ],
+          [
+            "Yeniyetmə",
+            "(çıxarkən) Yəqin bəzən yenə pis günlər olacaq, elə deyilmi?"
+          ],
+          [
+            "T",
+            "Mütləq olacaq. Sual mükəmməllik deyil, geri qayıda bilməkdir."
+          ],
+          [
+            "Valideyn",
+            "(ayağa qalxarkən) Ümid edirəm bunu davam etdirə biləcəyik."
+          ],
+          [
+            "T",
+            "Bacaracaqsınız — bu 8 həftə sadəcə mənim göstərdiyim deyil, sizin özünüzün tapdığı həllər idi."
+          ],
+          [
+            "Valideyn",
+            "(göz yaşlarını saxlayaraq) Sağ ol, Elvin."
+          ]
+        ]
+      }
+    ]
   }
 ];
 
