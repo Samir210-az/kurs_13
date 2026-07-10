@@ -238,51 +238,41 @@ const SESSIONS = [
   {
     "num": 1,
     "title": "Tanışlıq və Filial Modelin Təqdimi",
-    "about": "Filial Terapiya (Filial Therapy, Bernard & Louise Guerney, 1964; təkmilləşdirilmiş forması Risë VanFleet-in Child-Parent Relationship Therapy, CPRT) modelində terapevt birbaşa uşaqla işləmək əvəzinə, valideynə uşaq-mərkəzli oyun bacarıqlarını öyrədir ki, valideyn özü evdə terapevtik oyun seansları apara bilsin.",
-    "goal": "Valideynə Filial Terapiyanın məntiqini izah etmək və uşaq-mərkəzli oyunun əsas prinsipini tanıtmaq.",
+    "about": "Filial Terapiya (Guerney, 1964; VanFleet-in CPRT modifikasiyası) modelində terapevt birbaşa uşaqla işləmək əvəzinə, valideynə uşaq-mərkəzli oyun bacarıqlarını öyrədir ki, valideyn özü evdə terapevtik oyun seansları apara bilsin.",
+    "goal": "Valideynə Filial Terapiyanın məntiqini izah etmək və nəzarəti buraxmağın niyə çətin olacağını əvvəlcədən normallaşdırmaq.",
     "administrator": "Klinik psixoloq (Filial Terapiya təlimi keçmiş).",
     "materials": [
       "Oyun otağı/küncü nümunəsi",
       "Uşaq-mərkəzli oyun prinsipləri bukletı"
     ],
+    "homework": "Uşağınızla adi oyun zamanı kim idarə etdiyini müşahidə etmək, qeyd etmək.",
     "phases": [
       {
         "name": "🟢 Giriş (10-12 dəq)",
-        "text": [
-          "Valideynlə etibarlı əlaqə qurulur, Filial Terapiyanın unikal yanaşması izah olunur."
-        ],
         "dialog": [
           [
             "T",
-            "Salam! Bu proqramda fərqli bir yanaşma tətbiq edəcəyik — mən sizə öyrədəcəm, siz isə uşağınızla işləyəcəksiniz. Bu, sizə necə gəlir?"
+            "Salam Nərgiz xanım. Bu gün fərqli bir yanaşmadan danışacağıq — burada mən Leylaya deyil, sizə işləyəcəm."
           ],
           [
             "Valideyn",
-            "Maraqlıdır, amma bacara biləcəyimdən əminliyim yoxdur."
+            "(təəccüblənir) Mənə? Necə yəni?"
           ],
           [
             "T",
-            "Bu, çox təbii bir hissdir. Tədqiqatlar göstərir ki, valideynlər bu bacarıqları çox effektiv öyrənirlər."
+            "Filial Terapiyada valideyn öyrənir, sonra evdə tətbiq edir. Mən sadəcə göstərirəm, əsl iş sizin əlinizdə olacaq."
           ],
           [
             "Valideyn",
-            "Bu, məni rahatlaşdırır."
+            "Açığı, gözləmirdim bunu. Bir az narahatam, bacara bilərəmmi?"
           ],
           [
             "T",
-            "Uşağınızla münasibətinizi necə təsvir edərdiniz hazırda?"
+            "Bu narahatlıq normaldır, demək olar bütün valideynlərdə olur başlanğıcda."
           ],
           [
             "Valideyn",
-            "Yaxşı, amma bəzən əlaqə qura bilmirəm dərin səviyyədə."
-          ],
-          [
-            "T",
-            "Anlaşılandır. Bu proqram məhz bu əlaqəni dərinləşdirmək üçündür."
-          ],
-          [
-            "Valideyn",
-            "Bu, çox istədiyim bir şeydir."
+            "Yaxşı ki mən tək deyiləm belə düşünən."
           ],
           [
             "T",
@@ -290,1798 +280,1705 @@ const SESSIONS = [
           ],
           [
             "Valideyn",
-            "Uşağımla daha yaxın olmaq, onu daha yaxşı anlamaq istəyirəm."
+            "Leyla ilə... bilmirəm necə deyim, bir məsafə var kimi hiss edirəm. Danışırıq, amma dərin deyil."
           ],
           [
             "T",
-            "Bu, çox gözəl bir niyyətdir! Hazırsınızmı öyrənməyə başlamağa?"
+            "Sizin ailənizdə oyun vaxtı adətən necə keçir, kim təşəbbüs göstərir?"
           ],
           [
             "Valideyn",
-            "Bəli, tam hazıram."
+            "Adətən mən, 'gəl bu oyunu oynayaq' deyirəm."
           ],
           [
             "T",
-            "Bu otaqda oynamaq üçün hazırsanmı?"
+            "Bəs Leyla özü nə vaxt təşəbbüs göstərir?"
           ],
           [
-            "Uşaq",
-            "Bəli, çox oyuncaq var!"
+            "Valideyn",
+            "(fikirləşir) Nadir hallarda, düzü. Bəlkə buna görə narahatam."
+          ],
+          [
+            "T",
+            "Bu müşahidə çox dəyərlidir, elə bu proqramın toxunacağı nöqtədir."
+          ],
+          [
+            "Valideyn",
+            "Ər bu prosesə necə baxır, maraqlanıram?"
+          ],
+          [
+            "T",
+            "İstəsəniz, atanı da sonrakı seanslardan birinə dəvət edə bilərik, hazırda ana-uşaq diadına fokuslanırıq."
+          ],
+          [
+            "T",
+            "Başlayaq onda."
           ]
         ]
       },
       {
         "name": "🔵 Əsas hissə (25-28 dəq)",
-        "text": [
-          "Uşaq-mərkəzli oyunun əsas prinsipi (uşağın istiqamətləndirdiyi, valideynin izlədiyi oyun) izah olunur, ənənəvi oyun ilə fərqi göstərilir."
-        ],
         "dialog": [
           [
             "T",
-            "Adətən uşağınızla oynayanda, kim oyunu idarə edir?"
+            "Adətən Leyla ilə oynayanda kim oyunu idarə edir?"
           ],
           [
             "Valideyn",
-            "Adətən mən, ona nə etməli olduğunu göstərirəm."
+            "Mən, əlbəttə. Ona göstərirəm necə düzgün etməli."
           ],
           [
             "T",
-            "Bu, çox yayılmış bir yanaşmadır. Filial Terapiyada isə əksinədir — uşaq idarə edir, siz izləyirsiniz."
+            "Bu, çox adi bir yanaşmadır. Filial modeldə isə tərsinə çevirəcəyik — Leyla idarə edəcək, siz izləyəcəksiniz."
           ],
           [
             "Valideyn",
-            "Bu, mənə çətin gələ bilər, adətçilikdən."
+            "(şübhəylə) Bəs o hər şeyi dağıtsa? Ya da təhlükəli bir şey etsə?"
           ],
           [
             "T",
-            "Anlaşılandır, bu, yeni bir bacarıqdır. Niyə bu yanaşma faydalı ola bilər sənə görə?"
+            "Yaxşı sual — tam sərbəstlik demirəm, bir neçə sərhəd olacaq, bunu 4-cü seansda öyrədəcəm. Amma oyunun MƏZMUNUNU o seçəcək."
           ],
           [
             "Valideyn",
-            "Bəlkə uşaq özünü daha sərbəst hiss edər?"
+            "Mənə çətin gələ bilər bu, açığı deyim, mən nəzarəti sevən adamam."
           ],
           [
             "T",
-            "Tam doğrudur! Bu, uşağa 'Mən səni olduğun kimi qəbul edirəm' mesajını verir. Bu, sizə necə gəlir?"
+            "Bunu bilmək faydalıdır — özünüzü tanımaq, dəyişikliyin ilk addımıdır. Sizcə niyə bu yanaşma faydalı ola bilər?"
           ],
           [
             "Valideyn",
-            "Çox dəyərli bir mesaj kimi görünür."
+            "(fikirləşir) Bəlkə... o özünü daha sərbəst hiss edər yanımda?"
           ],
           [
             "T",
-            "Bu yanaşmanın 3 əsas komponenti var: izləmə, əks etdirmə, sərhəd qoyma. Bunları öyrənməyə hazırsınızmı?"
+            "Bu, çox güclü bir fərziyyədir. Uşaq-mərkəzli oyun uşağa 'səni olduğun kimi qəbul edirəm' mesajı verir."
           ],
           [
             "Valideyn",
-            "Bəli, hazıram."
+            "(uzun fasilə) Bilirsinizmi, mən heç vaxt belə düşünməmişdim ona baxaraq — həmişə 'düzəltmək' istəyimlə baxmışam."
           ],
           [
             "T",
-            "'İzləmə' uşağın nə etdiyini sadəcə sözlə təsvir etməkdir — məsələn 'Sən qırmızı kubu qoydun'. Bu, sizə məntiqli gəlirmi?"
-          ],
-          [
-            "Valideyn",
-            "Bəli, sadə görünür, amma yeni bir vərdiş olacaq."
+            "Bu, çox dürüst bir etiraf idi. Bu proqram bax elə bu fərqi işləyəcək."
           ],
           [
             "T",
-            "Tam doğru düşüncə! Növbəti seansda bunu praktik məşq edəcəyik."
+            "3 əsas bacarıq öyrədəcəyəm — izləmə, empatik cavab, sərhəd qoyma. Bunlar bir-birinin üstünə qurulur."
           ],
           [
             "Valideyn",
-            "Səbirsizliklə gözləyirəm."
+            "Neçə vaxta öyrənilər bunlar sizcə?"
           ],
           [
             "T",
-            "(valideynə) Filial modeldə sizin rolunuz nədir izah edim — siz uşağın oyununu izləyib əks etdirəcəksiniz, idarə etmədən."
+            "Dürüst deyim, bəzi valideynlər 2-3 seansda rahat olur, bəzilərinə 5-6 lazım olur. Tələsmirik."
           ],
           [
             "Valideyn",
-            "Anladım, sadəcə müşahidə edirəm və dəstəkləyirəm."
+            "Bu, rahatladı məni, açığı yavaş öyrənən adamam."
+          ],
+          [
+            "Valideyn",
+            "Bir sualım var — bu bacarıqlar Leylanın hər problemi üçün işləyəcəkmi?"
           ],
           [
             "T",
-            "Bu, sizə necə gəlir — nəzarəti buraxmaq?"
+            "Dürüst deyim, xeyr — bu, hər şeyi həll edən sehr deyil. Amma əlaqəni gücləndirir, bu da bir çox şeyə dolayı təsir edir."
           ],
           [
             "Valideyn",
-            "Bir az çətin, amma faydalı olacağına inanıram."
+            "Anladım, gözləntimi bir az aşağı salım deyəsən."
           ],
           [
             "T",
-            "Bu, çox təbii bir hissdir, məşq etdikcə asanlaşacaq."
+            "Realist gözlənti, uğurun açarıdır çox vaxt."
           ],
           [
-            "Valideyn",
-            "Ümid edirəm."
+            "T",
+            "Bu bacarıqları öyrənərkən ən böyük dəstəyiniz kim olacaq evdə sizcə?"
           ]
         ]
       },
       {
         "name": "🟣 Bağlanış (10-12 dəq)",
-        "text": [
-          "İlk seansın xülasəsi aparılır, gələcək seanslar üçün motivasiya formalaşdırılır."
-        ],
         "dialog": [
           [
             "T",
-            "Bu gün öyrəndiklərinizi xülasə edə bilərsinizmi?"
+            "Bu gün eşitdikləriniz sizdə nə hiss yaratdı?"
           ],
           [
             "Valideyn",
-            "Uşaq-mərkəzli oyun, mən izləyirəm, o idarə edir."
+            "Qarışıq. Maraqlıyam, amma qorxuram da bacarmayacağımdan."
           ],
           [
             "T",
-            "Möhtəşəm! Bu barədə necə hiss edirsiniz?"
+            "Bu ikisi eyni anda ola bilər, problem deyil."
           ],
           [
             "Valideyn",
-            "Həvəsli, amma bir az narahat da bacara biləcəyimdən."
+            "Yaxşı."
           ],
           [
             "T",
-            "Bu, tam normaldır, hər yeni bacarıq belə başlayır. Növbəti dəfə konkret bacarıqları məşq edəcəyik."
+            "Bu həftə tapşırıq sadədir — sadəcə müşahidə edin, adi oyununuzda kim idarə edir, heç nə dəyişdirmədən."
           ],
           [
             "Valideyn",
-            "Bu, məni rahatlaşdırır."
+            "Yəni indi hələ heç nə etməyim lazım deyil?"
           ],
           [
             "T",
-            "Bu proses sizin üçün nə qədər vacibdir 1-10 şkalasında?"
+            "Dəqiq belədir. Bu həftə sadəcə görün."
           ],
           [
             "Valideyn",
-            "10, çox istəyirəm uşağımla əlaqəmi gücləndirməyi."
+            "Yaxşı, bunu bacararam məncə."
           ],
           [
             "T",
-            "Bu, çox güclü bir motivasiyadır! Bu gün özünüzdə nə hiss edirsiniz?"
+            "Görüşənədək, Nərgiz xanım."
           ],
           [
             "Valideyn",
-            "Ümidli və həvəsli."
+            "Bu gün çox şey öyrəndim, bir az yorulmuş hiss edirəm açığı."
           ],
           [
             "T",
-            "Siz bu gün çox açıq və səmimi oldunuz."
+            "Bu normaldır, yeni məlumat yorucu ola bilər. İstirahət edin bu gün."
           ],
           [
             "Valideyn",
-            "Təşəkkür edirəm."
-          ],
-          [
-            "T",
-            "Görüşənədək!"
-          ],
-          [
-            "Valideyn",
-            "Görüşənədək, sağ olun!"
+            "Sağ olun, gələn həftəyə hazır olacam."
           ]
         ]
       }
-    ],
-    "homework": "Uşağınızla adi oyun zamanı kim idarə etdiyini müşahidə etmək, qeyd etmək."
+    ]
   },
   {
     "num": 2,
     "title": "İzləmə və Təsviri Şərh Bacarığı",
-    "about": "'İzləmə' (tracking) Filial Terapiyanın əsas bacarığıdır — valideyn uşağın davranışını mühakimə etmədən, sadəcə sözlə təsvir edir. Bu, uşağa 'sən görünürsən, diqqətlə izlənilirsən' hissini verir.",
-    "goal": "Valideynə izləmə bacarığını konkret nümunələr və məşq vasitəsilə öyrətmək.",
+    "about": "'Tracking' (izləmə) bacarığı — uşağın hərəkətini şərh etmək, sual vermədən və istiqamətləndirmədən. Bu, valideynlər üçün ən çətin öyrənilən bacarıqdır, çünki instinkt sual verməkdir.",
+    "goal": "Valideynə izləmə cümlələri qurmaqda ilk təcrübəni qazandırmaq.",
     "administrator": "Klinik psixoloq.",
     "materials": [
-      "Oyuncaqlar (məşq üçün)",
-      "'İzləmə Cümlələri' nümunə kartı"
+      "Nümunə izləmə cümlələri siyahısı"
     ],
+    "homework": "5 dəqiqəlik oyunda yalnız izləmə cümlələri işlətməyə cəhd etmək.",
     "phases": [
       {
-        "name": "🟢 Giriş (8-10 dəq)",
-        "text": [
-          "Ev tapşırığının nəzərdən keçirilməsi."
-        ],
+        "name": "🟢 Giriş (10-12 dəq)",
         "dialog": [
           [
             "T",
-            "Salam! Uşağınızla oynayanda kim idarə etdiyini müşahidə etdinizmi?"
+            "Necə keçdi müşahidə?"
           ],
           [
             "Valideyn",
-            "Bəli, gördüm ki, mən çox idarə edirəm, təklif verirəm daim."
+            "(bir az utanaraq) Açığı, mən demək olar hər dəqiqə idarə edirdim, indi görürəm."
           ],
           [
             "T",
-            "Bu, çox dəyərli bir özünüfarkındalıqdır! Bu gün 'izləmə' bacarığını öyrənəcəyik."
+            "Bunu görmək özü böyük addımdır — əvvəllər fərqinə varmırdınız."
           ],
           [
             "Valideyn",
-            "Bu, necə bir bacarıqdır?"
+            "Doğrudur, amma bir az özümü pis hiss etdim."
           ],
           [
             "T",
-            "Uşağın nə etdiyini sadəcə sözlə təsvir etmək, təklif vermədən. Məsələn 'Sən qırmızı kubu seçdin.'"
+            "Bu, tənqid üçün deyil, sadəcə başlanğıc nöqtəsini görmək üçündür."
           ],
           [
             "Valideyn",
-            "Bu, sadə görünür, amma məşq lazımdır bəlkə."
+            "Anlayıram, sadəcə... çox illik vərdiş, dəyişmək çətin olacaq deyəsən."
           ],
           [
             "T",
-            "Tam doğrudur, bu, yeni bir vərdişdir. Hazırsınızmı məşq etməyə?"
+            "Bu gün bu vərdişi dəyişməyə başlayacağıq — 'izləmə' bacarığı ilə."
+          ],
+          [
+            "T",
+            "5 dəqiqəlik izləmə tapşırığından başqa, bu həftə başqa nəsə diqqətinizi çəkdimi?"
           ],
           [
             "Valideyn",
-            "Bəli, hazıram."
+            "Bəli, işə görə iki gün heç oynaya bilmədim onunla, özümü pis hiss etdim."
           ],
           [
             "T",
-            "Bu barədə necə hiss edirsiniz?"
+            "Bu, tez-tez olur, öz-özünüzü tənqid etməyin lazım deyil."
           ],
           [
             "Valideyn",
-            "Maraqlı, sadə görünsə də faydalı ola bilər."
-          ],
-          [
-            "T",
-            "Möhtəşəm münasibət! Başlayaq."
+            "Çətindir, açığı özümü tənqid etmək öyrəncəli."
           ],
           [
             "Valideyn",
-            "Yaxşı, başlayaq."
+            "Bir də — bu izləmə bacarığını Leyla hiss edirmi ümumiyyətlə, fərq qoyurmi?"
           ],
           [
             "T",
-            "Bu gün nə ilə oynamaq istəyirsən?"
+            "Bunu tam bilmək çətindir hələ bu erkən mərhələdə, amma vaxtla görəcəyik."
           ],
           [
-            "Uşaq",
-            "Bu qaladakı fiqurlarla."
+            "T",
+            "Sağ olun sualınıza görə."
           ]
         ]
       },
       {
         "name": "🔵 Əsas hissə (25-28 dəq)",
-        "text": [
-          "İzləmə cümlələri konkret nümunələr üzərində məşq edilir, valideyn rol-oyunu ilə tətbiq edir."
-        ],
         "dialog": [
           [
             "T",
-            "Mən indi bir uşaq kimi oynayacam, siz izləyin. (klotslarla oynayır) Nə görürsünüz?"
+            "İzləmə sadəcə uşağın nə etdiyini sözlə təsvir etməkdir, sual vermədən, istiqamətləndirmədən. Nümunə: 'Sən qırmızı kubu qoydun'."
           ],
           [
             "Valideyn",
-            "Siz qırmızı klotsu götürdünüz."
+            "Bu, çox sadə görünür."
           ],
           [
             "T",
-            "Möhtəşəm! Bu, tam izləmə cümləsidir. Davam edim? (klotsu düzür)"
+            "Sadə görünür, amma təcrübədə çətindir, çünki instinktiniz sual verməkdir. Sınayaq — bu kuklanı götürürəm, siz təsvir edin."
           ],
           [
             "Valideyn",
-            "İndi onu masaya qoydunuz."
+            "(tərəddüdlə) Sən... kuklanı götürdün?"
           ],
           [
             "T",
-            "Əla! İndi mən (kuklanı hərəkət etdirir) nə edirəm?"
+            "Əla başlanğıc, amma 'sən' ilə bitirdiniz sual kimi. Cümlə kimi deyin — 'Sən kuklanı götürdün.'"
           ],
           [
             "Valideyn",
-            "Kuklanı hərəkət etdirirsiniz, o, gəzintiyə çıxır kimi."
+            "(təkrar edir) Sən kuklanı götürdün."
           ],
           [
             "T",
-            "Möhtəşəm izləmə, hətta emosional təxmin də əlavə etdiniz! Bu, sizə necə gəldi?"
+            "Dəqiq! İndi mən kuklanı masaya qoyuram."
           ],
           [
             "Valideyn",
-            "Asan idi, düşündüyümdən sadə."
+            "(fikirləşir) Kuklanı... masaya qoydun?"
           ],
           [
             "T",
-            "İndi mən sual verim — 'Nə edirəm?' deyəndə nə cavab verərdiniz adətən?"
+            "Yenə sual tonu ilə çıxdı. Fərqi hiss edirsinizmi — 'qoydun?' ilə 'qoydun.' arasında?"
           ],
           [
             "Valideyn",
-            "Adətən cavab verərdim, indi isə sadəcə izləyəcəm."
+            "(gülümsəyir) Açığı yox, çox incə fərqdir mənə görə."
           ],
           [
             "T",
-            "Tam doğru anlayış! Sualı geri qaytarmaq necə ola bilər — 'Sən nə etmək istəyirsən?'"
+            "Normaldır, bu, səsin tonunda gizlənir çox vaxt. Bir də cəhd edək, bu dəfə cümləni bitirən kimi danışın."
           ],
           [
             "Valideyn",
-            "Bu, uşağa qərar vermə imkanı verir."
+            "(təkrar) Kuklanı masaya qoydun."
           ],
           [
             "T",
-            "Möhtəşəm! Gəl indi real oyuncaqla siz məşq edin, mən uşaq oluram."
+            "Bax bu! İndi fərqi eşitdiniz özünüz?"
           ],
           [
             "Valideyn",
-            "(məşq edir) Sən topu götürdün."
+            "Bəli, indi eşidirəm, maraqlıdır."
           ],
           [
             "T",
-            "(valideynə) İndi sadəcə uşağın nə etdiyini təsvir edin, şərh vermədən."
+            "İzləmə niyə faydalıdır sizcə — sual əvəzinə?"
           ],
           [
             "Valideyn",
-            "(təsvir edir) Sən qülləni tikirsən, indi başqa bir hissə əlavə edirsən."
+            "Bəlkə... sual uşağı yoxlanılır kimi hiss etdirir, təsvir isə sadəcə görülür kimi?"
           ],
           [
             "T",
-            "Bu, uşağınıza necə hiss etdirdi sənə görə?"
+            "Bu, çox dəqiq bir müşahidədir. Tam bu haqdadır — 'görülmək', 'yoxlanmamaq'."
           ],
           [
             "Valideyn",
-            "Deyəsən diqqətli olduğumu hiss etdi, sevindi."
+            "Bəs mən uzun cümlə desəm, məsələn 'sən qırmızı kubu masaya qoyub sonra göy kubu onun üstünə qoydun' — bu düzgündürmü?"
           ],
           [
             "T",
-            "Möhtəşəm müşahidə! Bu bacarığı evdə necə tətbiq edəcəksiniz?"
+            "Bu, bir az uzundur, sadə saxlayın — uşaq üçün asan izlənməli. Qısa cümlələr daha effektivdir."
           ],
           [
-            "Valideyn",
-            "Hər gün 10 dəqiqə bu cür izləyəcəm."
+            "T",
+            "Bunu unutmayın — mükəmməl cümlə axtarmayın, sadəcə davamlı cəhd."
           ]
         ]
       },
       {
         "name": "🟣 Bağlanış (10-12 dəq)",
-        "text": [
-          "İzləmə bacarığının evdə tətbiqi planlaşdırılır."
-        ],
         "dialog": [
           [
             "T",
-            "Bu bacarığı evdə necə tətbiq edəcəksiniz?"
+            "Bu bacarıq sizə necə gəldi ümumilikdə?"
           ],
           [
             "Valideyn",
-            "Uşağımla oynayanda təklif vermək əvəzinə izləyəcəm."
+            "Gözlədiyimdən çətin, açığı. Amma maraqlı."
           ],
           [
             "T",
-            "Möhtəşəm niyyət! Bu barədə necə hiss edirsiniz?"
+            "Bu normaldır ilk cəhddə. Ev tapşırığı — 5 dəqiqə, yalnız izləmə cümlələri, sual olmadan."
           ],
           [
             "Valideyn",
-            "Həvəsli, sadə amma güclü bir texnika kimi görünür."
+            "Yalnız 5 dəqiqəmi? Az səslənir."
           ],
           [
             "T",
-            "Bu gün özünüzdə hansı dəyişikliyi hiss edirsiniz?"
+            "Qəsdən azdır — yeni bacarıq üçün yorucu olmasın deyə. Uzunluq sonra artacaq."
           ],
           [
             "Valideyn",
-            "Daha hazır hiss edirəm bu yanaşmaya."
+            "Anladım, sınayacam."
           ],
           [
             "T",
-            "Bu, çox gözəldir! Siz bu gün çox səylə çalışdınız."
+            "Çətinlik olsa, qeyd edin, gələn həftə birlikdə baxarıq."
           ],
           [
             "Valideyn",
-            "Təşəkkür edirəm."
+            "Yaxşı, sağ olun."
+          ],
+          [
+            "Valideyn",
+            "5 dəqiqə kifayət edəcəkmi görəsən?"
           ],
           [
             "T",
-            "Bu həftə neçə dəqiqə məşq etməyi planlaşdırırsınız?"
-          ],
-          [
-            "Valideyn",
-            "Gündə 10 dəqiqə, xüsusi oyun vaxtında."
-          ],
-          [
-            "T",
-            "Möhtəşəm plan! Növbəti dəfə empatik cavab verməyi öyrənəcəyik."
-          ],
-          [
-            "Valideyn",
-            "Maraqla gözləyirəm."
-          ],
-          [
-            "T",
-            "Görüşənədək!"
-          ],
-          [
-            "Valideyn",
-            "Görüşənədək, sağ olun!"
+            "İlk həftə üçün bəli, sonra tədricən artıracağıq."
           ]
         ]
       }
-    ],
-    "homework": "Gündə 10 dəqiqə uşaqla oynayarkən izləmə cümlələrini tətbiq etmək."
+    ]
   },
   {
     "num": 3,
     "title": "Empatik Cavab Vermə Bacarığı",
-    "about": "Empatik cavab (reflective listening, Rogers) uşağın hisslərini sözlə əks etdirməkdir — bu, uşağa hisslərinin görüldüyünü və qəbul edildiyini hiss etdirir, emosional inkişafı dəstəkləyir.",
-    "goal": "Valideynə uşağın emosiyalarını tanıma və empatik şəkildə əks etdirmə bacarığını öyrətmək.",
+    "about": "Uşağın emosiyasını sözlə əks etdirmək (reflective responding) — 'sən əsəbləşdin' kimi. Bu bacarıq izləmədən sonra öyrədilir, çünki emosiyanı tanımaq təsviri şərhdən daha dərin diqqət tələb edir.",
+    "goal": "Valideynə emosional əks etdirmə cümlələrini modelləşdirmək və məşq etdirmək.",
     "administrator": "Klinik psixoloq.",
     "materials": [
-      "Hiss kartları",
-      "Rol-oyunu ssenariləri"
+      "Emosiya kartları"
     ],
+    "homework": "Oyun zamanı ən azı 3 dəfə uşağın hissini sözlə adlandırmaq.",
     "phases": [
       {
-        "name": "🟢 Giriş (8-10 dəq)",
-        "text": [
-          "İzləmə bacarığının tətbiqinin nəzərdən keçirilməsi."
-        ],
+        "name": "🟢 Giriş (10-12 dəq)",
         "dialog": [
           [
             "T",
-            "Salam! İzləmə bacarığını tətbiq etdinizmi bu həftə?"
+            "İzləmə tapşırığı necə keçdi?"
           ],
           [
             "Valideyn",
-            "Bəli, hər gün 10 dəqiqə, uşağım da fərqli davrandı."
+            "Bir dəfə etdim, 5 dəqiqə. Açığı, ikinci dəqiqədə unutdum, yenə sual verdim."
           ],
           [
             "T",
-            "Necə fərqli?"
+            "Bu, çox təbiidir — köhnə vərdiş dərhal getmir. Nə hiss etdiniz o 5 dəqiqədə?"
           ],
           [
             "Valideyn",
-            "Daha çox danışdı, daha rahat göründü."
+            "Qəribə, düzü. Amma Leyla mənə diqqətlə baxırdı, adətən elə etmir."
           ],
           [
             "T",
-            "Bu, möhtəşəm nəticədir! Bu gün empatik cavab verməyi öyrənəcəyik."
+            "Bu, çox maraqlı bir müşahidədir — dəyişiklik onun da diqqətini çəkib."
+          ],
+          [
+            "T",
+            "İzləmə bacarığınız necə inkişaf edir bu aralıqda?"
           ],
           [
             "Valideyn",
-            "Bu, nədir dəqiq?"
+            "Bir az daha rahat oldum, amma hələ də bəzən sual şəklinə düşür."
           ],
           [
             "T",
-            "Uşağın hisslərini sözlə əks etdirmək — 'Sən buna görə əsəbisən' kimi."
+            "Bu, çox normal bir prosesdir, tam avtomatlaşma vaxt alır."
           ],
           [
             "Valideyn",
-            "Bu, faydalı görünür, çünki bəzən onun hisslərini bilmirəm."
+            "Neçə vaxt təxminən?"
           ],
           [
             "T",
-            "Hazırsınızmı öyrənməyə?"
+            "Fərqlidir hər kəsdə, bəziləri 2 həftədə rahatlanır, bəziləri aylarla."
           ],
           [
             "Valideyn",
-            "Bəli, hazıram."
+            "Bu gün bir az yorğun gəldim açığı, gecə yatammadım."
           ],
           [
             "T",
-            "Bu barədə necə hiss edirsiniz?"
+            "İstəsəniz bugünkü seansı bir az daha qısa apara bilərik."
           ],
           [
             "Valideyn",
-            "Maraqlı, faydalı olacağını düşünürəm."
+            "Yox, davam edək, sadəcə bildirmək istədim."
           ],
           [
             "T",
-            "Bu gün hansı hisslərini oyunda göstərəcəksən?"
-          ],
-          [
-            "Uşaq",
-            "Bilmirəm, görəcəyik."
+            "Anlayışınız üçün sağ olun."
           ]
         ]
       },
       {
         "name": "🔵 Əsas hissə (25-28 dəq)",
-        "text": [
-          "Hiss tanıma və əks etdirmə bacarığı konkret ssenarilər üzərində məşq edilir."
-        ],
         "dialog": [
           [
             "T",
-            "Mən indi bir uşaq kimi oynayacam — qüllə tikirəm, o yıxılır. (kədərli görünür) Nə hiss edirəm sənə görə?"
+            "Bu gün ikinci bacarığa keçirik — empatik cavab. Bu, uşağın hissini sözlə adlandırmaqdır."
           ],
           [
             "Valideyn",
-            "Kədərli, bəlkə bir az əsəbi görünürsünüz."
+            "Necə fərqlənir izləmədən?"
           ],
           [
             "T",
-            "Möhtəşəm müşahidə! Bunu necə əks etdirərdiniz mənə?"
+            "İzləmə hərəkəti təsvir edir, empatiya hissi. Məsələn, uşaq qülləni yıxsa və məyus görünsə — 'sən məyus oldun, qüllə yıxıldı deyə'."
           ],
           [
             "Valideyn",
-            "'Sən qülləni yıxılanda kədərləndin' deyərdim."
+            "Bunu necə bilim hansı hissdir dəqiq?"
           ],
           [
             "T",
-            "Möhtəşəm empatik cavab! Bunu eşidəndə mən (uşaq rolunda) necə hiss edərdim?"
+            "Həmişə dəqiq bilməyəcəksiniz, bu, normaldır — cəhd edin, səhv etsəniz uşaq düzəldəcək sizi."
           ],
           [
             "Valideyn",
-            "Bəlkə anlaşılmış hiss edərsiniz."
+            "(narahat) Ya səhv etsəm, pis olmazmı?"
           ],
           [
             "T",
-            "Tam doğrudur! İndi başqa bir ssenari — mən (sevincli) yeni bir oyuncaq tapıram."
+            "Əksinə — səhv edib düzəldilmək, uşağa 'sən məni öyrədə bilərsən' hissini verir, bu da faydalıdır."
           ],
           [
             "Valideyn",
-            "(sınayır) 'Sən bunu tapanda çox sevindin!'"
+            "(rahatlaşır) Bunu bilmək kömək etdi, açığı."
           ],
           [
             "T",
-            "Möhtəşəm! İndi çətin bir ssenari — mən əsəbi şəkildə oyuncağı atıram."
+            "Sınayaq — mən indi bir bloklardan qüllə tikirəm, yıxılır. (qüllə yıxılır simulyasiyası) Necə hiss edirəm sizcə?"
           ],
           [
             "Valideyn",
-            "(bir az tərəddüdlə) 'Sən əsəbisən indi.'"
+            "(fikirləşir) Bəlkə əsəbləşmisən?"
           ],
           [
             "T",
-            "Möhtəşəm, hətta çətin hissləri də adlandıra bildiniz! Bu, sizə necə gəldi?"
+            "Bu sual formasında oldu yenə. Cümlə kimi deyin."
           ],
           [
             "Valideyn",
-            "Bir az çətin idi, amma mümkün."
+            "(düzəldir) Sən əsəbləşdin, qüllə yenidən yıxıldı."
           ],
           [
             "T",
-            "Bu bacarıq real həyatda uşağınıza necə kömək edə bilər?"
+            "Əla! İndi mən başqa reaksiya verim — gülürəm, yenidən başlayıram tikməyə."
           ],
           [
             "Valideyn",
-            "Hisslərini tanımağı öyrənər, məncə."
+            "(tərəddüdlə) Sən... əylənirsən bunu yenidən tikməkdən?"
           ],
           [
             "T",
-            "(valideynə) Uşaq indi məyus görünür, bunu empatik şəkildə əks etdirin."
+            "Bu, sual tonunda çıxdı, amma məzmun düzgün idi. Bu, çətin bir bacarıqdır, praktika ilə asanlaşır."
           ],
           [
             "Valideyn",
-            "Görürəm ki, bu, səni məyus edir, qülə yıxıldı."
+            "Bəs Leylanın həqiqi hissini necə seçim, bir neçə ehtimal olanda?"
           ],
           [
             "T",
-            "Bu empatik cavab uşağınızda nə dəyişdi?"
+            "Yaxşı sual. Ən güclü görünən hissi seçin, yanılsanız da problem deyil, cəhd özü dəyərlidir."
           ],
           [
             "Valideyn",
-            "Sakitləşdi, yenidən cəhd etdi."
+            "Bəzən mən onun hissini yanlış oxuyuram, məsələn 'əsəbisən' deyirəm, o isə 'yox, sadəcə maraqlıyam' deyir."
           ],
           [
             "T",
-            "Bu, çox güclü bir əlaqə anı idi!"
-          ],
-          [
-            "Valideyn",
-            "Bəli, hiss etdim ki, məni başa düşdü."
-          ]
-        ]
-      },
-      {
-        "name": "🟣 Bağlanış (10-12 dəq)",
-        "text": [
-          "Empatik cavabın evdə davamlı tətbiqi planlaşdırılır."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Bu bacarığı necə davam etdirəcəksiniz?"
-          ],
-          [
-            "Valideyn",
-            "Oyun vaxtında hər hissi əks etdirməyə çalışacam."
-          ],
-          [
-            "T",
-            "Möhtəşəm niyyət! Bu barədə necə hiss edirsiniz?"
-          ],
-          [
-            "Valideyn",
-            "Həvəsli, uşağımı daha yaxşı anlaya biləcəyimi hiss edirəm."
-          ],
-          [
-            "T",
-            "Bu, çox gözəl bir hədəfdir! Bu gün özünüzdə nə hiss edirsiniz?"
-          ],
-          [
-            "Valideyn",
-            "Daha bacarıqlı, alətlərim artır."
-          ],
-          [
-            "T",
-            "Bu, çox gözəldir! Siz bu gün çox diqqətli oldunuz."
-          ],
-          [
-            "Valideyn",
-            "Təşəkkür edirəm."
-          ],
-          [
-            "T",
-            "İzləmə və empatik cavabı birlikdə istifadə edə bilərsinizmi?"
-          ],
-          [
-            "Valideyn",
-            "Bəli, ikisini birləşdirəcəm."
-          ],
-          [
-            "T",
-            "Möhtəşəm! Növbəti dəfə sərhəd qoymağı öyrənəcəyik."
-          ],
-          [
-            "Valideyn",
-            "Bu da vacibdir mənə görə, bəzən çətinləşir bu."
-          ],
-          [
-            "T",
-            "Görüşənədək!"
-          ],
-          [
-            "Valideyn",
-            "Görüşənədək, sağ olun!"
-          ]
-        ]
-      }
-    ],
-    "homework": "Oyun vaxtında izləmə və empatik cavabı birlikdə tətbiq etmək."
-  },
-  {
-    "num": 4,
-    "title": "Sərhəd Qoyma Bacarığı Oyunda",
-    "about": "VanFleet-in modelinə görə, uşaq-mərkəzli oyun tam sərhədsiz demək deyil — təhlükəsizlik və əşyaların qorunması üçün sadə, aydın sərhədlər lazımdır. 3 addımlı sərhəd qoyma (hissi qəbul et, sərhədi bildir, alternativ təklif et) bu balansı təmin edir.",
-    "goal": "Valideynə oyun zamanı lazım olan sərhədləri, uşağın avtonomiyasını qorumaqla necə qoyacağını öyrətmək.",
-    "administrator": "Klinik psixoloq.",
-    "materials": [
-      "Sərhəd qoyma addımları kartı",
-      "Rol-oyunu ssenariləri"
-    ],
-    "phases": [
-      {
-        "name": "🟢 Giriş (8-10 dəq)",
-        "text": [
-          "Empatik cavab tətbiqinin nəzərdən keçirilməsi."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Salam! Empatik cavabı tətbiq etdinizmi?"
-          ],
-          [
-            "Valideyn",
-            "Bəli, uşağım daha çox açıldı, hisslərini deyir indi."
-          ],
-          [
-            "T",
-            "Bu, möhtəşəm nəticədir! Bu gün sərhəd qoymağı öyrənəcəyik."
-          ],
-          [
-            "Valideyn",
-            "Bu, mənə çox lazımdır, bəzən oyun idarəolunmaz olur."
-          ],
-          [
-            "T",
-            "Anlaşılandır. Uşaq-mərkəzli oyun tam sərhədsiz demək deyil, sadəcə sərhədlər fərqli qoyulur."
-          ],
-          [
-            "Valideyn",
-            "Bu, məni rahatlaşdırır, çünki tam sərbəstlik məni narahat edirdi."
-          ],
-          [
-            "T",
-            "Hazırsınızmı öyrənməyə?"
-          ],
-          [
-            "Valideyn",
-            "Bəli, hazıram."
-          ],
-          [
-            "T",
-            "Bu barədə necə hiss edirsiniz?"
-          ],
-          [
-            "Valideyn",
-            "Ümidli, bu, çox lazımlı bir bacarıqdır mənə görə."
-          ],
-          [
-            "T",
-            "Möhtəşəm! Başlayaq."
-          ],
-          [
-            "Valideyn",
-            "Yaxşı, başlayaq."
-          ],
-          [
-            "T",
-            "Bu gün oyun otağının qaydalarını xatırlayaq."
-          ],
-          [
-            "Uşaq",
-            "Əşyaları qırmamaq, otaqdan çıxmamaq."
-          ]
-        ]
-      },
-      {
-        "name": "🔵 Əsas hissə (25-28 dəq)",
-        "text": [
-          "3 addımlı sərhəd qoyma (hissi qəbul et, sərhədi bildir, alternativ təklif et) izah olunur və məşq edilir."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Tutaq ki, uşaq divara rəsm çəkmək istəyir. 3 addımı sınayaq — əvvəlcə hissi qəbul edin."
-          ],
-          [
-            "Valideyn",
-            "'Sən divara çəkmək istəyirsən, çünki böyük yer var orada.'"
-          ],
-          [
-            "T",
-            "Möhtəşəm! İndi sərhədi bildirin."
-          ],
-          [
-            "Valideyn",
-            "'Amma divara çəkmək olmaz.'"
-          ],
-          [
-            "T",
-            "Əla! İndi alternativ təklif edin."
-          ],
-          [
-            "Valideyn",
-            "'Bu böyük kağıza çəkə bilərsən.'"
-          ],
-          [
-            "T",
-            "Möhtəşəm 3 addım! Bu, uşağa necə hiss etdirir sənə görə?"
-          ],
-          [
-            "Valideyn",
-            "Rədd edilmiş hiss etməz, çünki hissi qəbul edildi."
-          ],
-          [
-            "T",
-            "Tam doğrudur! Başqa bir ssenari — uşaq oyuncağı atmaq istəyir sizə."
-          ],
-          [
-            "Valideyn",
-            "'Sən əsəbisən, atmaq istəyirsən.' (hissi qəbul)"
-          ],
-          [
-            "T",
-            "Davam edin."
-          ],
-          [
-            "Valideyn",
-            "'Amma məni ata bilməzsən.' (sərhəd) 'Bu yastığı ata bilərsən.' (alternativ)"
-          ],
-          [
-            "T",
-            "Möhtəşəm tətbiq! Bu, sizə necə gəldi?"
-          ],
-          [
-            "Valideyn",
-            "Düşündüyümdən asan, strukturlu olduğu üçün."
-          ],
-          [
-            "T",
-            "(valideynə) Uşaq indi bir sərhədi sınayır, ACT modelini tətbiq edin — tanıyın, məhdudlaşdırın, alternativ verin."
-          ],
-          [
-            "Valideyn",
-            "Görürəm oyuncaqla vurmaq istəyirsən, amma insanlara vura bilmərik, əvəzinə yastığa vur bilərsən."
-          ],
-          [
-            "T",
-            "Bu, necə keçdi sənə görə?"
-          ],
-          [
-            "Valideyn",
-            "Uşaq razılaşdı, yastığa keçdi."
-          ],
-          [
-            "T",
-            "Möhtəşəm tətbiq! Bu formulanı yadda saxlaya bilərsinizmi?"
-          ],
-          [
-            "Valideyn",
-            "Bəli, tanı-məhdudlaşdır-alternativ, sadədir."
-          ]
-        ]
-      },
-      {
-        "name": "🟣 Bağlanış (10-12 dəq)",
-        "text": [
-          "Sərhəd qoyma bacarığının evdə tətbiqi planlaşdırılır."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Bu 3 addımı necə xatırlayacaqsınız?"
-          ],
-          [
-            "Valideyn",
-            "'Qəbul et, bildir, təklif et' — kartı yanımda saxlayacam."
-          ],
-          [
-            "T",
-            "Möhtəşəm plan! Bu barədə necə hiss edirsiniz?"
-          ],
-          [
-            "Valideyn",
-            "Daha hazır, artıq strukturum var."
-          ],
-          [
-            "T",
-            "Bu gün özünüzdə hansı dəyişikliyi hiss edirsiniz?"
-          ],
-          [
-            "Valideyn",
-            "Daha inamlı, çətin anları idarə edə biləcəyimi hiss edirəm."
-          ],
-          [
-            "T",
-            "Bu, çox gözəldir! Siz bu gün çox səylə çalışdınız."
-          ],
-          [
-            "Valideyn",
-            "Təşəkkür edirəm."
-          ],
-          [
-            "T",
-            "İndi 3 bacarığı (izləmə, empatiya, sərhəd) birləşdirməyə hazırsınızmı?"
-          ],
-          [
-            "Valideyn",
-            "Bəli, hazıram sınamağa."
-          ],
-          [
-            "T",
-            "Möhtəşəm! Növbəti dəfə supervizor nəzarəti altında tam seans aparacağıq."
-          ],
-          [
-            "Valideyn",
-            "Bu, mənə köməkli olacaq, əmin olmaq üçün."
-          ],
-          [
-            "T",
-            "Görüşənədək!"
-          ],
-          [
-            "Valideyn",
-            "Görüşənədək, sağ olun!"
-          ]
-        ]
-      }
-    ],
-    "homework": "3 bacarığı (izləmə, empatiya, sərhəd) birləşdirərək gündəlik oyun seansında tətbiq etmək."
-  },
-  {
-    "num": 5,
-    "title": "Nəzarətli Təcrübə Seansı",
-    "about": "VanFleet-in modelinə görə, valideynin ilk tam oyun seansları terapevtin müşahidəsi altında aparılmalıdır ki, rəy vasitəsilə bacarıqlar möhkəmlənsin — bu, 'coaching' mərhələsi adlanır.",
-    "goal": "Valideynin uşağı ilə tam struktur oyun seansını terapevtin müşahidəsi altında aparması və konstruktiv rəy alması.",
-    "administrator": "Klinik psixoloq, uşaq və valideynin birgə iştirakı ilə.",
-    "materials": [
-      "Oyun otağı/küncü",
-      "Seçilmiş oyuncaqlar dəsti (5-7 ədəd)"
-    ],
-    "phases": [
-      {
-        "name": "🟢 Giriş (8-10 dəq)",
-        "text": [
-          "Nəzarətli seansın formatı izah olunur, uşaq da prosesə qoşulur."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Salam hər ikinizə! Bu gün valideyniniz sizinlə xüsusi bir oyun vaxtı keçirəcək, mən izləyəcəm. Necəsiniz?"
-          ],
-          [
-            "Uşaq",
-            "Yaxşıyam, bu, maraqlı görünür!"
-          ],
-          [
-            "Valideyn",
-            "Mən bir az həyəcanlıyam, amma hazıram."
-          ],
-          [
-            "T",
-            "Bu, tam normaldır. Günel xanım, bu oyunda kim idarə edəcək?"
-          ],
-          [
-            "Valideyn",
-            "O idarə edəcək, mən izləyəcəm və dəstək olacam."
-          ],
-          [
-            "T",
-            "Möhtəşəm xatırlama! Leyla, bu oyun vaxtında istədiyin hər şeyi edə bilərsən, bu vaxt sənindir."
-          ],
-          [
-            "Uşaq",
-            "Bu, əladır!"
-          ],
-          [
-            "T",
-            "Hazırsınızmı başlamağa?"
-          ],
-          [
-            "Valideyn",
-            "Bəli, hazıram."
-          ],
-          [
-            "Uşaq",
-            "Mən də hazıram!"
-          ],
-          [
-            "T",
-            "Bu barədə necə hiss edirsiniz?"
-          ],
-          [
-            "Valideyn",
-            "Bir az narahat, amma çox həvəsli."
-          ],
-          [
-            "T",
-            "Bu gün siz özünüz aparacaqsınız seansı, mən müşahidə edəcəm."
-          ],
-          [
-            "Valideyn",
-            "Bir az həyəcanlıyam, amma hazıram."
-          ]
-        ]
-      },
-      {
-        "name": "🔵 Əsas hissə (25-30 dəq)",
-        "text": [
-          "Valideyn uşaqla struktur oyun seansı aparır, terapevt müşahidə edir və seansdan sonra konstruktiv rəy verir."
-        ],
-        "dialog": [
-          [
-            "Uşaq",
-            "(oyuncaqları seçir) Mən bu evi tikirəm."
-          ],
-          [
-            "Valideyn",
-            "Sən böyük bir ev tikirsən."
-          ],
-          [
-            "T",
-            "(kənardan) Möhtəşəm izləmə!"
-          ],
-          [
-            "Uşaq",
-            "Bəli, bu, ailəm üçündür."
-          ],
-          [
-            "Valideyn",
-            "Sən bu evi ailən üçün tikirsən, bu, sənə xoşdur."
-          ],
-          [
-            "T",
-            "Möhtəşəm empatik cavab!"
-          ],
-          [
-            "Uşaq",
-            "(ev yıxılır, əsəbiləşir) Bu, pis oldu!"
-          ],
-          [
-            "Valideyn",
-            "Sən əsəbisən, çünki ev yıxıldı."
-          ],
-          [
-            "T",
-            "Möhtəşəm hiss tanıma!"
-          ],
-          [
-            "Uşaq",
-            "(yenidən tikməyə başlayır) Mən yenidən tikəcəm."
-          ],
-          [
-            "Valideyn",
-            "Sən vaz keçmirsən, yenidən cəhd edirsən."
-          ],
-          [
-            "T",
-            "(seansdan sonra) Bu, inanılmaz dərəcədə yaxşı idi! Xüsusilə hiss tanımanız çox güclü idi."
-          ],
-          [
-            "Valideyn",
-            "Təşəkkür edirəm, bir az həyəcanlı idim, amma axıcı hiss etdim."
-          ],
-          [
-            "T",
-            "Uşağınızın reaksiyasını gördünüzmü — o, çox rahat və açıq idi."
-          ],
-          [
-            "T",
-            "(müşahidə edir) Çox yaxşı gedir, indi bir hiss əks etdirin."
-          ],
-          [
-            "Valideyn",
-            "Görürəm bu, səni maraqlandırır."
-          ],
-          [
-            "T",
-            "Möhtəşəm! Bu, tam düzgün tətbiq idi."
-          ],
-          [
-            "Valideyn",
-            "Təşəkkür edirəm, rahatlaşdım."
-          ],
-          [
-            "T",
-            "Bu təcrübədən sonra özünüzü necə hiss edirsiniz?"
-          ],
-          [
-            "Valideyn",
-            "Daha inamlı, bacara bilərəm bunu evdə də."
-          ]
-        ]
-      },
-      {
-        "name": "🟣 Bağlanış (10-12 dəq)",
-        "text": [
-          "Seansdan konkret nəticələr çıxarılır, gələcək ev seansları üçün hazırlıq."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Leyla, bu oyun vaxtı sənə necə gəldi?"
-          ],
-          [
-            "Uşaq",
-            "Çox xoş idi, anam məni çox yaxşı dinlədi."
-          ],
-          [
-            "T",
-            "Bu, çox gözəl bir rəydir! Günel xanım, özünüzü necə hiss edirsiniz bu seansdan sonra?"
-          ],
-          [
-            "Valideyn",
-            "Qürurlu, bacardığımı hiss etdim."
-          ],
-          [
-            "T",
-            "Bu, tam haqlısınız! Bu seansı evdə necə davam etdirəcəksiniz?"
-          ],
-          [
-            "Valideyn",
-            "Hər həftə eyni formatda, xüsusi vaxt ayıraraq."
-          ],
-          [
-            "Uşaq",
-            "Mən də bunu istəyirəm, çox əyləncəli idi!"
-          ],
-          [
-            "T",
-            "Bu, çox gözəl bir razılaşmadır! Bu gün özünüzdə nə hiss edirsiniz?"
-          ],
-          [
-            "Valideyn",
-            "İnamlı və həvəsli."
-          ],
-          [
-            "Uşaq",
-            "Mən də çox xoşbəxtəm."
-          ],
-          [
-            "T",
-            "Siz hər ikiniz bu gün möhtəşəm bir əlaqə göstərdiniz."
-          ],
-          [
-            "Valideyn",
-            "Təşəkkür edirəm."
-          ],
-          [
-            "T",
-            "Növbəti dəfə ev seanslarının necə keçdiyini müzakirə edəcəyik."
-          ],
-          [
-            "Uşaq",
-            "Maraqla gözləyirəm!"
-          ]
-        ]
-      }
-    ],
-    "homework": "Evdə eyni formatda ilk müstəqil oyun seansını keçirmək (həftədə 1 dəfə, 20-30 dəqiqə)."
-  },
-  {
-    "num": 6,
-    "title": "Ev Oyun Seanslarının Davam Etdirilməsi",
-    "about": "Müntəzəm, struktur ev oyun seansları (weekly special play sessions) Filial Terapiyanın əsas komponentidir — bu, valideyn-uşaq bağlılığını sistematik şəkildə gücləndirən 'qorunmuş vaxt'dır.",
-    "goal": "İlk müstəqil ev seansının nəticələrini nəzərdən keçirmək, çətinlikləri həll etmək və davamlılığı gücləndirmək.",
-    "administrator": "Klinik psixoloq.",
-    "materials": [
-      "Valideynin seans qeydləri (əgər aparılıbsa)",
-      "Əlavə bacarıq kartları"
-    ],
-    "phases": [
-      {
-        "name": "🟢 Giriş (8-10 dəq)",
-        "text": [
-          "İlk ev seansının nəticələrinin nəzərdən keçirilməsi."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Salam! Evdə ilk seansı keçirdinizmi?"
-          ],
-          [
-            "Valideyn",
-            "Bəli! Bir az çətin idi tək olanda, amma yaxşı keçdi ümumilikdə."
-          ],
-          [
-            "T",
-            "Bu, möhtəşəm nəticədir! Hansı hissəsi çətin oldu?"
-          ],
-          [
-            "Valideyn",
-            "Bəzən nə deyəcəyimi unudurdum, sükut yaranırdı."
-          ],
-          [
-            "T",
-            "Bu, çox normaldır ilk dəfələrdə. Uşağınız necə reaksiya verdi?"
-          ],
-          [
-            "Valideyn",
-            "O, çox həvəsli idi, məndən daha çox danışdı!"
-          ],
-          [
-            "T",
-            "Bu, əla işarədir! Bu gün bu çətinlikləri həll edəcəyik."
-          ],
-          [
-            "Valideyn",
-            "Bu, mənə kömək edəcək, təşəkkür edirəm."
-          ],
-          [
-            "T",
-            "Hazırsınızmı davam etməyə?"
-          ],
-          [
-            "Valideyn",
-            "Bəli, hazıram."
-          ],
-          [
-            "T",
-            "Bu barədə necə hiss edirsiniz?"
-          ],
-          [
-            "Valideyn",
-            "Ümidli, ilk addım atıldı artıq."
-          ],
-          [
-            "T",
-            "Evdə oyun seansları necə keçdi bu həftə?"
-          ],
-          [
-            "Valideyn",
-            "Yaxşı, bir neçə çətinlik oldu amma."
-          ]
-        ]
-      },
-      {
-        "name": "🔵 Əsas hissə (25-28 dəq)",
-        "text": [
-          "Sükut anları, çətin davranışlar kimi ümumi çətinliklər müzakirə olunur, əlavə strategiyalar öyrədilir."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Sükut yaranan anda nə edə bilərsiniz?"
-          ],
-          [
-            "Valideyn",
-            "Bəlkə sadəcə izləməyə davam edərəm, təzyiq hiss etmədən."
-          ],
-          [
-            "T",
-            "Möhtəşəm fikir! Sükut da normaldır, hər şeyi doldurmaq lazım deyil."
-          ],
-          [
-            "Valideyn",
-            "Bu, məni rahatlaşdırır, hiss edirdim ki, daim danışmalıyam."
-          ],
-          [
-            "T",
-            "Xeyr, izləmə bəzən sadəcə sakit müşahidə ola bilər. Başqa bir çətinlik olubmu?"
-          ],
-          [
-            "Valideyn",
-            "Bəli, bir anda o, məndən bir şey etməyimi istədi, çaşdım nə edim."
-          ],
-          [
-            "T",
-            "Bu, çox tez-tez baş verir. Uşaq-mərkəzli oyunda, ona köməklik edə bilərsiniz, amma öndə getməyin."
-          ],
-          [
-            "Valideyn",
-            "Anladım, yəni ona kömək edirəm, amma o qərar verir necə?"
-          ],
-          [
-            "T",
-            "Tam doğrudur! Başqa bir vəziyyət — o, sizi oyuna 'rol' almağa dəvət etsə?"
-          ],
-          [
-            "Valideyn",
-            "Bunu necə edim düzgün?"
-          ],
-          [
-            "T",
-            "Onun göstərdiyi rolu oynaya bilərsiniz, amma öz təxəyyülünüzü çox əlavə etməyin — onun hekayəsi olsun."
-          ],
-          [
-            "Valideyn",
-            "Anladım, mən sadəcə kömək edən aktyoram."
-          ],
-          [
-            "T",
-            "Möhtəşəm anlayış! Bu, sizi necə hiss etdirir?"
-          ],
-          [
-            "Valideyn",
-            "Daha hazır, çətinliklərə cavab tapdım."
-          ],
-          [
-            "T",
-            "Hansı çətinlik yarandı?"
-          ],
-          [
-            "Valideyn",
-            "Bəzən nəzarəti itirdim, məsləhət verməyə başladım."
-          ],
-          [
-            "T",
-            "Bu, çox normaldır, öyrənmə prosesindəyik. Növbəti dəfə nə fərqli edəcəksiniz?"
-          ],
-          [
-            "Valideyn",
-            "Özümü xatırladacam, sadəcə izləmək və əks etdirmək."
-          ],
-          [
-            "T",
-            "Möhtəşəm niyyət! Bu həftə daha hansı uğur oldu?"
-          ],
-          [
-            "Valideyn",
-            "Uşağım daha çox danışdı mənə oyun zamanı."
-          ]
-        ]
-      },
-      {
-        "name": "🟣 Bağlanış (10-12 dəq)",
-        "text": [
-          "Davamlılıq üçün konkret plan gücləndirilir."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Bu yeni bilgilərlə növbəti seansa necə hazırlaşacaqsınız?"
-          ],
-          [
-            "Valideyn",
-            "Daha sakit olacam sükut anlarında, öndə getməyəcəm."
-          ],
-          [
-            "T",
-            "Möhtəşəm niyyət! Bu barədə necə hiss edirsiniz?"
-          ],
-          [
-            "Valideyn",
-            "Daha inamlı, artıq təcrübəm var."
-          ],
-          [
-            "T",
-            "Bu gün özünüzdə hansı dəyişikliyi hiss edirsiniz?"
-          ],
-          [
-            "Valideyn",
-            "Daha bacarıqlı, çətinlikləri normal qəbul edirəm indi."
-          ],
-          [
-            "T",
-            "Bu, çox gözəldir! Siz bu gün çox səmimi oldunuz çətinlikləriniz haqqında."
-          ],
-          [
-            "Valideyn",
-            "Təşəkkür edirəm."
-          ],
-          [
-            "T",
-            "Ev seanslarını neçə tezliklə davam etdirəcəksiniz?"
-          ],
-          [
-            "Valideyn",
-            "Hər həftə, eyni gün və vaxtda."
-          ],
-          [
-            "T",
-            "Möhtəşəm ardıcıllıq! Növbəti dəfə irəliləyişi daha da möhkəmləndirəcəyik."
-          ],
-          [
-            "Valideyn",
-            "Maraqla gözləyirəm."
-          ],
-          [
-            "T",
-            "Görüşənədək!"
-          ],
-          [
-            "Valideyn",
-            "Görüşənədək, sağ olun!"
-          ]
-        ]
-      }
-    ],
-    "homework": "Növbəti həftə ev seansını davam etdirmək, çətinlikləri qeyd edib gətirmək."
-  },
-  {
-    "num": 7,
-    "title": "Çətinliklərin Həlli və Möhkəmləndirmə",
-    "about": "Filial Terapiyanın davamlı mərhələsində, valideynin ortaya çıxan spesifik çətinlikləri (məsələn, uşağın aqressiv oyunu) həll etmək üçün əlavə fəndlər öyrədilir, ümumi bacarıqlar möhkəmləndirilir.",
-    "goal": "Ev seanslarında yaranan spesifik çətinlikləri həll etmək və valideynin ümumi bacarıq səviyyəsini möhkəmləndirmək.",
-    "administrator": "Klinik psixoloq.",
-    "materials": [
-      "Valideynin son seans qeydləri",
-      "Əlavə ssenari kartları"
-    ],
-    "phases": [
-      {
-        "name": "🟢 Giriş (8-10 dəq)",
-        "text": [
-          "Son həftələrin seanslarının ümumi nəzərdən keçirilməsi."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Salam! Son həftələr necə keçdi ev seansları?"
-          ],
-          [
-            "Valideyn",
-            "Ümumiyyətlə yaxşı, amma bir yeni çətinlik yarandı."
-          ],
-          [
-            "T",
-            "Nə cür çətinlik idi?"
-          ],
-          [
-            "Valideyn",
-            "Uşağım kuklalarla döyüş oyunu oynadı, bir az narahat oldum."
-          ],
-          [
-            "T",
-            "Bu, çox tez-tez baş verən bir vəziyyətdir. Bu barədə danışaq."
-          ],
-          [
-            "Valideyn",
-            "Bu, normal bir şeydirmi?"
-          ],
-          [
-            "T",
-            "Bəli, çox vaxt aqressiv oyun uşağın daxili gərginliyini təhlükəsiz şəkildə boşaltmasıdır."
-          ],
-          [
-            "Valideyn",
-            "Bu, məni rahatlaşdırır, düşünürdüm nəsə səhv gedir."
-          ],
-          [
-            "T",
-            "Xeyr, bu, çox sağlam bir prosesdir, sərhədlər daxilində. Hazırsınızmı bunu necə dəstəkləyəcəyinizi öyrənməyə?"
-          ],
-          [
-            "Valideyn",
-            "Bəli, hazıram."
-          ],
-          [
-            "T",
-            "Bu barədə necə hiss edirsiniz indi?"
-          ],
-          [
-            "Valideyn",
-            "Daha rahat, izahınızdan sonra."
-          ],
-          [
-            "T",
-            "Bu son həftələrdə ən çətin an nə oldu?"
-          ],
-          [
-            "Valideyn",
-            "Sərhəd qoymaq, hələ də çətindir."
-          ]
-        ]
-      },
-      {
-        "name": "🔵 Əsas hissə (25-28 dəq)",
-        "text": [
-          "Aqressiv oyun, tənhalıq oyunu kimi spesifik ssenarilər üzərində dəstəkləyici cavablar öyrədilir."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Uşaq kuklalarla döyüş oynayanda nə deyə bilərsiniz?"
-          ],
-          [
-            "Valideyn",
-            "Bəlkə 'Bu kuklalar döyüşür, sən onları idarə edirsən' deyə bilərəm."
-          ],
-          [
-            "T",
-            "Möhtəşəm izləmə! Əgər döyüş sizə (valideynə) yönəlsə, nə edərsiniz?"
-          ],
-          [
-            "Valideyn",
-            "Sərhəd qoyaram — 'Mənə vurmaq olmaz, kuklaya vura bilərsən.'"
-          ],
-          [
-            "T",
-            "Möhtəşəm tətbiq! Uşaq tənha oyun oynasa, məsələn bir kuklanı təkləsə, nə edərsiniz?"
-          ],
-          [
-            "Valideyn",
-            "'Bu kukla tək qalıb' deyə bilərəm, hiss əlavə edərək bəlkə."
-          ],
-          [
-            "T",
-            "Əla! Bu, sizin öz narahatlığınızı necə idarə edə bilər sənə görə?"
-          ],
-          [
-            "Valideyn",
-            "Bəlkə dərin nəfəs alaram, mühakimə etməməyə çalışaram."
-          ],
-          [
-            "T",
-            "Möhtəşəm özünüfarkındalıq! Uşaq sizdən 'necə' etməyi soruşsa (yönləndirmə istəsə), nə edərsiniz?"
-          ],
-          [
-            "Valideyn",
-            "'Sən qərar verə bilərsən necə etmək istədiyini' deyərəm."
-          ],
-          [
-            "T",
-            "Mükəmməl! Bu, uşağın avtonomiyasını qoruyur. Necə hiss edirsiniz bu ssenariləri sınadıqdan sonra?"
-          ],
-          [
-            "Valideyn",
-            "Daha hazır, hər vəziyyət üçün bir strategiyam var indi."
-          ],
-          [
-            "T",
-            "Bu, çox gözəl bir irəliləyişdir!"
-          ],
-          [
-            "Valideyn",
-            "Bu, mənə çox güvən verir, təşəkkür edirəm."
-          ],
-          [
-            "T",
-            "Bu çətinliyi necə həll etməyə çalışdınız?"
-          ],
-          [
-            "Valideyn",
-            "ACT formulasını istifadə etdim, kömək etdi."
-          ],
-          [
-            "T",
-            "Möhtəşəm! Bu bacarığı necə möhkəmləndirə bilərik daha?"
-          ],
-          [
-            "Valideyn",
-            "Bəlkə daha çox təcrübə lazımdır."
-          ],
-          [
-            "T",
-            "Bu proqramı bitirdikdən sonra necə davam edəcəksiniz?"
-          ],
-          [
-            "Valideyn",
-            "Hər gün 15-20 dəqiqə oyun vaxtı davam etdirəcəyik."
-          ]
-        ]
-      },
-      {
-        "name": "🟣 Bağlanış (10-12 dəq)",
-        "text": [
-          "Bütün bacarıqların birləşdirilmiş tətbiqi üçün son hazırlıq."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Bu son çətinlikləri həll etdikdən sonra, özünüzü necə hiss edirsiniz ümumilikdə?"
-          ],
-          [
-            "Valideyn",
-            "Çox inamlı, demək olar bütün vəziyyətlərə hazıram."
-          ],
-          [
-            "T",
-            "Bu, möhtəşəm bir irəliləyişdir! Uşağınızla münasibətinizdə hansı dəyişikliyi görürsünüz?"
-          ],
-          [
-            "Valideyn",
-            "Daha yaxın, o, daha çox açılır mənə."
-          ],
-          [
-            "T",
-            "Bu, çox dəyərli bir nəticədir! Bu gün özünüzdə nə hiss edirsiniz?"
-          ],
-          [
-            "Valideyn",
-            "Qürurlu və minnətdar."
-          ],
-          [
-            "T",
-            "Bu, çox gözəldir! Siz bu proses boyu çox səylə çalışdınız."
-          ],
-          [
-            "Valideyn",
-            "Təşəkkür edirəm, köməyiniz üçün."
-          ],
-          [
-            "T",
-            "Növbəti dəfə yekun qiymətləndirmə aparacağıq."
-          ],
-          [
-            "Valideyn",
-            "Bu, sonuncu görüşümüzdür demək?"
-          ],
-          [
-            "T",
-            "Demək olar, bəli, amma çox məhsuldar bir səyahət idi."
-          ],
-          [
-            "Valideyn",
-            "Bir az kədərlənirəm, amma çox razıyam."
-          ],
-          [
-            "T",
-            "Bu, çox təbii hissdir. Görüşənədək!"
-          ],
-          [
-            "Valideyn",
-            "Görüşənədək, sağ olun!"
-          ]
-        ]
-      }
-    ],
-    "homework": "Öyrənilən yeni strategiyaları (aqressiv oyun, avtonomiya dəstəyi) ev seansında tətbiq etmək."
-  },
-  {
-    "num": 8,
-    "title": "Yekun Qiymətləndirmə və Davamlılıq Planı",
-    "about": "Filial Terapiyanın yekun mərhələsi, valideynin qazandığı bacarıqların (izləmə, empatiya, sərhəd qoyma) uzunmüddətli, müstəqil tətbiqi üçün konsolidasiya prosesidir.",
-    "goal": "Proqramın nəticələrini qiymətləndirmək və valideynin gələcəkdə müstəqil davam etdirəcəyi çərçivəni formalaşdırmaq.",
-    "administrator": "Klinik psixoloq, uşaq və valideynin birgə iştirakı ilə.",
-    "materials": [
-      "Bütün əvvəlki materiallar",
-      "'Filial Alət Qutusu' yekun vərəqi"
-    ],
-    "phases": [
-      {
-        "name": "🟢 Giriş (10 dəq)",
-        "text": [
-          "Proqramın əvvəlindən bəri qət edilən yol xatırlanır."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Salam hər ikinizə! Bu, bizim son görüşümüzdür. Necə hiss edirsiniz?"
-          ],
-          [
-            "Valideyn",
-            "Bir az kədərli, amma çox minnətdaram bu proses üçün."
-          ],
-          [
-            "Uşaq",
-            "Mən də kədərliyəm, amma anamla oyunlarımızı davam etdirəcəyik!"
-          ],
-          [
-            "T",
-            "Bu, möhtəşəm xəbərdir! İlk gəldiyinizdə münasibətiniz necə idi?"
-          ],
-          [
-            "Valideyn",
-            "Yaxın idik, amma dərinlik yox idi bəlkə."
-          ],
-          [
-            "Uşaq",
-            "Mən bəzən danışmırdım ona nə hiss etdiyimi."
-          ],
-          [
-            "T",
-            "İndi necəsiniz?"
-          ],
-          [
-            "Uşaq",
-            "Daha çox danışıram, o məni yaxşı dinləyir."
-          ],
-          [
-            "Valideyn",
-            "Mən də onu daha yaxşı anlayıram indi."
-          ],
-          [
-            "T",
-            "Bu, möhtəşəm bir dəyişiklikdir! Hazırsınızmı yekun qiymətləndirməyə?"
-          ],
-          [
-            "Valideyn",
-            "Bəli, hazıram."
-          ],
-          [
-            "T",
-            "Bu son görüşə hazır hiss edirsinizmi?"
-          ],
-          [
-            "Valideyn",
-            "Bəli, tam hazırıq."
+            "Bu, əla bir nümunədir — uşaq sizi düzəltdi, bu, əslində sağlam bir əlaqə göstəricisidir."
           ],
           [
             "T",
             "Davam edək."
-          ],
-          [
-            "T",
-            "Bu proqram boyu ən böyük dəyişiklik nə oldu sizə görə?"
-          ],
-          [
-            "Valideyn",
-            "Uşağımı daha yaxşı anlamağı öyrəndim."
-          ]
-        ]
-      },
-      {
-        "name": "🔵 Əsas hissə (25-30 dəq)",
-        "text": [
-          "Bütün öyrənilən bacarıqlar (izləmə, empatiya, sərhəd) 'Filial Alət Qutusu' vərəqinə yazılır, davamlılıq planı formalaşdırılır."
-        ],
-        "dialog": [
-          [
-            "T",
-            "Valideyn olaraq öyrəndiyiniz əsas bacarıqları sadalaya bilərsinizmi?"
-          ],
-          [
-            "Valideyn",
-            "İzləmə, empatik cavab, 3 addımlı sərhəd qoyma."
-          ],
-          [
-            "T",
-            "Möhtəşəm yaddaş! Leyla, anan səninlə oynayanda ən çox nəyi bəyənirsən?"
-          ],
-          [
-            "Uşaq",
-            "Məni dinləməsini, hisslərimi başa düşməsini."
-          ],
-          [
-            "T",
-            "Bu, çox dəyərli bir rəydir! Bu bacarıqları vərəqə yazaq."
-          ],
-          [
-            "Valideyn",
-            "(yazır) Bax, hamısı burada!"
-          ],
-          [
-            "T",
-            "Bu proses sizə valideyn olaraq nə öyrətdi?"
-          ],
-          [
-            "Valideyn",
-            "Uşağımı idarə etmək əvəzinə, ona yer verməyin gücünü."
-          ],
-          [
-            "T",
-            "Bu, çox dərin bir dərsdir! Bu ev seanslarını necə davam etdirəcəksiniz?"
-          ],
-          [
-            "Valideyn",
-            "Hər həftə davam edəcəyik, artıq bizim ailə vaxtımızdır."
-          ],
-          [
-            "Uşaq",
-            "Mən çox sevirəm bu vaxtı!"
-          ],
-          [
-            "T",
-            "Çətinlik yaransa, nə edəcəksiniz?"
-          ],
-          [
-            "Valideyn",
-            "Bu alət qutusuna baxıb, uyğun bacarığı tətbiq edəcəm."
-          ],
-          [
-            "Uşaq",
-            "Mən də çox öyrəndim bu prosesdə."
-          ],
-          [
-            "T",
-            "Uşaq, bu oyun vaxtları sənə necə hiss etdirdi?"
-          ],
-          [
-            "Uşaq",
-            "Xoşbəxt, anam mənimlə oynayanda çox sevirəm."
-          ],
-          [
-            "T",
-            "Bu bacarıqları necə davam etdirəcəksiniz?"
-          ],
-          [
-            "Valideyn",
-            "Hər gün oyun vaxtını davam etdirəcəyik."
-          ],
-          [
-            "T",
-            "Möhtəşəm plan! Bu proqramdan ən çox nəyi xatırlayacaqsınız?"
-          ],
-          [
-            "Valideyn",
-            "İzləmək, məcbur etməmək, sadəcə orada olmaq."
           ]
         ]
       },
       {
         "name": "🟣 Bağlanış (10-12 dəq)",
-        "text": [
-          "Proqram rəsmi şəkildə tamamlanır, ailəyə təbrik edilir."
-        ],
         "dialog": [
           [
             "T",
-            "Siz bu proqramda inanılmaz irəliləyiş göstərdiniz! Sizinlə çox fəxr edirəm."
+            "Bu bacarıq izləmədən daha çətin gəldi sizə, elə deyilmi?"
           ],
           [
             "Valideyn",
-            "Təşəkkür edirəm, mən də özümlə fəxr edirəm."
-          ],
-          [
-            "Uşaq",
-            "Mən də anamla fəxr edirəm!"
+            "Bəli, hiss oxumaq daha çətindir mənə görə hərəkətdən."
           ],
           [
             "T",
-            "Bu, çox gözəl bir sözdür! Leyla, sən anan haqqında nə öyrəndin?"
-          ],
-          [
-            "Uşaq",
-            "O, məni çox sevir və dinləyir."
-          ],
-          [
-            "T",
-            "Bu, çox dəyərli bir kəşfdir! Uğurlar sizə ailə olaraq!"
+            "Bu, çoxlarında belədir. Tapşırıq — bu həftə 3 dəfə empatik cavab sınayın, mükəmməl olmasa da."
           ],
           [
             "Valideyn",
-            "Sağ olun, hər şey üçün!"
-          ],
-          [
-            "Uşaq",
-            "Təşəkkür edirəm!"
+            "Yaxşı, cəhd edəcəm."
           ],
           [
             "T",
-            "3 ay sonra qısa nəzarət görüşü planlaşdıracağıq."
+            "Səhv etsəniz özünüzü tənqid etməyin, bu, öyrənmə prosesinin təbii hissəsidir."
           ],
           [
             "Valideyn",
-            "Əla, gözləyəcəyik."
+            "Bunu xatırlayacam, sağ olun."
+          ],
+          [
+            "Valideyn",
+            "Bu gün öyrəndiyim ən vacib şey nə idi bilirsiniz?"
           ],
           [
             "T",
-            "Alət qutunuzu unutmayın! Xüsusi oyun vaxtınızı da!"
+            "Deyin, maraqlıyam."
           ],
           [
             "Valideyn",
-            "Unutmarıq, bu, artıq həyatımızın bir hissəsidir."
+            "Səhv etməyin özü problem olmadığı."
           ],
           [
             "T",
-            "Bu, çox gözəl bir ailə səyahəti idi."
+            "Yorğunluğunuza baxmayaraq diqqətli iştirak etdiniz bu gün."
           ],
           [
             "Valideyn",
-            "Bu proqram bizim üçün çox dəyərli idi, təşəkkür edirik."
+            "Sağ olun, çalışdım."
+          ],
+          [
+            "Valideyn",
+            "Evdə bir az dincələcəm indi."
           ]
         ]
       }
+    ]
+  },
+  {
+    "num": 4,
+    "title": "Sərhəd Qoyma Bacarığı Oyunda",
+    "about": "ACT modeli (Landreth) — Acknowledge, Communicate, Target alternative: hissi tanı, məhdudiyyəti bildir, alternativ təklif et. Sərhəd qoymaq 'yox' demək deyil, strukturlu keçiddir.",
+    "goal": "Valideynə ACT formulasını öyrətmək və real vaxtda tətbiq etdirmək.",
+    "administrator": "Klinik psixoloq.",
+    "materials": [
+      "ACT formulası kartı"
     ],
-    "homework": "Həftəlik xüsusi oyun vaxtını davamlı davam etdirmək, 3 ay sonra nəzarət görüşünə hazırlaşmaq."
+    "homework": "Bir sərhəd situasiyasında ACT-i sınamaq və nəticəni qeyd etmək.",
+    "phases": [
+      {
+        "name": "🟢 Giriş (10-12 dəq)",
+        "dialog": [
+          [
+            "T",
+            "Empatik cavab necə keçdi?"
+          ],
+          [
+            "Valideyn",
+            "İki dəfə sınadım. Bir dəfə düz gəldi məncə, o gülümsədi mənə baxıb."
+          ],
+          [
+            "T",
+            "Bu, çox gözəl bir işarədir — o, eşidildiyini hiss etdi."
+          ],
+          [
+            "Valideyn",
+            "İkinci dəfə isə... yanlış hiss adlandırdım deyəsən, o mənə baxıb 'yox' dedi sadəcə."
+          ],
+          [
+            "T",
+            "Bu da faydalı material — 'yox' cavabı belə sizə bir şey öyrədir."
+          ],
+          [
+            "T",
+            "Sərhəd mövzusuna keçməzdən əvvəl, bu həftə hər hansı çətin bir an oldumu?"
+          ],
+          [
+            "Valideyn",
+            "Bəli, o boya ilə divara toxunmağa çalışdı, mən köhnə vərdişlə 'yox!' dedim sərt səslə."
+          ],
+          [
+            "T",
+            "Bu, tam təbiidir, hələ yeni bacarığı öyrənməmisiniz. Bu gün elə buna kömək edəcəyik."
+          ],
+          [
+            "Valideyn",
+            "Ümid edirəm daha yaxşı bacaraam bundan sonra."
+          ],
+          [
+            "Valideyn",
+            "Bu gün özümü daha hazır hiss edirəm keçən həftədən."
+          ],
+          [
+            "T",
+            "Bu, təbii bir irəliləyişdir, hər həftə bir az daha rahat olursunuz."
+          ],
+          [
+            "Valideyn",
+            "Elə bil vərdiş formalaşır yavaş-yavaş."
+          ],
+          [
+            "Valideyn",
+            "Hazıram."
+          ],
+          [
+            "T",
+            "Əla, başlayaq."
+          ]
+        ]
+      },
+      {
+        "name": "🔵 Əsas hissə (25-28 dəq)",
+        "dialog": [
+          [
+            "T",
+            "Bu gün sərhəd qoymağı öyrənəcəyik — ACT modeli: hissi tanı, məhdudiyyəti bildir, alternativ təklif et."
+          ],
+          [
+            "Valideyn",
+            "Sərhəd qoymaq mənim üçün asan olacaq yəqin, bunu çox edirəm adətən."
+          ],
+          [
+            "T",
+            "Bəlkə, amma fərq — bu, 'yox' deməkdən fərqlidir, strukturlu bir keçiddir. Nümunə göstərim: uşaq divara rəsm çəkmək istəsə."
+          ],
+          [
+            "Valideyn",
+            "Mən sadəcə 'yox, olmaz' deyərdim."
+          ],
+          [
+            "T",
+            "ACT formulası fərqli işləyir — 'Divara rəsm çəkmək istəyirsən (tanı), amma divara çəkə bilmərik (məhdudiyyət), bu kağıza çəkə bilərsən (alternativ)'."
+          ],
+          [
+            "Valideyn",
+            "(təkrarlamağa çalışır) Divara çəkmək istəyirsən... divara olmaz... bu kağıza çək."
+          ],
+          [
+            "T",
+            "Yaxşı cəhd, sadəcə birinci hissəni bir az yumşaldaq — hökm kimi deyil, anlayış kimi səslənsin."
+          ],
+          [
+            "Valideyn",
+            "(yenidən) Divara rəsm çəkmək istəyirsən, bunu görürəm. Divara çəkə bilmərik. Bu kağıza çəkə bilərsən."
+          ],
+          [
+            "T",
+            "Bax bu! İndi sınayaq mən uşaq rolunda, siz valideyn."
+          ],
+          [
+            "Valideyn",
+            "(bir az gərgin) Yaxşı."
+          ],
+          [
+            "T",
+            "(uşaq kimi) Mən oyuncaqları divara atmaq istəyirəm!"
+          ],
+          [
+            "Valideyn",
+            "(tərəddüdlə) Sən... oyuncaqları atmaq istəyirsən. Divara ata bilmərik. Bu... yastığa ata bilərsən?"
+          ],
+          [
+            "T",
+            "Möhtəşəm tətbiq oldu, üç addımı da düzgün ardıcıllıqla verdiniz!"
+          ],
+          [
+            "Valideyn",
+            "(rahatlaşır) Düşündüyümdən asan oldu əslində, bir formula olanda."
+          ],
+          [
+            "T",
+            "Real vəziyyətdə bu qədər hamar getməyəcək, uşaq bəzən alternativi qəbul etməyəcək. O zaman nə edərsiniz?"
+          ],
+          [
+            "Valideyn",
+            "(fikirləşir) Bilmirəm açığı, bəlkə təkrarlayaram?"
+          ],
+          [
+            "T",
+            "Dəqiq — sakit təkrar, eyni üç addım. Səsinizi qaldırmadan."
+          ],
+          [
+            "Valideyn",
+            "Bəs əgər uşaq ACT-dən sonra da davam etsə, məsələn yenə divara çəkməyə çalışsa?"
+          ],
+          [
+            "T",
+            "Onda sakitcə fiziki olaraq alternativi təklif edin — kağızı ona tərəf itələyin, sözlə təkrarlamaqla yanaşı."
+          ],
+          [
+            "T",
+            "Bu, tam doğrudur — vərdiş formalaşması bax belə tədricən gedir."
+          ]
+        ]
+      },
+      {
+        "name": "🟣 Bağlanış (10-12 dəq)",
+        "dialog": [
+          [
+            "T",
+            "Bu formula sizə real gəlirmi, yoxsa süni?"
+          ],
+          [
+            "Valideyn",
+            "Açığı, ilk dəfə bir az süni gəldi, amma indi bir az daha təbii hiss edirəm."
+          ],
+          [
+            "T",
+            "Bu, dürüst bir cavabdır — yeni bacarıqlar əvvəlcə süni gəlir, sonra öz sözünüz olur."
+          ],
+          [
+            "Valideyn",
+            "Ümid edirəm belə olsun."
+          ],
+          [
+            "T",
+            "Bu həftə bir sərhəd situasiyasında sınayın, nəticəni yazın, hətta uğursuz olsa da."
+          ],
+          [
+            "Valideyn",
+            "Uğursuz olsa nə edim?"
+          ],
+          [
+            "T",
+            "Yazın nə baş verdi, gələn həftə birlikdə təhlil edərik. Uğursuzluq material deməkdir, bizim üçün."
+          ],
+          [
+            "Valideyn",
+            "Bu baxış xoşuma gəldi, sağ olun."
+          ],
+          [
+            "Valideyn",
+            "Bu formula yadımda qalacaqmı görəsən, təzyiq altında?"
+          ],
+          [
+            "T",
+            "Praktika ilə bəli. Kart üzərinizdə saxlaya bilərsiniz ilk vaxtlar."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "num": 5,
+    "title": "Nəzarətli Təcrübə Seansı",
+    "about": "Valideyn ilk dəfə tam bir oyun seansını terapevtin müşahidəsi altında aparır — bütün öyrənilən bacarıqlar (izləmə, empatiya, sərhəd) birlikdə tətbiq olunur.",
+    "goal": "Valideynin bacarıqları inteqrasiya etmə səviyyəsini qiymətləndirmək və canlı geribildirim vermək.",
+    "administrator": "Klinik psixoloq (birtərəfli güzgü və ya kənardan müşahidə).",
+    "materials": [
+      "Müşahidə qeyd forması"
+    ],
+    "homework": "Bu həftə 1 müstəqil ev seansı aparmaq, qeydlər aparmaq.",
+    "phases": [
+      {
+        "name": "🟢 Giriş (10-12 dəq)",
+        "dialog": [
+          [
+            "T",
+            "Bu gün ilk dəfə tam bir seansı özünüz aparacaqsınız, mən kənardan izləyəcəm."
+          ],
+          [
+            "Valideyn",
+            "(gərginləşir) İndi? Hazır deyiləm kimi hiss edirəm."
+          ],
+          [
+            "T",
+            "Bu narahatlıq normaldır. Xatırladım — mükəmməl olmaq gözlənilmir, sadəcə cəhd edin."
+          ],
+          [
+            "Valideyn",
+            "Yaxşı, dərin nəfəs alım."
+          ],
+          [
+            "T",
+            "Bu gün tam seans aparmazdan əvvəl, hər hansı sualınız var mı?"
+          ],
+          [
+            "Valideyn",
+            "Bəli — əgər tamamilə ilişib qalsam, nə edim?"
+          ],
+          [
+            "T",
+            "Sadəcə dayanın, dərin nəfəs alın, mən kənardan lazım olsa kiçik işarə verərəm."
+          ],
+          [
+            "Valideyn",
+            "Bu, rahatlaşdırır məni, tək deyiləm bu prosesdə."
+          ],
+          [
+            "Valideyn",
+            "Bu gün Leyla bir az fərqli görünür, bilmirəm niyə."
+          ],
+          [
+            "T",
+            "Uşaqlar da gündən-günə dəyişir, bu normaldır."
+          ],
+          [
+            "Valideyn",
+            "Doğrudur, bəzən unuduram bunu."
+          ],
+          [
+            "T",
+            "Bu gün onun bugünkü halına uyğunlaşın, əvvəlcədən planlaşdırmayın."
+          ],
+          [
+            "Valideyn",
+            "Anladım, çevik olacam."
+          ],
+          [
+            "Valideyn",
+            "Hazıram başlamağa."
+          ]
+        ]
+      },
+      {
+        "name": "🔵 Əsas hissə (25-28 dəq)",
+        "dialog": [
+          [
+            "T",
+            "(kənardan) Başlaya bilərsiniz, mən sadəcə qeyd aparacam, müdaxilə etməyəcəm."
+          ],
+          [
+            "Valideyn",
+            "(Leylaya) Bu gün nə ilə oynamaq istəyirsən?"
+          ],
+          [
+            "Uşaq",
+            "(oyuncaqlara baxır) Bu qala ilə."
+          ],
+          [
+            "Valideyn",
+            "Sən qala ilə oynamaq istəyirsən."
+          ],
+          [
+            "T",
+            "(qeyd edir, müdaxilə etmir)"
+          ],
+          [
+            "Uşaq",
+            "(qülləni tikir, sonra yıxır, gülür)"
+          ],
+          [
+            "Valideyn",
+            "(bir anlıq tərəddüd edir, sonra) Sən... qülləni yıxdın və gülürsən."
+          ],
+          [
+            "Uşaq",
+            "Bəli! Əylənclidir!"
+          ],
+          [
+            "Valideyn",
+            "Sənə əylənclidir bu."
+          ],
+          [
+            "T",
+            "(daxili qeyddə: izləmə düzgün, amma reaksiya bir az gecikmiş idi)"
+          ],
+          [
+            "Uşaq",
+            "(başqa oyuncaq götürür, valideynə uzadır) Sən də tik indi."
+          ],
+          [
+            "Valideyn",
+            "(çətinlikdə qalır, instinktiv göstərmək istəyir, amma dayanır) Sən istəyirsən mən də tikim."
+          ],
+          [
+            "Uşaq",
+            "Bəli, kömək et!"
+          ],
+          [
+            "Valideyn",
+            "(tərəddüdlə, T-yə baxır)"
+          ],
+          [
+            "T",
+            "(səssizcə başını yellədir, 'sizin qərarınızdır' işarəsi)"
+          ],
+          [
+            "Valideyn",
+            "(qərar verir) Mən sənin istədiyin kimi kömək edə bilərəm, sən göstər necə."
+          ],
+          [
+            "Uşaq",
+            "(razı qalır, birlikdə tikirlər)"
+          ],
+          [
+            "Uşaq",
+            "(valideynə) Sən niyə bu cür danışırsan indi, qəribədir."
+          ],
+          [
+            "Valideyn",
+            "(bir az utanaraq, T-yə baxaraq) Bu... sənin fikrincə qəribədirmi?"
+          ],
+          [
+            "T",
+            "(səssizcə, müdaxilə etmədən qeyd aparır)"
+          ],
+          [
+            "Uşaq",
+            "(çiyin çəkir) Bilmirəm, fərqlisən sadəcə."
+          ],
+          [
+            "Valideyn",
+            "(sakitcə davam edir) Sən fərqli olduğumu düşünürsən."
+          ]
+        ]
+      },
+      {
+        "name": "🟣 Bağlanış (10-12 dəq)",
+        "dialog": [
+          [
+            "T",
+            "Necə hiss etdiniz seans zamanı?"
+          ],
+          [
+            "Valideyn",
+            "Bir neçə dəfə köhnə vərdişimə qayıtmaq istədim, amma özümü saxladım."
+          ],
+          [
+            "T",
+            "Bunu gördüm — 'kömək et' anında çox yaxşı qərar verdiniz, göstərmək əvəzinə soruşdunuz necə."
+          ],
+          [
+            "Valideyn",
+            "(sevinir) Doğrudan?"
+          ],
+          [
+            "T",
+            "Bəli, bu, dəqiq Filial modelin mahiyyətidir — onun liderliyini qəbul etmək."
+          ],
+          [
+            "Valideyn",
+            "Bir yerdə isə gecikdim reaksiya verməkdə, hiss etdim özüm."
+          ],
+          [
+            "T",
+            "Bunu görmüsünüz özünüz, bu, çox yaxşı özünütənqiddir, mənfi mənada yox."
+          ],
+          [
+            "Valideyn",
+            "Sağ olun, bu, məni bir az rahatlatdı."
+          ],
+          [
+            "T",
+            "Leylanın 'qəribədir' reaksiyasını necə qarşıladınız?"
+          ],
+          [
+            "Valideyn",
+            "Bir az özümü qəribə hiss etdim, amma davam etdim, siz demişdiniz kimi."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "num": 6,
+    "title": "Ev Oyun Seanslarının Davam Etdirilməsi",
+    "about": "Valideyn ilk müstəqil ev seansını aparıb — bu seansda uğurlar və çətinliklər birgə təhlil olunur, adətən bu mərhələdə valideynlərdə ilk 'bu, doğrudanmı işləyir?' şübhəsi yaranır.",
+    "goal": "İlk müstəqil təcrübəni struktur təhlildən keçirmək və çətinlikləri normallaşdırmaq.",
+    "administrator": "Klinik psixoloq.",
+    "materials": [
+      "Ev seansı qeyd vərəqi"
+    ],
+    "homework": "Daha 1 ev seansı, bu dəfə konkret çətin anı qeyd etməklə.",
+    "phases": [
+      {
+        "name": "🟢 Giriş (10-12 dəq)",
+        "dialog": [
+          [
+            "T",
+            "Ev seansı necə keçdi?"
+          ],
+          [
+            "Valideyn",
+            "(qarışıq ifadə) Yaxşı başladı, amma ortada çətinləşdi."
+          ],
+          [
+            "T",
+            "Nə oldu?"
+          ],
+          [
+            "Valideyn",
+            "Leyla oyuncaqları hər yerə səpələdi, mən özümü saxlaya bilmədim, 'yığışdır bunları' dedim."
+          ],
+          [
+            "T",
+            "Bu, çox real bir andır — köhnə refleks güclüdür təzyiq altında."
+          ],
+          [
+            "Valideyn",
+            "Özümü uğursuz hiss etdim, açığı."
+          ],
+          [
+            "T",
+            "Bu, uğursuzluq deyil, bu, öyrənmənin bir hissəsidir. Neçə dəqiqə sonra bu oldu?"
+          ],
+          [
+            "Valideyn",
+            "Bəlkə 15-ci dəqiqədə. İlk 15 dəqiqə yaxşı getdi əslində."
+          ],
+          [
+            "T",
+            "Bu, evdə tam müstəqil ilk seansınız idi. Əvvəlcə ümumi təəssüratınızı deyin."
+          ],
+          [
+            "Valideyn",
+            "Fərqli idi, otaqda tək olmaq, T yoxdu deyə bir az itmiş hiss etdim əvvəlcə."
+          ],
+          [
+            "T",
+            "Bu, çox anlaşılan bir hissdir — dəstəksiz ilk dəfə."
+          ],
+          [
+            "T",
+            "Aygün xanım... bağışlayın, Nərgiz xanım, bu gün hazırsınızmı əvvəlki seansın təhlilinə?"
+          ],
+          [
+            "Valideyn",
+            "(gülümsəyir) Bəli, hazıram, adım qarışdırıla bilər, problem deyil."
+          ],
+          [
+            "T",
+            "Üzr istəyirəm, çox ailə ilə işləyirəm bəzən qarışır."
+          ],
+          [
+            "Valideyn",
+            "Problem deyil, davam edək."
+          ],
+          [
+            "Valideyn",
+            "Açığı, bu həftə çox fikirləşdim seans haqqında."
+          ],
+          [
+            "T",
+            "Nə barədə düşündünüz konkret?"
+          ],
+          [
+            "T",
+            "Başlayaq."
+          ]
+        ]
+      },
+      {
+        "name": "🔵 Əsas hissə (25-28 dəq)",
+        "dialog": [
+          [
+            "T",
+            "Bu, çox vacib məlumatdır — 15 dəqiqə dözümünüz kifayət idi, sonra yorulmuşsunuz. Bu normaldır."
+          ],
+          [
+            "Valideyn",
+            "Deməli mən uğursuz deyiləm tam?"
+          ],
+          [
+            "T",
+            "Xeyr, əksinə — 15 dəqiqə ardıcıl tətbiq, əvvəlki həftələrlə müqayisədə böyük irəliləyişdir."
+          ],
+          [
+            "Valideyn",
+            "(bir az rahatlaşır) Belə baxmamışdım buna."
+          ],
+          [
+            "T",
+            "'Yığışdır' deyəndən sonra nə oldu?"
+          ],
+          [
+            "Valideyn",
+            "Leyla bir az küsdü, sonra mən üzr istədim, dedim davam edək əvvəlki kimi."
+          ],
+          [
+            "T",
+            "Üzr istəməyiniz və düzəltməyə çalışmağınız — bu, çox dəyərli bir modeldir uşağa, böyüklər də səhv edir, düzəldir."
+          ],
+          [
+            "Valideyn",
+            "Bunu düşünməmişdim, doğru deyirsiniz."
+          ],
+          [
+            "T",
+            "Bu, doğrudanmı işləyir sualı sizdə varmı hələ?"
+          ],
+          [
+            "Valideyn",
+            "(dürüst) Açığı, bəzən var. Bir oyun 20 dəqiqə, bu, gerçəkdən böyük fərq yaradacaqmı?"
+          ],
+          [
+            "T",
+            "Haqlı sual. Cavab — tək başına yox, amma davamlı təkrarla, bəli, güclü təsiri var. Tədqiqatlar bunu göstərir."
+          ],
+          [
+            "Valideyn",
+            "Yaxşı, inanmağa çalışacam."
+          ],
+          [
+            "T",
+            "İnanc məcburi deyil indi, davam etmək kifayətdir, nəticələr özü inandıracaq."
+          ],
+          [
+            "Valideyn",
+            "(davam edir) Bəzən dayanıb düşünürdüm, 'indi izləməliyəm, yoxsa empatiya?' — qarışdı bir az başımda."
+          ],
+          [
+            "T",
+            "Bu, çox normaldır ilk müstəqil seansda, bacarıqları ayırd etmək təcrübə tələb edir."
+          ],
+          [
+            "Valideyn",
+            "Bəs bu qarışıqlıq keçəcəkmi vaxtla?"
+          ],
+          [
+            "T",
+            "Bəli, təkrarla bacarıqlar bir-birinə qarışmadan avtomatlaşır."
+          ],
+          [
+            "Valideyn",
+            "(bir az utanaraq) Bəzən özümü acizanə hiss edirəm, düzü."
+          ],
+          [
+            "T",
+            "Bu hiss haqqında bir az daha danışa bilərsinizmi?"
+          ],
+          [
+            "Valideyn",
+            "Sadəcə... hər şeyi düzgün etmək istəyirəm, amma çətin gəlir bəzən."
+          ]
+        ]
+      },
+      {
+        "name": "🟣 Bağlanış (10-12 dəq)",
+        "dialog": [
+          [
+            "T",
+            "Bu həftə üçün nə düşünürsünüz — davam edə bilərsinizmi?"
+          ],
+          [
+            "Valideyn",
+            "Bəli, bu dəfə 'yığışdır' anına hazır olacam bəlkə."
+          ],
+          [
+            "T",
+            "Əla niyyət. Daha bir ev seansı, konkret bir çətin anı qeyd edin gətirin."
+          ],
+          [
+            "Valideyn",
+            "Yaxşı, sağ olun dözümlü olduğunuz üçün."
+          ],
+          [
+            "Valideyn",
+            "Ümumilikdə özümə nə qədər qiymət verərdim, bilmirəm, bəlkə 6/10?"
+          ],
+          [
+            "T",
+            "Bu, ilk müstəqil cəhd üçün çox yaxşı bir qiymətdir, gözləntim də bu idi."
+          ],
+          [
+            "T",
+            "Bu acizlik hissini normal qəbul edin, hər öyrənmə prosesində olur."
+          ],
+          [
+            "Valideyn",
+            "Sağ olun anlayışınıza görə."
+          ],
+          [
+            "Valideyn",
+            "Bir az rahatlaşdım bunu deyəndən sonra."
+          ],
+          [
+            "T",
+            "Bu, çox sağlam bir addımdır — hissi ifadə etmək."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "num": 7,
+    "title": "Çətinliklərin Həlli və Möhkəmləndirmə",
+    "about": "Proqramın bu mərhələsində adətən 'plato' effekti yaşanır — irəliləyiş görünməz olur. Bu seans konkret problemli anları detallı təhlil edərək bacarıqları dəqiqləşdirir.",
+    "goal": "Konkret çətinlik ssenarilərini birgə həll etmək və valideynin özünəinamını bərpa etmək.",
+    "administrator": "Klinik psixoloq.",
+    "materials": [
+      "Problem-həll iş vərəqi"
+    ],
+    "homework": "2 ev seansı, hər ikisində bir çətinliyi qeyd edib növbəti görüşə gətirmək.",
+    "phases": [
+      {
+        "name": "🟢 Giriş (10-12 dəq)",
+        "dialog": [
+          [
+            "T",
+            "Bu həftə necə keçdi?"
+          ],
+          [
+            "Valideyn",
+            "Qarışıq, açığı. Bir seans çox yaxşı getdi, digəri isə... Leyla bu dəfə məni sınadı deyəsən."
+          ],
+          [
+            "T",
+            "Necə sınadı?"
+          ],
+          [
+            "Valideyn",
+            "Qəsdən oyuncaqları atmağa başladı, mənə baxaraq, reaksiyamı görmək üçün kimi."
+          ],
+          [
+            "T",
+            "Bu gün konkret çətinliklər üzərində işləyəcəyik. Hansı vəziyyəti gətirmisiniz?"
+          ],
+          [
+            "Valideyn",
+            "Leyla bəzən oyunu birdən dayandırıb 'bezdim' deyir, mən nə edəcəyimi bilmirəm."
+          ],
+          [
+            "T",
+            "Yaxşı nümunə, bunu indi işləyək."
+          ],
+          [
+            "Valideyn",
+            "Sağ olun, çünki bu, məni həqiqətən çaşdırır."
+          ],
+          [
+            "Valideyn",
+            "Bu iki həftə müxtəlif keçdi, bir yaxşı, bir çətin gün."
+          ],
+          [
+            "T",
+            "Bu, çox realdır, xətti irəliləyiş nadirdir belə proseslərdə."
+          ],
+          [
+            "T",
+            "Başlayaq bugünkü müzakirəyə."
+          ],
+          [
+            "Valideyn",
+            "Hazıram, keçən dəfəkindən çox şey öyrəndim."
+          ],
+          [
+            "T",
+            "Bunu eşitmək sevindiricidir, başlayaq."
+          ],
+          [
+            "Valideyn",
+            "Bu gün bir az fərqli hazırlaşmışam bu seansa."
+          ],
+          [
+            "T",
+            "Yaxşı, dinləyirəm."
+          ],
+          [
+            "T",
+            "Başlayaq."
+          ]
+        ]
+      },
+      {
+        "name": "🔵 Əsas hissə (25-28 dəq)",
+        "dialog": [
+          [
+            "T",
+            "Bu, çox tanış bir nümunədir — uşaqlar yeni sərhədləri sınayır, xüsusən valideyn dəyişəndə."
+          ],
+          [
+            "Valideyn",
+            "Mən nə etdim bilirsinizmi? Sadəcə ACT-i tətbiq etdim, üç dəfə təkrarladım sakit səslə."
+          ],
+          [
+            "T",
+            "Bu, tam düzgün cavabdır. Nəticə nə oldu?"
+          ],
+          [
+            "Valideyn",
+            "Üçüncü dəfədən sonra dayandı, sanki test etmiş, kifayət qədər sınamışdı."
+          ],
+          [
+            "T",
+            "Bu, sərhədin 'tutması' üçün klassik nümunədir — sınaq, sonra qəbul."
+          ],
+          [
+            "Valideyn",
+            "Bu, məni rahatlaşdırdı açığı, yenidən 'yığışdır' deməyimdən qorxurdum."
+          ],
+          [
+            "T",
+            "Görürsünüz — köhnə refleksin əvəzinə yeni bacarıq işlədi çətin anda. Bu, böyük irəliləyişdir."
+          ],
+          [
+            "Valideyn",
+            "Bir sualım da var — bəzən Leyla heç nə demədən sadəcə oturur, oynamır. O zaman nə edim?"
+          ],
+          [
+            "T",
+            "Yaxşı sual — bu, sükut da bir kommunikasiyadır. İzləyin: 'Sən bu gün sakit oturmaq istəyirsən' deyə bilərsiniz, məcbur etmədən."
+          ],
+          [
+            "Valideyn",
+            "Sükutu qəbul etmək... bu, mənə ən çətin gələn şey olacaq yəqin."
+          ],
+          [
+            "T",
+            "Niyə sizcə?"
+          ],
+          [
+            "Valideyn",
+            "Mən özüm sükutu sevmirəm, doldurmaq istəyirəm həmişə."
+          ],
+          [
+            "T",
+            "Bu, çox dəyərli bir özünütanımadır. Bəlkə bu, bu proqramın sizə verdiyi əlavə bir dərsdir — sükutla rahat olmaq."
+          ],
+          [
+            "T",
+            "'Bezdim' deyəndə, ilk instinktiniz nə olur?"
+          ],
+          [
+            "Valideyn",
+            "Yeni oyuncaq təklif etmək, əyləndirməyə çalışmaq."
+          ],
+          [
+            "T",
+            "Bu, çox təbii instinktdir, amma Filial modeldə fərqli yanaşırıq — sadəcə izləyin: 'Sən bezdin, bu oyunu davam etdirmək istəmirsən'."
+          ],
+          [
+            "Valideyn",
+            "Bəs sonra nə edim, sükut qalsın?"
+          ],
+          [
+            "T",
+            "Bəli, ona qərar vermə fürsətini verin — davam edərmi, başqa şey seçərmi, özü bilir."
+          ],
+          [
+            "Valideyn",
+            "Bu, mənə çox passiv gəlir açığı, bir şey etmək istəyirəm həmişə."
+          ],
+          [
+            "T",
+            "Anlayıram bu narahatlığı. Sınayaq, bir daha bu ssenarini rol-oyunu ilə."
+          ],
+          [
+            "Valideyn",
+            "Rol-oyunu kömək etdi, açığı real vəziyyətdə daha rahat oldum sonra."
+          ],
+          [
+            "Valideyn",
+            "Bir sualım da var — Leylanın müəlliməsi soruşdu nə etdiyimizi, nə deyim ona?"
+          ],
+          [
+            "T",
+            "Sadə deyə bilərsiniz — 'birlikdə xüsusi oyun vaxtı keçiririk', detala getmək məcburi deyil."
+          ],
+          [
+            "Valideyn",
+            "Anladım, sağ olun."
+          ]
+        ]
+      },
+      {
+        "name": "🟣 Bağlanış (10-12 dəq)",
+        "dialog": [
+          [
+            "T",
+            "Bu həftənin ən böyük dərsi nə oldu sizcə?"
+          ],
+          [
+            "Valideyn",
+            "Sərhəd tutdu — sınandı, amma tutdu. Bu, mənə güvən verdi."
+          ],
+          [
+            "T",
+            "Bu güvən çox əhəmiyyətlidir. Daha 2 ev seansı, sükut anına da diqqət yetirin."
+          ],
+          [
+            "Valideyn",
+            "Yaxşı, cəhd edəcəm."
+          ],
+          [
+            "Valideyn",
+            "Bu, ən çətin öyrəndiyim şey oldu bəlkə — heç nə etməmək."
+          ],
+          [
+            "T",
+            "Bu, çox güclü bir müşahidədir sizin üçün."
+          ],
+          [
+            "Valideyn",
+            "Sınayacam bunu bu həftə."
+          ],
+          [
+            "T",
+            "Bu, çox yaxşı bir nəticədir rol-oyunundan."
+          ],
+          [
+            "Valideyn",
+            "Təşəkkür edirəm bu texnikanı göstərdiyinizə."
+          ],
+          [
+            "Valideyn",
+            "Yaxşı fikir, sadə saxlayaram."
+          ],
+          [
+            "T",
+            "Bu, kifayət qədər izahatdır çoxları üçün."
+          ],
+          [
+            "Valideyn",
+            "Sağ olun."
+          ],
+          [
+            "T",
+            "Növbəti seansda görüşərik."
+          ],
+          [
+            "T",
+            "Görüşənədək."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "num": 8,
+    "title": "Yekun Qiymətləndirmə və Davamlılıq Planı",
+    "about": "Proqramın son seansı — real dəyişikliklər (böyük və kiçik) qiymətləndirilir, tam olmayan tərəflər dürüst tanınır, davamlılıq üçün konkret plan qurulur.",
+    "goal": "Proqram nəticələrini realist şəkildə konsolidasiya etmək və müstəqil davam üçün hazırlamaq.",
+    "administrator": "Klinik psixoloq.",
+    "materials": [
+      "Davamlılıq planı sənədi"
+    ],
+    "homework": "Yoxdur — proqram bitir, aylıq özünüqiymətləndirmə tövsiyə olunur.",
+    "phases": [
+      {
+        "name": "🟢 Giriş (10-12 dəq)",
+        "dialog": [
+          [
+            "T",
+            "Bu, proqramımızın son planlaşdırılmış görüşüdür. Necə hiss edirsiniz?"
+          ],
+          [
+            "Valideyn",
+            "Qürurlu, açığı. Amma də bir az narahat sizsiz davam edə biləcəyimdən."
+          ],
+          [
+            "T",
+            "Bu qarışıq hiss çox təbiidir proqram bitəndə."
+          ],
+          [
+            "T",
+            "Son seansımıza gəlmişik. Əvvəlcə, bu 8 həftə ərzində sizin üçün ən gözlənilməz şey nə oldu?"
+          ],
+          [
+            "Valideyn",
+            "(fikirləşir) Yəqin ki, mənim özüm haqqımda öyrəndiklərim — Leyla haqqında öyrənəcəyimi düşünürdüm əvvəlcə."
+          ],
+          [
+            "T",
+            "Bu, çox dərin bir müşahidədir, Filial Terapiyanın gizli faydalarından biridir."
+          ],
+          [
+            "Valideyn",
+            "Doğrudan gözləmirdim bunu."
+          ],
+          [
+            "Valideyn",
+            "Ər də soruşur bəzən, 'bu, doğrudanmı işləyir' — mən özüm bəzən əminəm, bəzən yox."
+          ],
+          [
+            "T",
+            "Bu qeyri-müəyyənlik normaldır, mütləq əminlik nadir olur belə proseslərdə."
+          ],
+          [
+            "Valideyn",
+            "Bu gün bir az emosionalam, düzü, proqram bitir deyə."
+          ],
+          [
+            "T",
+            "Bu hiss tamamilə anlaşılandır, bir çox valideyndə olur son seansda."
+          ],
+          [
+            "Valideyn",
+            "Sizinlə işləmək dəyərli bir təcrübə oldu."
+          ],
+          [
+            "Valideyn",
+            "Hazıram bugünkü seansa."
+          ],
+          [
+            "T",
+            "Başlayaq onda."
+          ],
+          [
+            "Valideyn",
+            "Bu gün bir az narahatam sonuncu seans olduğu üçün."
+          ],
+          [
+            "T",
+            "Bu hiss anlaşılandır."
+          ]
+        ]
+      },
+      {
+        "name": "🔵 Əsas hissə (25-28 dəq)",
+        "dialog": [
+          [
+            "T",
+            "İlk gəldiyiniz gündən bu günə, sizcə ən böyük dəyişiklik nə oldu?"
+          ],
+          [
+            "Valideyn",
+            "(fikirləşir) Mən artıq hər şeyi idarə etmək lazım olmadığını bilirəm. Bu, böyük bir şey mənim üçün."
+          ],
+          [
+            "T",
+            "Bu, çox dərin bir dəyişiklikdir — sadəcə texnika deyil, dünyagörüşü səviyyəsində."
+          ],
+          [
+            "Valideyn",
+            "Leyla da dəyişdi məncə — daha çox danışır mənə, daha rahat görünür."
+          ],
+          [
+            "T",
+            "Nə hələ tam həll olmayıb sizcə?"
+          ],
+          [
+            "Valideyn",
+            "(dürüst) Sükut anları hələ də çətindir mənə. Və bəzən yorulanda köhnə vərdişə qayıdıram, xüsusən stresli günlərdə."
+          ],
+          [
+            "T",
+            "Bu dürüstlük çox dəyərlidir — mükəmməl bitirmək əvəzinə real bitirmək."
+          ],
+          [
+            "Valideyn",
+            "Bəs mən özüm davam edə bilərəmmi indi sizsiz?"
+          ],
+          [
+            "T",
+            "Bacarıqlarınız var artıq. Tövsiyəm — həftədə ən azı 2 seans davam etdirin, heç olmasa 15-20 dəqiqə."
+          ],
+          [
+            "Valideyn",
+            "Yaxşı, bunu edə bilərəm."
+          ],
+          [
+            "T",
+            "Çətinlik yaransa, qeyd edin, bir ay sonra qısa bir yoxlama görüşü planlaşdıraq."
+          ],
+          [
+            "Valideyn",
+            "Bu, məni rahatlaşdırır, tam tək buraxılmıram."
+          ],
+          [
+            "Valideyn",
+            "Bir sual da — mən başqa uşaqlarımla da (bacısı var Leylanın) eyni üsulu tətbiq edə bilərəmmi?"
+          ],
+          [
+            "T",
+            "Prinsiplər universal, amma vaxt hər uşaqla ayrıca olmalıdır, birləşdirməyin."
+          ],
+          [
+            "Valideyn",
+            "Anladım, ayrı-ayrı vaxt planlaşdıraram."
+          ],
+          [
+            "T",
+            "Bu, çox düşünülmüş bir yanaşmadır."
+          ],
+          [
+            "Valideyn",
+            "Leylanın gələcəkdə hansı çətinliklərlə üzləşə biləcəyini düşünürsünüz bu bacarıqlarla?"
+          ],
+          [
+            "T",
+            "Bunu qabaqcadan bilmək çətindir, amma güclü əlaqə, gələcək çətinliklərə qarşı ən yaxşı qoruyucu amillərdəndir."
+          ],
+          [
+            "Valideyn",
+            "Bu, rahatladı məni bir az."
+          ],
+          [
+            "T",
+            "Sual-cavab formasında davam edə bilərik, başqa sualınız varsa."
+          ],
+          [
+            "T",
+            "Bu, sizin üçün faydalı oldu ümid edirəm."
+          ],
+          [
+            "Valideyn",
+            "Sağ olun bu izahata görə."
+          ]
+        ]
+      },
+      {
+        "name": "🟣 Bağlanış (10-12 dəq)",
+        "dialog": [
+          [
+            "T",
+            "Bu proqrama gəldiyiniz gündən bu günə, Leylaya baxışınız necə dəyişdi?"
+          ],
+          [
+            "Valideyn",
+            "(kövrəlir bir az) Onu daha çox 'öz adamı' kimi görürəm indi, məndən kiçik bir versiya kimi yox."
+          ],
+          [
+            "T",
+            "Bu, çox gözəl bir sözlə ifadə etdiniz. Uğurlar sizə ikinizə."
+          ],
+          [
+            "Valideyn",
+            "Sağ olun hər şey üçün, doğrudan dəyişiklik yaratdı bu proqram."
+          ],
+          [
+            "Valideyn",
+            "Sizinlə işləmək mənim üçün gözlədiyimdən daha çox şey dəyişdi, təşəkkür edirəm."
+          ],
+          [
+            "T",
+            "Mən də sizin açıqlığınızı, çətin anları belə paylaşdığınızı çox qiymətləndirdim."
+          ],
+          [
+            "Valideyn",
+            "Ümid edirəm bu tempı davam etdirə bilərəm."
+          ],
+          [
+            "Valideyn",
+            "Yoxdur, hər şey aydındır artıq."
+          ],
+          [
+            "Valideyn",
+            "Bəli, çox faydalı oldu."
+          ],
+          [
+            "T",
+            "Sağ olun bu proses boyu açıqlığınıza görə."
+          ],
+          [
+            "Valideyn",
+            "Mən də sağ olun, çox şey öyrəndim."
+          ],
+          [
+            "T",
+            "Uğurlar sizə və Leylaya."
+          ]
+        ]
+      }
+    ]
   }
 ];
 
