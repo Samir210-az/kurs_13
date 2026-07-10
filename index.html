@@ -140,19 +140,110 @@
 
 <script>
 const lessons = [
-  {n:"01", icon:"🔥", title:"Aqressiv Uşaqlar və Yeniyetmələrlə İş Proqramı", desc:"Aggression Replacement Training modelinə əsaslanan 16 seanslıq proqram — uşağın qəzəbini tanımaqdan tutmuş, tetikləyiciləri xəritələməyə, bədən siqnallarını oxumağa və 'Dayan-Düşün-Hərəkət et' texnikasına qədər addım-addım aparır. Ailə iştirakı və məktəbə keçid mərhələləri də daxildir, nəticə obyektiv şkala ilə ölçülür.", href:"01-aqressiv-usaqlarla-is.html", active:true},
-  {n:"02", icon:"🗣️", title:"Kəkələmə Proqramı", desc:"Nitq axıcılığı pozuntusunun həm əsas, həm ikincili davranışlarını əhatə edən 45 seanslıq, kursun ən geniş proqramı. Loqopedik texnikalarla yanaşı, uşağın öz nitqindən utanmaması, özünəinamının qurulması və valideyn dəstəyi paralel işlənir.", href:"02-kekeleme-proqrami.html", active:true},
-  {n:"03", icon:"🌟", title:"Kids'Skills Proqramı", desc:"Ben Furman-ın 15 addımlı Kids'Skills metodu çətinliyi 'problem' kimi deyil, öyrənilə bilən bir bacarıq kimi çərçivələyir. Uşaq özü bacarığını seçir, məşq edir və irəliləyişini özü qeyd edir — Həll-Yönümlü yanaşmanın oyunlaşdırılmış forması.", href:"03-kids-skills.html", active:true},
-  {n:"04", icon:"🧭", title:"Uşaq və Yeniyetmələr üçün Həllə Yönəlmiş Qısamüddətli Terapiya", desc:"de Shazer və Insoo Kim Berg-in Həll-Yönümlü Qısamüddətli Terapiya modeli 8 seansda problemin təhlilinə deyil, arzu olunan gələcəyə fokuslanır. Möcüzə Sualı, İstisna Axtarma və Şkala Sualları ilə uşaq öz daxili resurslarını kəşf edir.", href:"04-cozum-odakli-terapiya.html", active:true},
-  {n:"05", icon:"🎓", title:"Yeniyetmə Psixologiyası — Özgüvən, Özünəqapanma, İmtahan Stresi və Sosiallaşma", desc:"Erikson-un 'İdentitet və Rol Çaşqınlığı' mərhələsinə söykənən 12 seanslıq proqram. Özgüvən, sosial anksiyete, imtahan stresi və sosiallaşma çətinlikləri ayrı alt-modullarda işlənir ki, yeniyetmə öz kimliyini daha rahat tapa bilsin.", href:"05-yeniyetme-psixologiyasi.html", active:true},
-  {n:"06", icon:"👨‍👩‍👧‍👦", title:"Yeniyetmə və Ailə Münasibətləri", desc:"Bowen-in Ailə Sistemləri Nəzəriyyəsi əsasında qurulmuş 8 seanslıq proqram valideyn-yeniyetmə münaqişələrinin arxasındakı kommunikasiya nümunələrini üzə çıxarır. Sərhəd qoyma, aktiv dinləmə və qarşılıqlı hörmətin bərpası mərkəzi mövzulardır.", href:"06-yeniyetme-aile-munasibetleri.html", active:true},
-  {n:"07", icon:"📖", title:"Oyun və Nağıl Terapiyası", desc:"Bettelheim və Gilligan-ın nağıl terapiyası ənənəsinə söykənən 8 seans. Uşaq öz emosional təcrübəsini birbaşa deyil, nağıl personajları üzərindən, təhlükəsiz məsafədən ifadə edir — xüsusilə utancaq, birbaşa danışmaqda çətinlik çəkən uşaqlar üçün faydalıdır.", href:"07-oyun-nagil-terapiyasi.html", active:true},
-  {n:"08", icon:"🧩", title:"Koqnitiv Oyun Terapiyası", desc:"Knell-in Koqnitiv-Davranış Oyun Terapiyası modeli klassik KDT prinsiplərini — düşüncə-hiss-davranış əlaqəsini — kiçik yaşlı uşağın anlaya biləcəyi oyun dilinə çevirir. 8 seansda kuklalar və rollu oyunlarla koqnitiv anlayışlar canlandırılır.", href:"08-koqnitiv-oyun-terapiyasi.html", active:true},
-  {n:"09", icon:"🤝", title:"Filial Oyun Terapiyası", desc:"Guerney cütlüyünün Filial Terapiya modeli fərqli bir yol tutur: terapevt uşaqla deyil, valideynlə işləyir və onu 'birincil dəyişiklik agenti'nə çevirir. 8 seansda valideyn izləmə, empatik cavab və oyun-mərkəzli ünsiyyət bacarıqlarını öyrənir.", href:"09-filial-oyun-terapiyasi.html", active:true},
-  {n:"10", icon:"🧸", title:"Uşaq Mərkəzli Oyun Terapiyası", desc:"Virginia Axline-ın klassik modeli uşağın öz-özünü sağaltma qabiliyyətinə dərin inanca əsaslanır. 8 seans boyu qeyri-direktiv mühitdə uşağa öz temposunda, öz yolu ilə irəliləmək imkanı yaradılır.", href:"10-usaq-merkezli-oyun-terapiyasi.html", active:true},
-  {n:"11", icon:"🔷", title:"Autizmli Uşaqlarla Oyun Terapiyası", desc:"Greenspan və Wieder-in DIR/Floortime modeli 'uşağın ardınca getmək' prinsipinə əsaslanır. 8 seansda autizm spektrində olan uşağın funksional emosional inkişaf mərhələsinə uyğun, əlaqə-mərkəzli müdaxilə aparılır.", href:"11-autizmli-usaqlarla-oyun-terapiyasi.html", active:true},
-  {n:"12", icon:"🃏", title:"Metafor Assosiativ Kartlar — Diaqnostik və Koreksiya Proqramı (MAK)", desc:"1975-ci ildən istifadə olunan Metafor Assosiativ Kartlar, Rorschach kimi layihəli testlərin müasir və çevik davamçısıdır. 8 seansda çoxmənalı görüntülər vasitəsilə klient, öz daxili dünyasını sözlə ifadə etməkdə çətinlik çəksə belə, kart üzərindən danışmağa başlayır.", href:"12-mak-kartlari.html", active:true},
-  {n:"13", icon:"👥", title:"Uşaq və Yeniyetmələr üçün Qrup Terapiyası Proqramı", desc:"Irvin Yalom-un qrup psixoterapiya nəzəriyyəsinə əsaslanan 8 seans. Universallıq, aidiyyət hissi və real vaxtda sosial bacarıq məşqi kimi 'terapevtik amillər' vasitəsilə yeniyetmələr həm öz problemlərinin tək olmadığını görür, həm yeni bacarıqlar qazanır.", href:"13-qrup-terapiyasi.html", active:true}
+  {
+    "n": "01",
+    "icon": "🔥",
+    "title": "Aqressiv Uşaqlar və Yeniyetmələrlə İş Proqramı",
+    "desc": "Aggression Replacement Training modelinə əsaslanan 16 seanslıq proqram uşağın qəzəbini tanımaqdan başlayır: tetikləyicilər xəritələnir, bədən siqnalları 'qəzəb termometri' ilə oxunur, 'Dayan-Düşün-Hərəkət et' texnikası, dərin nəfəs və özünə təlimat bacarıqları addım-addım öyrədilir. Perspektiv alma, sosial bacarıqlar və moral mühakimə seansları, ailə iştirakı və məktəbə keçid mərhələsi ilə tamamlanır, nəticə obyektiv şkala ilə ölçülür.",
+    "href": "01-aqressiv-usaqlarla-is.html",
+    "active": true
+  },
+  {
+    "n": "02",
+    "icon": "🗣️",
+    "title": "Kəkələmə Proqramı",
+    "desc": "Nitq axıcılığı pozuntusunun həm əsas (blok, təkrar, uzatma), həm ikincili davranışlarını (qaçınma, utanc) əhatə edən 45 seanslıq, kursun ən geniş proqramı. Diafraqmal nəfəs, yumşaq başlanğıc, yavaşladılmış nitq və yüngül artikulyator təmas kimi loqopedik texnikalar tədricən söz-cümlə-monoloq-real söhbət səviyyəsinə köçürülür, paralel olaraq uşağın özünəinamı və valideyn dəstəyi işlənir.",
+    "href": "02-kekeleme-proqrami.html",
+    "active": true
+  },
+  {
+    "n": "03",
+    "icon": "🌟",
+    "title": "Kids'Skills Proqramı",
+    "desc": "Ben Furman-ın 15 addımlı Kids'Skills metodu çətinliyi 'problem' kimi deyil, öyrənilə bilən bacarıq kimi çərçivələyir. Uşaq özü bacarığa ad qoyur, dəstəkçi personaj seçir, əvvəlki uğurlarını xatırlayır, köməkçilərini rəsmiləşdirir, bacarığı rol-oyunla məşq edir və nəhayət öyrəndiyini başqa uşağa ötürür — Həll-Yönümlü yanaşmanın tam oyunlaşdırılmış forması.",
+    "href": "03-kids-skills.html",
+    "active": true
+  },
+  {
+    "n": "04",
+    "icon": "🧭",
+    "title": "Uşaq və Yeniyetmələr üçün Həllə Yönəlmiş Qısamüddətli Terapiya",
+    "desc": "de Shazer və Insoo Kim Berg-in Həll-Yönümlü Qısamüddətli Terapiya modeli 8 seansda problemin təhlilinə deyil, arzu olunan gələcəyə fokuslanır. Möcüzə Sualı, İstisna Axtarma, Şkala Sualları, güclü tərəflərin aşkarlanması və kiçik addımların planlaşdırılması ilə uşaq öz daxili resurslarını kəşf edir, irəliləyişini özü qeyd edir və yekunda uğurunu bayram edir.",
+    "href": "04-cozum-odakli-terapiya.html",
+    "active": true
+  },
+  {
+    "n": "05",
+    "icon": "🎓",
+    "title": "Yeniyetmə Psixologiyası — Özgüvən, Özünəqapanma, İmtahan Stresi və Sosiallaşma",
+    "desc": "Erikson-un 'İdentitet və Rol Çaşqınlığı' mərhələsinə söykənən 12 seanslıq proqram. Özgüvən (özünü tanıma, mənfi öz-danışığın dəyişdirilməsi, uğur təcrübələrinin möhkəmləndirilməsi), özünəqapanma və sosial qıcıqlanma, imtahan stresi və sosiallaşma çətinlikləri ayrı alt-modullarda addım-addım işlənir ki, yeniyetmə öz kimliyini daha rahat, daha inamlı tapa bilsin.",
+    "href": "05-yeniyetme-psixologiyasi.html",
+    "active": true
+  },
+  {
+    "n": "06",
+    "icon": "👨‍👩‍👧‍👦",
+    "title": "Yeniyetmə və Ailə Münasibətləri",
+    "desc": "Bowen-in Ailə Sistemləri Nəzəriyyəsi əsasında qurulmuş 8 seanslıq proqram tanışlıq və ailə dinamikasının qiymətləndirilməsindən başlayır, muxtariyyət-bağlılıq balansına, effektiv kommunikasiyaya, sərhəd və qaydalara, konflikt həllinə keçir və etibarın bərpası ilə tamamlanır. Valideyn-yeniyetmə münaqişəsinin arxasındakı kommunikasiya nümunələri üzə çıxarılır, qarşılıqlı hörmət bərpa edilir.",
+    "href": "06-yeniyetme-aile-munasibetleri.html",
+    "active": true
+  },
+  {
+    "n": "07",
+    "icon": "📖",
+    "title": "Oyun və Nağıl Terapiyası",
+    "desc": "Bettelheim və Gilligan-ın nağıl terapiyası ənənəsinə söykənən 8 seans nağıl seçimindən başlayır, metafora vasitəsilə emosional ifadəyə, personajlarla özünütanımaya, qorxuların nağıl üzərindən emalına və problem-həlli nağıllarına keçir, sonda uşaq öz nağılını özü yaradır. Uşaq öz təcrübəsini birbaşa deyil, təhlükəsiz məsafədən ifadə edir — xüsusilə utancaq uşaqlar üçün faydalıdır.",
+    "href": "07-oyun-nagil-terapiyasi.html",
+    "active": true
+  },
+  {
+    "n": "08",
+    "icon": "🧩",
+    "title": "Koqnitiv Oyun Terapiyası",
+    "desc": "Knell-in Koqnitiv-Davranış Oyun Terapiyası modeli klassik KDT prinsiplərini — düşüncə-hiss-davranış üçbucağını — kiçik yaşlı uşağın anlaya biləcəyi oyun dilinə çevirir. 8 seansda kuklalar vasitəsilə avtomatik düşüncələr tanınır, 'detektiv oyunu' ilə balanslaşdırılır, kiçik davranış təcrübələri aparılır və 'Super Güc Sözləri' kartları ilə özünə təlimat bacarığı formalaşdırılır.",
+    "href": "08-koqnitiv-oyun-terapiyasi.html",
+    "active": true
+  },
+  {
+    "n": "09",
+    "icon": "🤝",
+    "title": "Filial Oyun Terapiyası",
+    "desc": "Guerney cütlüyünün Filial Terapiya modeli fərqli bir yol tutur: terapevt uşaqla deyil, valideynlə işləyir və onu 'birincil dəyişiklik agenti'nə çevirir. 8 seansda valideyn izləmə, təsviri şərh, empatik cavab vermə və sərhəd qoyma bacarıqlarını öyrənir, əvvəlcə nəzarətli seansda, sonra evdə müstəqil oyun seansları ilə tətbiq edir.",
+    "href": "09-filial-oyun-terapiyasi.html",
+    "active": true
+  },
+  {
+    "n": "10",
+    "icon": "🧸",
+    "title": "Uşaq Mərkəzli Oyun Terapiyası",
+    "desc": "Virginia Axline-ın klassik modeli uşağın öz-özünü sağaltma qabiliyyətinə dərin inanca əsaslanır. 8 seans boyu qəbuledici münasibət, sərbəstlik hissi, hisslərin əks etdirilməsi və uşağın öz qərarlarına, öz templə inkişafına hörmət mərkəzi yerdədir — qeyri-direktiv mühitdə uşağa öz yolu ilə irəliləmək imkanı yaradılır, terapevt sadəcə izləyir və müşayiət edir.",
+    "href": "10-usaq-merkezli-oyun-terapiyasi.html",
+    "active": true
+  },
+  {
+    "n": "11",
+    "icon": "🔷",
+    "title": "Autizmli Uşaqlarla Oyun Terapiyası",
+    "desc": "Greenspan və Wieder-in DIR/Floortime modeli 'uşağın ardınca getmək' prinsipinə əsaslanır. 8 seansda sensor-motor profilinin qiymətləndirilməsindən başlanır, terapevt uşağın inisiativini izləyir, ortaq diqqət və simvolik oyun inkişaf etdirilir, sosial hekayələr və növbə alma məşqləri ilə autizm spektrində olan uşağın funksional emosional inkişafına əlaqə-mərkəzli müdaxilə aparılır.",
+    "href": "11-autizmli-usaqlarla-oyun-terapiyasi.html",
+    "active": true
+  },
+  {
+    "n": "12",
+    "icon": "🃏",
+    "title": "Metafor Assosiativ Kartlar — Diaqnostik və Koreksiya Proqramı (MAK)",
+    "desc": "1975-ci ildən istifadə olunan Metafor Assosiativ Kartlar (MAK), Rorschach kimi layihəli testlərin müasir və çevik davamçısıdır. 8 seansda giriş və ilkin diaqnostikadan başlayaraq emosional vəziyyət, ailə münasibətləri və çətinliklər kartlar üzərindən araşdırılır, sonda resurs kartları ilə koreksiya aparılır — klient öz daxili dünyasını sözlə çətinlik çəksə belə, kart vasitəsilə ifadə edir.",
+    "href": "12-mak-kartlari.html",
+    "active": true
+  },
+  {
+    "n": "13",
+    "icon": "👥",
+    "title": "Uşaq və Yeniyetmələr üçün Qrup Terapiyası Proqramı",
+    "desc": "Irvin Yalom-un qrup psixoterapiya nəzəriyyəsinə əsaslanan 8 seans qrup qaydalarının formalaşdırılmasından başlayır, etibar qurma fəaliyyətləri, emosional ifadə, aktiv dinləmə və konflikt həlli qrup kontekstində işlənir, əməkdaşlıq fəaliyyətləri ilə davam edir. Universallıq və aidiyyət hissi vasitəsilə yeniyetmələr həm öz problemlərinin tək olmadığını görür, həm yeni sosial bacarıqlar qazanır.",
+    "href": "13-qrup-terapiyasi.html",
+    "active": true
+  }
 ];
 
 const grid = document.getElementById('grid');
