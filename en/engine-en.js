@@ -1,7 +1,7 @@
-/* Child & Adolescent Therapy Programs Course — Shared JS engine (English)
+/* AN Child & Adolescent Therapy Programs Course — Shared JS Engine (English)
    By s_akhundoff — https://instagram.com/s_akhundoff */
 
-// Section reveal on scroll
+// Reveal sections on scroll
 const io = new IntersectionObserver((entries)=>{
   entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target);} });
 },{threshold:0.1});
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
   document.querySelectorAll('section').forEach(s=>io.observe(s));
 });
 
-// Parallax background blobs
+// Parallax background "blobs"
 window.addEventListener('mousemove', e=>{
   const mx = (e.clientX/window.innerWidth - 0.5);
   const my = (e.clientY/window.innerHeight - 0.5);
@@ -27,25 +27,25 @@ function renderSession(s){
   if(s.about){
     html += `<div class="m-block"><h5>ℹ️ About</h5><div class="m-goal">${s.about}</div></div>`;
   }
-  html += `<div class="m-block"><h5>🎯 Purpose</h5><div class="m-goal">${s.goal}</div></div>`;
+  html += `<div class="m-block"><h5>🎯 Goal</h5><div class="m-goal">${s.goal}</div></div>`;
   if(s.structure){
-    html += `<div class="m-block"><h5>🧱 Structure (sections/number of items)</h5><div class="m-goal">${s.structure}</div></div>`;
+    html += `<div class="m-block"><h5>🧱 Structure</h5><div class="m-goal">${s.structure}</div></div>`;
   }
   if(s.administrator){
-    html += `<div class="m-block"><h5>🎓 Who can administer this</h5><div class="m-goal">${s.administrator}</div></div>`;
+    html += `<div class="m-block"><h5>🎓 Who can administer it</h5><div class="m-goal">${s.administrator}</div></div>`;
   }
   if(s.materials && s.materials.length){
     html += `<div class="m-block"><h5>🧰 Materials needed</h5><div class="m-materials">${s.materials.map(m=>`<span>${m}</span>`).join('')}</div></div>`;
   }
-  html += `<div class="m-block"><h5>📋 How to conduct it (step by step)</h5>`;
+  html += `<div class="m-block"><h5>📋 Full session script</h5>`;
   s.phases.forEach(ph=>{
     html += `<div class="m-phase"><div class="ph-name">${ph.name}</div>`;
     (ph.text||[]).forEach(t=>{ html += `<p>${t}</p>`; });
     if(ph.dialog && ph.dialog.length){
       html += `<div class="m-dialog">`;
       ph.dialog.forEach(d=>{
-        const who = d[0]==='T' ? 'Therapist' : (d[0]==='K' ? 'Client' : d[0]);
-        const cls = d[0]==='T' ? 't' : (d[0]==='K' ? 'k' : '');
+        const who = d[0]==='T' ? 'Therapist' : d[0];
+        const cls = d[0]==='T' ? 't' : 'k';
         html += `<div class="dl"><span class="dw ${cls}">${who}:</span><span class="dt">${d[1]}</span></div>`;
       });
       html += `</div>`;
@@ -54,7 +54,7 @@ function renderSession(s){
   });
   html += `</div>`;
   if(s.scoring){
-    html += `<div class="m-block"><h5>📊 Scoring and interpretation ranges</h5><div class="m-homework">${s.scoring}</div></div>`;
+    html += `<div class="m-block"><h5>📊 Scoring & Interpretation Ranges</h5><div class="m-homework">${s.scoring}</div></div>`;
   }
   if(s.homework){
     html += `<div class="m-block"><h5>📝 Homework</h5><div class="m-homework">${s.homework}</div></div>`;
