@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <script>document.documentElement.style.visibility='hidden';</script>
@@ -104,6 +104,17 @@
     .stats{gap:26px;}
     header{padding:64px 18px 34px;}
   }
+
+  .hero-illust{
+    position:relative;
+    width:min(440px, 82vw);
+    height:230px;
+    margin:34px auto 8px;
+    animation:fadeUp 1s ease both .32s;
+  }
+  .hero-illust svg{position:absolute; inset:0; width:100%; height:100%; overflow:visible;}
+  .hero-illust .layer{will-change:transform; transition:transform .1s linear;}
+
 </style>
 </head>
 <body>
@@ -127,6 +138,37 @@
     <span class="eyebrow">Professional Development Program</span>
     <h1>Child & Adolescent Therapy<br><span class="kurs-word">PROGRAMS</span></h1>
     <p class="sub">From aggression to stuttering, from play therapy to group models — 13 complete, clinically grounded, session-by-session structured therapy programs.</p>
+
+    <div class="hero-illust" aria-hidden="true">
+      <svg viewBox="0 0 440 230" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="heroGradK13" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#eab308"/>
+            <stop offset="100%" stop-color="#7ba098"/>
+          </linearGradient>
+        </defs>
+        <g class="layer" data-speed="5" data-scroll-y="0.012">
+          <path d="M110 208 C110 150 150 150 168 168 L168 208 Z" fill="none" stroke="url(#heroGradK13)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+          <path d="M226 208 C226 150 186 150 168 168 L168 208 Z" fill="none" stroke="url(#heroGradK13)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+          <path d="M120 168 L158 168 M120 182 L158 182 M120 196 L158 196" stroke="var(--text-3)" stroke-width="1.1" opacity="0.55"/>
+          <path d="M178 168 L216 168 M178 182 L216 182 M178 196 L216 196" stroke="var(--text-3)" stroke-width="1.1" opacity="0.55"/>
+        </g>
+        <g class="layer" data-speed="12" data-scroll-y="0.024">
+          <rect x="268" y="140" width="46" height="46" rx="7" fill="var(--teal-soft)" stroke="var(--teal)" stroke-width="1.8" transform="rotate(-6 291 163)"/>
+          <rect x="316" y="112" width="42" height="42" rx="7" fill="var(--amber-soft)" stroke="var(--amber)" stroke-width="1.8" transform="rotate(5 337 133)"/>
+          <rect x="290" y="78" width="38" height="38" rx="7" fill="var(--violet-soft)" stroke="var(--violet)" stroke-width="1.8" transform="rotate(-4 309 97)"/>
+        </g>
+        <g class="layer" data-speed="20" data-scroll-y="0.04">
+          <path d="M70 90 L74 100 L84 102 L74 104 L70 114 L66 104 L56 102 L66 100 Z" fill="var(--amber)" opacity="0.9"/>
+          <path d="M370 70 L373 78 L381 80 L373 82 L370 90 L367 82 L359 80 L367 78 Z" fill="var(--teal)" opacity="0.85"/>
+          <circle cx="240" cy="55" r="3.4" fill="var(--violet)" opacity="0.8"/>
+          <circle cx="60" cy="150" r="2.6" fill="var(--teal)" opacity="0.75"/>
+          <circle cx="400" cy="150" r="2.6" fill="var(--amber)" opacity="0.75"/>
+        </g>
+      </svg>
+    </div>
+
+    
     <div class="stats">
       <div class="stat"><b>13</b><span>PROGRAMS</span></div>
       <div class="stat"><b>150+</b><span>SESSIONS</span></div>
@@ -303,6 +345,26 @@ window.addEventListener('scroll', ()=>{
     b.style.transform += ` translateY(${y*0.05*(i+1)}px)`;
   });
 });
+
+// Hero illustration parallax (layered, subtler than background blobs)
+const heroLayers = document.querySelectorAll('.hero-illust .layer');
+window.addEventListener('mousemove', e=>{
+  const hmx = (e.clientX/window.innerWidth - 0.5);
+  const hmy = (e.clientY/window.innerHeight - 0.5);
+  heroLayers.forEach(l=>{
+    const s = parseFloat(l.dataset.speed);
+    const sy = (parseFloat(l.dataset.scrollY)||0) * (window.scrollY||0);
+    l.style.transform = `translate(${hmx*s}px, ${hmy*s + sy}px)`;
+  });
+});
+window.addEventListener('scroll', ()=>{
+  const y = window.scrollY;
+  heroLayers.forEach(l=>{
+    const sy = parseFloat(l.dataset.scrollY)||0;
+    l.style.transform += ` translateY(${y*sy}px)`;
+  });
+}, {passive:true});
+
 </script>
 <script src="../protect.js" defer></script>
 <script src="../pwa.js" defer></script>
